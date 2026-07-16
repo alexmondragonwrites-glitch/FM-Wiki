@@ -13,17 +13,11 @@ window.FM_MATCHES=window.FM_MATCHES||[];window.FM_MATCHES.push({
   ],
   stats:[
     {label:'Schüsse',home:2,away:23,kind:'number'},
-    {label:'Aufs Tor',home:1,away:8,kind:'number'},
     {label:'xG',home:0.17,away:2.57,kind:'decimal'},
     {label:'Ballbesitz',home:35,away:65,kind:'percent'},
     {label:'Pässe',home:80,away:88,kind:'percent',homeDetail:'324/406',awayDetail:'590 angekommen'},
-    {label:'Zweikämpfe',home:82,away:93,kind:'percent',homeDetail:'23/28',awayDetail:'27/29'},
-    {label:'Kopfbälle',home:47,away:50,kind:'percent',homeDetail:'23/49',awayDetail:'26 gewonnen'},
-    {label:'Ecken',home:1,away:5,kind:'number'},
-    {label:'Fouls',home:11,away:7,kind:'number'},
-    {label:'Gelbe Karten',home:2,away:0,kind:'number'},
-    {label:'Intensive Sprints',home:104,away:138,kind:'number'},
-    {label:'Notenschnitt',home:6.52,away:7.34,kind:'decimal'}
+    {label:'Zweikämpfe',home:82,away:93,kind:'percent',homeDetail:'23/28'},
+    {label:'Kopfbälle',home:47,away:50,kind:'percent',homeDetail:'23/49'}
   ],
   xgTimeline:[
     {minute:0,home:0,away:0},{minute:15,home:0.02,away:0.35},{minute:30,home:0.05,away:0.88},{minute:45,home:0.08,away:1.43},{minute:60,home:0.12,away:1.72},{minute:75,home:0.14,away:2.04},{minute:90,home:0.17,away:2.57}
@@ -32,7 +26,7 @@ window.FM_MATCHES=window.FM_MATCHES||[];window.FM_MATCHES.push({
     summary:'Die Zahlen erzählen eine fast lückenlose Geschichte: 23:2 Abschlüsse, 2,57:0,17 xG und 65 Prozent Ballbesitz. Heerenveen verteidigte lange in einem flachen 4-4-2, bekam aber weder Finn Harps’ zentrales Übergewicht noch die Läufe aus den Halbräumen unter Kontrolle.',
     possession:'O’Neill gab dem Aufbau Ruhe, während O’Kane und Frame ständig unterschiedliche Höhen besetzten. Die 590 angekommenen Pässe und 88 Prozent Genauigkeit waren nicht sterile Zirkulation, sondern das Fundament für wiederholte Angriffe gegen eine immer tiefer werdende Viererkette.',
     chanceCreation:'Die Schusskarte zeigt 23 Versuche, davon 18 mit dem Fuß, drei per Kopf und zwei direkte Standards. Viele Abschlüsse waren nur mittlerer Qualität, doch die Menge und Verteilung über Strafraumkante, Halbräume und Zentrum erzeugten dauerhaft Druck.',
-    defensive:'Heerenveen kam auf zwei Abschlüsse, einen Schuss aufs Tor und 0,17 xG. Bruce, Istrankins und O’Neill erstickten zweite Bälle, während Henrique mit 7,5 erneut eine ruhige weiße Weste verbuchte.',
+    defensive:'Heerenveen kam auf zwei Abschlüsse und 0,17 xG. Bruce, Istrankins und O’Neill erstickten zweite Bälle, während Henrique mit 7,5 erneut eine ruhige weiße Weste verbuchte.',
     turningPoint:'Der eigentliche Wendepunkt war kein einzelner Moment, sondern O’Kanes Dominanz zwischen den Linien. Mit Tor, Vorlage und 8,4 zwang er Heerenveens Mittelfeld ständig zu Entscheidungen, die Räume für Papini und Docherty öffneten.',
     nuance:'23 Abschlüsse bei 2,57 xG bedeuten auch: Ein Teil des Volumens bestand aus nur ordentlichen Chancen. Gegen stärkere Gegner muss Finn Harps dieselbe territoriale Dominanz in etwas mehr Strafraumnähe und weniger mittlere Versuche übersetzen.'
   },
