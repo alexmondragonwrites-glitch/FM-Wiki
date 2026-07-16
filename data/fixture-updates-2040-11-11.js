@@ -1,1 +1,1 @@
-(()=>{const fixtures=window.FM_FIXTURES||[];const final=fixtures.find(x=>x[0]==='2040-11-11'&&x[2]==='Shamrock Rovers');if(final)final[4]='2 - 0';})();
+(()=>{const fixtures=window.FM_FIXTURES||[];const final=fixtures.find(x=>x[0]==='2040-11-11'&&x[2]==='Shamrock Rovers');if(final)final[4]='3 - 0';})();
