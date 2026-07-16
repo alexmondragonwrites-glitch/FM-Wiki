@@ -1,57 +1,11 @@
-<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Immersives Vereinsarchiv des Finn-Harps-Langzeitsaves.">
-  <title>Finn Harps | Official Save Archive</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-  <div class="utility-bar"><span>FINN HARPS · OFFICIAL SAVE ARCHIVE</span><span>SAISON 2040 · BALLYBOFEY</span></div>
-  <header class="site-header">
-    <a class="club-brand" href="#top"><span class="club-crest">FH</span><span><strong>FINN HARPS</strong><small>FOOTBALL MANAGER ARCHIVE</small></span></a>
-    <button class="menu-toggle" aria-label="Navigation öffnen">☰</button>
-    <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#news">News</a><a href="#kader">Kader</a><a href="#taktik">Taktik</a><a href="#planung">Zukunft</a><a href="#archiv">Archiv</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="club-hero">
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="kicker">FROM BALLYBOFEY TO EUROPE</p>
-        <h1>Eine Dynastie,<br>die dokumentiert wird.</h1>
-        <p>Spielerprofile, Taktik, Nachwuchs, Titel und die Geschichten hinter dem Aufstieg von Finn Harps.</p>
-        <div class="hero-actions"><a class="button button-light" href="#kader">Kader entdecken</a><a class="button button-ghost" href="spieler/paulo-henrique.html">Spieler im Fokus</a></div>
-      </div>
-      <aside class="hero-score"><span>CHAMPIONS LEAGUE</span><strong>3 SPIELE · 9 PUNKTE</strong><small>7:1 Tore · Platz 3</small></aside>
-    </section>
-
-    <section class="quick-stats" aria-label="Vereinskennzahlen">
-      <article><span>Dokumentierte Spieler</span><strong id="playerCount">0</strong></article>
-      <article><span>Ø Alter</span><strong id="averageAge">–</strong></article>
-      <article><span>U21-Talente</span><strong id="talentCount">–</strong></article>
-      <article><span>Akademie weltweit</span><strong>#2</strong></article>
-    </section>
-
-    <section id="news" class="section-wrap news-layout">
-      <article class="lead-story"><div class="story-label">AKADEMIE</div><p class="kicker dark">WELTWEIT ANERKANNT</p><h2>Finn Harps besitzt die zweitbeste Jugendakademie der Welt.</h2><p>Callum Brennan steht stellvertretend für eine Generation, die den Klub nicht nur ergänzt, sondern neu definiert. Newcastle liegt im Ranking noch vor Finn Harps, Bayern und Inter bereits dahinter.</p><a class="arrow-link" href="#planung">Zur Zukunftsplanung →</a></article>
-      <aside class="focus-card"><div><span>SPIELER IM FOKUS</span><h3>Paulo Henrique</h3><p>Champions-League-Sieger, zweimal bester Torwart des Wettbewerbs und Brasiliens Nummer eins.</p></div><a class="button button-blue" href="spieler/paulo-henrique.html">Tiefenanalyse öffnen</a></aside>
-    </section>
-
-    <section id="kader" class="section-wrap"><div class="section-head"><div><p class="kicker dark">ERSTE MANNSCHAFT</p><h2>Kader 2040</h2></div><div class="filters"><input id="searchInput" type="search" placeholder="Name, Rolle, Nation …"><select id="positionFilter"><option value="all">Alle Positionen</option></select></div></div><div id="playerGrid" class="player-grid" aria-live="polite"></div></section>
-
-    <section id="taktik" class="dark-section"><div class="section-wrap tactical-grid"><article><p class="kicker">HAUPTSYSTEM · 4-3-3</p><h2>Das Herz schlägt im Mittelfeld.</h2><p class="muted-light">O’Neill ordnet. O’Kane verbindet. Frame attackiert den Raum. Drei verschiedene Profile, die sich zu einem einzigen Mechanismus verzahnen.</p><div class="role-strips"><span><b>O’Neill</b> Tiefer Spielmacher</span><span><b>O’Kane</b> Box-to-Box-Verbindungsspieler</span><span><b>Frame</b> Mezzala auf Angriff</span></div></article><div class="pitch"><span class="player-dot dm" data-label="O’Neill">6</span><span class="player-dot cm-left" data-label="O’Kane">8</span><span class="player-dot cm-right" data-label="Frame">10</span><span class="player-dot lw" data-label="Maisto / Docherty">11</span><span class="player-dot rw" data-label="Walker / Papini">7</span><span class="player-dot st" data-label="Ramsey">9</span></div></div></section>
-
-    <section id="planung" class="section-wrap"><div class="section-head"><div><p class="kicker dark">KADERARCHITEKTUR</p><h2>Nächste Kapitel</h2></div></div><div class="timeline"><article><span>JETZT</span><h3>Kern binden</h3><p>Henrique, Ramsey, Frame, O’Kane und Bruce tragen die Mannschaft durch ihre Prime.</p></article><article><span>1–2 SAISONS</span><h3>Rouvière ablösen</h3><p>Einen jüngeren Kreativspieler aufbauen, ohne die aktuelle Tiefe leichtfertig zu opfern.</p></article><article><span>2–4 SAISONS</span><h3>Akademie übernehmen lassen</h3><p>Brennan, Walker, Barry, Istrankins und Reilly sollen Verantwortung erben.</p></article></div></section>
-
-    <section id="archiv" class="dark-section"><div class="section-wrap"><p class="kicker">DIGITALES VEREINSARCHIV</p><h2>Alle Analysen leben direkt auf der Website.</h2><p class="muted-light">Spielerprofile, Saisonchroniken, Titel, Transfers und Taktik werden als gestaltete Webseiten geführt. Es gibt keine separaten Markdown-Analysen mehr.</p></div></section>
-  </main>
-
-  <dialog id="playerDialog"><button class="dialog-close" type="button" aria-label="Dialog schließen">×</button><div id="dialogContent"></div></dialog>
-  <footer><strong>FINN HARPS FM WIKI</strong><span>Founded 1954. Rewritten in 2040.</span></footer>
-  <script src="data/players.js"></script><script src="assets/app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Finn Harps Football Manager Save Archive 2040"><title>Finn Harps | Save Archive</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<div class="utility-bar"><span>FINN HARPS · OFFICIAL SAVE ARCHIVE</span><span>SAISON 2040 · BALLYBOFEY</span></div>
+<header class="site-header"><a class="club-brand" href="index.html"><span class="club-crest">FH</span><span><strong>FINN HARPS</strong><small>FOOTBALL MANAGER ARCHIVE</small></span></a><nav class="main-nav"><a class="active" href="index.html">News</a><a href="kader.html">Kader</a><a href="spieler.html?id=paulo-henrique">Spieler</a><a href="mitarbeiter.html">Staff</a><a href="dokumentation.html">Doku</a></nav></header>
+<main><section class="club-hero compact"><div class="hero-content"><p class="kicker">FROM BALLYBOFEY TO EUROPE</p><h1>Die Dynastie<br>in Daten.</h1><p>Spieler, Rollen, Leistungen und die Menschen hinter Finn Harps 2040. Kompakt, lebendig und mit jedem Export genauer.</p><div class="hero-actions"><a class="button button-light" href="kader.html">Kaderzentrale</a><a class="button button-ghost" href="spieler.html?id=paulo-henrique">Spieler im Fokus</a></div></div><aside class="hero-score"><span>SAISONPULS</span><strong>159 TORE · 132 VORLAGEN</strong><small>31 Spieler · Ø 21,9 Jahre</small></aside></section>
+<section class="quick-stats"><article><span>Kaderspieler</span><strong>31</strong></article><article><span>U21-Spieler</span><strong>17</strong></article><article><span>Akademie weltweit</span><strong>#2</strong></article><article><span>Champions League</span><strong>2× Sieger</strong></article></section>
+<section class="section-wrap intro-grid"><article class="lead-story"><div class="story-label">KADER 2040</div><p class="kicker dark">EINE MANNSCHAFT IM VOLLEN FLUSS</p><h2>Produktion aus jeder Linie.</h2><p>Frame erzielt 20 Tore aus dem Mittelfeld, Walker liefert mit 18 Jahren 29 Scorerpunkte und Papini führt den Kader mit 20 Vorlagen sowie einer 7,32er Durchschnittsnote an.</p><a class="arrow-link" href="kader.html">Leistungszentrum öffnen →</a></article><aside class="focus-card"><span>TOPSCORER</span><h3>Justin Ramsey</h3><strong class="focus-number">34</strong><p>Tore in 31 Einsätzen. Der Angriff hat ein Gesicht.</p><a class="button button-blue" href="spieler.html?id=justin-ramsey">Profil öffnen</a></aside></section>
+<section class="section-wrap"><div class="section-head"><div><p class="kicker dark">SPIELER IM FOKUS</p><h2>Die Achse der Dynastie</h2></div><a class="arrow-link" href="kader.html">Alle 31 Spieler →</a></div><div id="spotlightGrid" class="spotlight-grid"></div></section>
+<section class="dark-section"><div class="section-wrap tactical-grid"><article><p class="kicker">HAUPTSYSTEM · 4-3-3</p><h2>Drei Mittelfeldspieler, drei Funktionen.</h2><p class="muted-light">O’Neill ordnet tief. O’Kane trägt das Spiel durch die Zonen. Frame attackiert rechts den Halbraum. Die Formation lebt weniger von Symmetrie als von sauber verteilten Verantwortungen.</p><div class="role-strips"><span><b>O’Neill</b> Zurückgezogener Spielmacher</span><span><b>O’Kane</b> Box-to-Box-Mittelfeldspieler</span><span><b>Frame</b> Mezzala auf Angriff</span></div></article><div class="pitch"><span class="player-dot gk" data-label="Henrique">1</span><span class="player-dot lb" data-label="Kelly">21</span><span class="player-dot cb1" data-label="Istrankins">46</span><span class="player-dot cb2" data-label="Bruce">19</span><span class="player-dot rb" data-label="Fernández">2</span><span class="player-dot dm" data-label="O’Neill">17</span><span class="player-dot cm-left" data-label="O’Kane">16</span><span class="player-dot cm-right" data-label="Frame">33</span><span class="player-dot lw" data-label="Maisto">32</span><span class="player-dot rw" data-label="Walker">34</span><span class="player-dot st" data-label="Gavin / Ramsey">9</span></div></div></section>
+<section class="section-wrap"><div class="section-head"><div><p class="kicker dark">HINTER DER MANNSCHAFT</p><h2>Ein Klubapparat auf Weltklasseniveau.</h2></div></div><div class="story-cards"><article><span>CHEFSCOUT</span><h3>Jürgen Klopp</h3><p>Das Scoutingnetz wird von einem prominenten Architekten geführt.</p></article><article><span>JUGEND</span><h3>Eric Pradier</h3><p>Leitet die Abteilung, die weltweit auf Rang zwei geführt wird.</p></article><article><span>ANALYSE</span><h3>Joe Newton</h3><p>Chefleistungsanalyst eines erstaunlich tief besetzten Datenapparats.</p></article></div><a class="button button-blue section-button" href="mitarbeiter.html">Staff-Verzeichnis öffnen</a></section>
+<section class="archive-band"><div><p class="kicker">DATEN & METHODIK</p><h2>Nachvollziehbar statt nebulös.</h2><p>Die Website trennt exportierte FM-Rohdaten, redaktionelle Analyse und Prognosen sauber voneinander.</p></div><a class="button button-light" href="dokumentation.html">Dokumentation lesen</a></section></main>
+<footer><strong>FINN HARPS FM WIKI</strong><span>Founded 1954. Rewritten in 2040.</span></footer><script src="data/players.js"></script><script src="assets/app.js"></script></body></html>
