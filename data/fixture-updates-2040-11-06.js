@@ -1,0 +1,1 @@
+(()=>{const row=(window.FM_FIXTURES||[]).find(x=>x[0]==='2040-11-02'&&x[2]==='Waterford');if(row)row[4]='3 - 0';})();
