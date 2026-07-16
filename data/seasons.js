@@ -1,0 +1,8 @@
+window.FM_SEASONS=[
+{
+ year:2040,status:'Abschlussphase',referenceDate:'2040-11-02',headline:'Krönung und Wiederholung',summary:'Champions-League-Sieger, Meister und UEFA-Superpokalsieger. Der FAI Cup ist noch offen.',formation:'4-3-3 mit Sechser',squadIds:(window.FM_PLAYERS||[]).map(p=>p.id),changes:{incoming:['Daryl Frame für €40 Mio. von Liverpool'],outgoing:[],promoted:['Billy Walker endgültig im Profikader etabliert','Mareks Istrankins als 18-jähriger Innenverteidiger integriert','Ben Barry und Evan Reilly mit ersten echten Profiminuten'],notes:['Paulo Henrique bleibt klare Nummer eins','Frame übernimmt die rechte Mezzala-Rolle','Walker drängt Papini auf rechts zunehmend in einen Generationswechsel']},honours:['SSE Airtricity League Premier Division','UEFA Champions League','UEFA-Superpokal'],locked:false
+},
+{
+ year:2041,status:'Planung',referenceDate:'2041-01-01',headline:'Die nächste Titelverteidigung beginnt',summary:'Vorläufiger Startkader auf Basis des letzten bekannten Datenstands aus 2040. Transfers und Rollen werden mit jedem neuen Upload fortgeschrieben.',formation:'4-3-3 mit Sechser',squadIds:(window.FM_PLAYERS||[]).map(p=>p.id),changes:{incoming:[],outgoing:[],promoted:['Aktueller 2040er Kader als Ausgangsbasis übernommen'],notes:['Saison ist noch nicht gestartet','Alter wird automatisch zum Referenzdatum 01.01.2041 berechnet','Kaderstatus bleibt vorläufig, bis neue Exporte vorliegen']},honours:[],locked:false
+}
+];
