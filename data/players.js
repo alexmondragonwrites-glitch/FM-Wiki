@@ -1,1 +1,1 @@
-window.FM_PLAYERS=[];document.write('<script src="data/players-1.js"><\/script><script src="data/players-2.js"><\/script><script src="data/players-3.js"><\/script><script src="data/players-4.js"><\/script>');
+window.FM_PLAYERS=[];document.write('<script src="data/players-1.js"><\/script><script src="data/players-2.js"><\/script><script src="data/players-3.js"><\/script><script src="data/players-4.js"><\/script><script src="data/player-meta.js"><\/script>');
