@@ -1,0 +1,91 @@
+window.FM_MATCHES=[{
+  id:'2040-10-24-lech-poznan',
+  date:'2040-10-24',
+  competition:'UEFA Champions League',
+  stage:'Ligaphase · Spiel 3',
+  home:{id:'lech-poznan',name:'Lech Poznań',short:'LPO',score:0,formation:'4-2-3-1'},
+  away:{id:'finn-harps',name:'Finn Harps',short:'FH',score:2,formation:'4-3-3'},
+  venue:'Poznań Stadium',
+  location:'Poznań, Polen',
+  attendance:'39.625',
+  weather:'Feucht · 9 °C',
+  headline:'Kontrolle, Geduld, zwei präzise Schnitte.',
+  standfirst:'Finn Harps dominierte Ball, Raum und Abschlussvolumen. Frame öffnete das Spiel vor der Pause, Maisto schloss es nach dem Platzverweis endgültig.',
+  verdict:'Verdienter Auswärtssieg',
+  reportStatus:'complete',
+  events:[
+    {minute:40,type:'goal',team:'Finn Harps',player:'Daryl Frame',text:'0:1'},
+    {minute:66,type:'red',team:'Lech Poznań',player:'Krzysztof Jaworski',text:'Platzverweis'},
+    {minute:74,type:'injury',team:'Lech Poznań',player:'Kevin Suárez',text:'Verletzt'},
+    {minute:80,type:'goal',team:'Finn Harps',player:'Romano Maisto',text:'0:2'}
+  ],
+  stats:[
+    {label:'Schüsse',home:6,away:16,kind:'number'},
+    {label:'Aufs Tor',home:2,away:5,kind:'number'},
+    {label:'xG',home:0.58,away:1.82,kind:'decimal'},
+    {label:'Großchancen',home:0,away:2,kind:'number'},
+    {label:'Ballbesitz',home:36,away:64,kind:'percent'},
+    {label:'Pässe',home:84,away:87,kind:'percent',homeDetail:'281/336',awayDetail:'504/577'},
+    {label:'Zweikämpfe',home:69,away:78,kind:'percent',homeDetail:'24/35',awayDetail:'28/36'},
+    {label:'Kopfbälle',home:49,away:49,kind:'percent',homeDetail:'23/47',awayDetail:'23/47'},
+    {label:'Ecken',home:5,away:5,kind:'number'},
+    {label:'Fouls',home:17,away:10,kind:'number'},
+    {label:'Intensive Sprints',home:119,away:146,kind:'number'},
+    {label:'Notenschnitt',home:6.47,away:7.02,kind:'decimal'}
+  ],
+  xgTimeline:[
+    {minute:12,home:0.08,away:0.03},
+    {minute:20,home:0.18,away:0.16},
+    {minute:31,home:0.31,away:0.26},
+    {minute:40,home:0.32,away:0.93,event:'Frame'},
+    {minute:66,home:0.34,away:1.02,event:'Rot'},
+    {minute:80,home:0.51,away:1.68,event:'Maisto'},
+    {minute:90,home:0.58,away:1.82}
+  ],
+  analysis:{
+    summary:'Das Ergebnis war enger als das Spiel. Finn Harps hatte 64 Prozent Ballbesitz, gab fast dreimal so viele Schüsse ab und erzeugte mehr als das Dreifache des gegnerischen xG. Lech blieb über weite Strecken in tiefen, wenig gefährlichen Abschlüssen gefangen.',
+    possession:'Mit 504 angekommenen Pässen kontrollierte Finn Harps nicht nur den Ball, sondern auch die Pausen zwischen den Angriffen. O’Neill, O’Kane und Frame hielten die Zirkulation stabil, ohne das Spiel in sterilem Querpassbesitz einschlafen zu lassen.',
+    chanceCreation:'Die 16 Abschlüsse verteilten sich über mehrere Zonen rund um den Strafraum. Zwei Großchancen und 1,82 xG zeigen, dass die Dominanz nicht bloß kosmetisch war. Frame traf in der Phase, in der Finn Harps das Spiel endgültig an sich zog.',
+    defensive:'Lech kam auf sechs Schüsse, zwei davon aufs Tor, aber auf keine Großchance. Henrique blieb mit 7,6 bester Spieler, weil er die wenigen echten Prüfungen souverän löste und die Null bewahrte.',
+    turningPoint:'Jaworskis Platzverweis in der 66. Minute nahm Lech die letzte Möglichkeit, den Rhythmus noch einmal zu brechen. Maistos 0:2 in der 80. Minute war weniger überraschender Nackenschlag als logischer Schlusspunkt.',
+    nuance:'Nicht alles war glänzend: Walker fand nach seiner Einwechslung kaum Wirkung über Flanken, Papini blieb trotz viel Ballkontakt ohne verwertbare Hereingabe und die zweite Hälfte brauchte lange bis zur endgültigen Entscheidung.'
+  },
+  keyPerformers:[
+    {player:'Paulo Henrique',rating:7.6,role:'Torwart',note:'Sicher bei den wenigen gefährlichen Aktionen und entscheidend für die weiße Weste.'},
+    {player:'Daryl Frame',rating:7.4,role:'Mezzala',note:'Öffnete das Spiel mit dem 0:1 und gab dem rechten Halbraum Zug.'},
+    {player:'Romano Maisto',rating:7.3,role:'Inverser Außenstürmer',note:'Kam von der Bank und entschied die Partie mit dem zweiten Treffer.'},
+    {player:'Callum Brennan',rating:7.6,role:'Inverser Flügelverteidiger',note:'Starke Schlussphase nach der Einwechslung, sauber im Passspiel und stabil im Gegenpressing.'}
+  ],
+  finnHarpsLineup:[
+    {player:'Paulo Henrique',position:'TW',rating:7.6,minutes:90,goals:0,assists:0},
+    {player:'Diego Fernández',position:'VR',rating:6.9,minutes:67,goals:0,assists:0},
+    {player:'Darcy Andrews',position:'VZ',rating:7.0,minutes:90,goals:0,assists:0},
+    {player:'Mareks Istrankins',position:'VZ',rating:6.9,minutes:90,goals:0,assists:0},
+    {player:'Kevin Kelly',position:'VL',rating:6.7,minutes:54,goals:0,assists:0},
+    {player:"Jim O'Neill",position:'DM',rating:6.8,minutes:54,goals:0,assists:0},
+    {player:'Daryl Frame',position:'MZ',rating:7.4,minutes:90,goals:1,assists:0},
+    {player:"Cormac O'Kane",position:'MZ',rating:7.1,minutes:90,goals:0,assists:0},
+    {player:'Giacomo Papini',position:'OMR',rating:6.7,minutes:67,goals:0,assists:0},
+    {player:'Dom Docherty',position:'OML',rating:6.8,minutes:45,goals:0,assists:0},
+    {player:'Justin Ramsey',position:'ST',rating:7.0,minutes:90,goals:0,assists:0},
+    {player:'Amir Mašić',position:'DM',rating:6.8,minutes:36,goals:0,assists:0,sub:true},
+    {player:'Gustavo da Silva',position:'VL',rating:7.0,minutes:36,goals:0,assists:0,sub:true},
+    {player:'Callum Brennan',position:'VR',rating:7.6,minutes:23,goals:0,assists:1,sub:true},
+    {player:'Romano Maisto',position:'OML',rating:7.3,minutes:45,goals:1,assists:0,sub:true},
+    {player:'Billy Walker',position:'OMR',rating:6.6,minutes:23,goals:0,assists:0,sub:true}
+  ],
+  lechLineup:[
+    {player:'Artem Manko',position:'TW',rating:6.4},
+    {player:'Stéphane Quere',position:'V',rating:6.3},
+    {player:'Oleksandr Shvets',position:'V',rating:6.7},
+    {player:'Maximiliano Andreotti',position:'V',rating:6.5},
+    {player:'Kevin Suárez',position:'V',rating:6.3},
+    {player:'Tomáš Fotr',position:'DM',rating:6.9},
+    {player:'Samuel Martin',position:'MZ',rating:6.3},
+    {player:'Milan Radojčić',position:'OMR',rating:7.1},
+    {player:'Adrián Urbano',position:'OMZ',rating:6.2},
+    {player:'Przemysław Malinowski',position:'OML',rating:6.3},
+    {player:'Krzysztof Jaworski',position:'ST',rating:6.3,red:true}
+  ],
+  sources:['Matchstatistik-HTML','Spielerstatistik Lech','Spielerstatistik Finn Harps','xG- und Schusskarten-Screenshot']
+}];
