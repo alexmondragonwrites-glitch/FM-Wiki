@@ -26,10 +26,13 @@ function populatePositions(){
 }
 
 function playerCard(player,index){
+  const profileState = player.page ? '<span class="profile-ready">Tiefenanalyse</span>' : '<span class="profile-pending">Kurzprofil</span>';
   return `<article class="player-card" tabindex="0" role="button" data-index="${index}" data-position="${escapeHtml(player.position)}">
-    <header><div><h3>${escapeHtml(player.name)}</h3><div class="meta">${escapeHtml(player.nation)} · ${player.age} Jahre</div></div><div class="rating" title="Wiki-Bewertung">${stars(player.rating)}</div></header>
+    <div class="card-topline">${profileState}<div class="rating" title="Wiki-Bewertung">${stars(player.rating)}</div></div>
+    <header><div><h3>${escapeHtml(player.name)}</h3><div class="meta">${escapeHtml(player.nation)} · ${player.age} Jahre</div></div></header>
     <div class="tags"><span class="tag">${escapeHtml(player.position)}</span><span class="tag">${escapeHtml(player.status)}</span><span class="tag">${escapeHtml(player.role)}</span></div>
     <p>${escapeHtml(player.summary)}</p>
+    <span class="card-action">${player.page ? 'Profil öffnen →' : 'Kurzprofil ansehen →'}</span>
   </article>`;
 }
 
@@ -46,11 +49,11 @@ function render(){
 function openPlayer(index){
   const player = players[index];
   if(!player) return;
-  const profileLink = player.page ? `<div class="profile-actions"><a class="button button-blue" href="${escapeHtml(player.page)}">Vollständige Tiefenanalyse öffnen</a></div>` : '<p class="meta">Die vollständige Webanalyse wird noch aufgebaut.</p>';
-  dialogContent.innerHTML = `<div class="dialog-hero"><p class="kicker">${escapeHtml(player.position)} · ${escapeHtml(player.nation)}</p><h2>${escapeHtml(player.name)}</h2><p>${escapeHtml(player.summary)}</p></div>
-  <div class="dialog-body"><div class="dialog-grid"><div><span>Alter</span><strong>${player.age}</strong></div><div><span>Kaderstatus</span><strong>${escapeHtml(player.status)}</strong></div><div><span>Ideale Rolle</span><strong>${escapeHtml(player.role)}</strong></div><div><span>Wiki-Bewertung</span><strong class="rating">${stars(player.rating)}</strong></div></div>
-  <div class="strengths"><div><h3>Stärken</h3><ul>${player.strengths.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div><h3>Risiken / Grenzen</h3><ul>${player.risks.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></div></div>
-  <h3>Zukunftsplan</h3><p>${escapeHtml(player.future)}</p>${profileLink}</div>`;
+  if(player.page){ window.location.href = player.page; return; }
+  dialogContent.innerHTML = `<div class="dialog-hero compact"><p class="kicker">${escapeHtml(player.position)} · ${escapeHtml(player.nation)}</p><h2>${escapeHtml(player.name)}</h2><p>${escapeHtml(player.summary)}</p></div>
+  <div class="dialog-body"><div class="dialog-grid"><div><span>Alter</span><strong>${player.age}</strong></div><div><span>Kaderstatus</span><strong>${escapeHtml(player.status)}</strong></div><div><span>Ideale Rolle</span><strong>${escapeHtml(player.role)}</strong></div><div><span>Bewertung</span><strong class="rating">${stars(player.rating)}</strong></div></div>
+  <div class="preview-columns"><section><p class="kicker dark">PROFIL</p><h3>Stärken</h3><ul>${player.strengths.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section><p class="kicker dark">ENTWICKLUNG</p><h3>Risiken & Grenzen</h3><ul>${player.risks.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></section></div>
+  <div class="future-box"><span>ZUKUNFTSPLAN</span><p>${escapeHtml(player.future)}</p></div><p class="profile-status-note">Die vollständige gestaltete Webanalyse wird als eigene Spielerseite ergänzt.</p></div>`;
   dialog.showModal();
 }
 
