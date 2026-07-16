@@ -1,0 +1,1 @@
+(()=>{document.querySelectorAll('.club-squad-table tbody tr').forEach(row=>{row.querySelectorAll('td b').forEach(cell=>{if(cell.textContent.trim()==='NaN')cell.textContent='–';});});})();
