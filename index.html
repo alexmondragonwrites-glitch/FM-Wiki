@@ -13,7 +13,7 @@
     <a class="club-brand" href="#top"><span class="club-crest">FH</span><span><strong>FINN HARPS</strong><small>FOOTBALL MANAGER ARCHIVE</small></span></a>
     <button class="menu-toggle" aria-label="Navigation öffnen">☰</button>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#news">News</a><a href="#kader">Kader</a><a href="#taktik">Taktik</a><a href="#planung">Zukunft</a><a href="README.md">Wiki</a>
+      <a href="#news">News</a><a href="#kader">Kader</a><a href="#taktik">Taktik</a><a href="#planung">Zukunft</a><a href="#archiv">Archiv</a>
     </nav>
   </header>
 
@@ -37,35 +37,17 @@
     </section>
 
     <section id="news" class="section-wrap news-layout">
-      <article class="lead-story">
-        <div class="story-label">AKADEMIE</div>
-        <p class="kicker dark">WELTWEIT ANERKANNT</p>
-        <h2>Finn Harps besitzt die zweitbeste Jugendakademie der Welt.</h2>
-        <p>Callum Brennan steht stellvertretend für eine Generation, die den Klub nicht nur ergänzt, sondern neu definiert. Newcastle liegt im Ranking noch vor Finn Harps, Bayern und Inter bereits dahinter.</p>
-        <a class="arrow-link" href="#planung">Zur Zukunftsplanung →</a>
-      </article>
-      <aside class="focus-card">
-        <div><span>SPIELER IM FOKUS</span><h3>Paulo Henrique</h3><p>Champions-League-Sieger, zweimal bester Torwart des Wettbewerbs und Brasiliens Nummer eins.</p></div>
-        <a class="button button-blue" href="spieler/paulo-henrique.html">Tiefenanalyse öffnen</a>
-      </aside>
+      <article class="lead-story"><div class="story-label">AKADEMIE</div><p class="kicker dark">WELTWEIT ANERKANNT</p><h2>Finn Harps besitzt die zweitbeste Jugendakademie der Welt.</h2><p>Callum Brennan steht stellvertretend für eine Generation, die den Klub nicht nur ergänzt, sondern neu definiert. Newcastle liegt im Ranking noch vor Finn Harps, Bayern und Inter bereits dahinter.</p><a class="arrow-link" href="#planung">Zur Zukunftsplanung →</a></article>
+      <aside class="focus-card"><div><span>SPIELER IM FOKUS</span><h3>Paulo Henrique</h3><p>Champions-League-Sieger, zweimal bester Torwart des Wettbewerbs und Brasiliens Nummer eins.</p></div><a class="button button-blue" href="spieler/paulo-henrique.html">Tiefenanalyse öffnen</a></aside>
     </section>
 
-    <section id="kader" class="section-wrap">
-      <div class="section-head"><div><p class="kicker dark">ERSTE MANNSCHAFT</p><h2>Kader 2040</h2></div><div class="filters"><input id="searchInput" type="search" placeholder="Name, Rolle, Nation …"><select id="positionFilter"><option value="all">Alle Positionen</option></select></div></div>
-      <div id="playerGrid" class="player-grid" aria-live="polite"></div>
-    </section>
+    <section id="kader" class="section-wrap"><div class="section-head"><div><p class="kicker dark">ERSTE MANNSCHAFT</p><h2>Kader 2040</h2></div><div class="filters"><input id="searchInput" type="search" placeholder="Name, Rolle, Nation …"><select id="positionFilter"><option value="all">Alle Positionen</option></select></div></div><div id="playerGrid" class="player-grid" aria-live="polite"></div></section>
 
-    <section id="taktik" class="dark-section">
-      <div class="section-wrap tactical-grid">
-        <article><p class="kicker">HAUPTSYSTEM · 4-3-3</p><h2>Das Herz schlägt im Mittelfeld.</h2><p class="muted-light">O’Neill ordnet. O’Kane verbindet. Frame attackiert den Raum. Drei verschiedene Profile, die sich zu einem einzigen Mechanismus verzahnen.</p><div class="role-strips"><span><b>O’Neill</b> Tiefer Spielmacher</span><span><b>O’Kane</b> Verbindungsspieler</span><span><b>Frame</b> Mezzala auf Angriff</span></div></article>
-        <div class="pitch"><span class="player-dot dm" data-label="O’Neill">6</span><span class="player-dot cm-left" data-label="O’Kane">8</span><span class="player-dot cm-right" data-label="Frame">10</span><span class="player-dot lw" data-label="Docherty">11</span><span class="player-dot rw" data-label="Papini / Walker">7</span><span class="player-dot st" data-label="Ramsey">9</span></div>
-      </div>
-    </section>
+    <section id="taktik" class="dark-section"><div class="section-wrap tactical-grid"><article><p class="kicker">HAUPTSYSTEM · 4-3-3</p><h2>Das Herz schlägt im Mittelfeld.</h2><p class="muted-light">O’Neill ordnet. O’Kane verbindet. Frame attackiert den Raum. Drei verschiedene Profile, die sich zu einem einzigen Mechanismus verzahnen.</p><div class="role-strips"><span><b>O’Neill</b> Tiefer Spielmacher</span><span><b>O’Kane</b> Box-to-Box-Verbindungsspieler</span><span><b>Frame</b> Mezzala auf Angriff</span></div></article><div class="pitch"><span class="player-dot dm" data-label="O’Neill">6</span><span class="player-dot cm-left" data-label="O’Kane">8</span><span class="player-dot cm-right" data-label="Frame">10</span><span class="player-dot lw" data-label="Maisto / Docherty">11</span><span class="player-dot rw" data-label="Walker / Papini">7</span><span class="player-dot st" data-label="Ramsey">9</span></div></div></section>
 
-    <section id="planung" class="section-wrap">
-      <div class="section-head"><div><p class="kicker dark">KADERARCHITEKTUR</p><h2>Nächste Kapitel</h2></div></div>
-      <div class="timeline"><article><span>JETZT</span><h3>Kern binden</h3><p>Henrique, Ramsey, Frame, O’Kane und Bruce tragen die Mannschaft durch ihre Prime.</p></article><article><span>1–2 SAISONS</span><h3>Rouvière ablösen</h3><p>Einen jüngeren Kreativspieler aufbauen, ohne die aktuelle Tiefe leichtfertig zu opfern.</p></article><article><span>2–4 SAISONS</span><h3>Akademie übernehmen lassen</h3><p>Brennan, Walker, Barry, Istrankins und Reilly sollen Verantwortung erben.</p></article></div>
-    </section>
+    <section id="planung" class="section-wrap"><div class="section-head"><div><p class="kicker dark">KADERARCHITEKTUR</p><h2>Nächste Kapitel</h2></div></div><div class="timeline"><article><span>JETZT</span><h3>Kern binden</h3><p>Henrique, Ramsey, Frame, O’Kane und Bruce tragen die Mannschaft durch ihre Prime.</p></article><article><span>1–2 SAISONS</span><h3>Rouvière ablösen</h3><p>Einen jüngeren Kreativspieler aufbauen, ohne die aktuelle Tiefe leichtfertig zu opfern.</p></article><article><span>2–4 SAISONS</span><h3>Akademie übernehmen lassen</h3><p>Brennan, Walker, Barry, Istrankins und Reilly sollen Verantwortung erben.</p></article></div></section>
+
+    <section id="archiv" class="dark-section"><div class="section-wrap"><p class="kicker">DIGITALES VEREINSARCHIV</p><h2>Alle Analysen leben direkt auf der Website.</h2><p class="muted-light">Spielerprofile, Saisonchroniken, Titel, Transfers und Taktik werden als gestaltete Webseiten geführt. Es gibt keine separaten Markdown-Analysen mehr.</p></div></section>
   </main>
 
   <dialog id="playerDialog"><button class="dialog-close" type="button" aria-label="Dialog schließen">×</button><div id="dialogContent"></div></dialog>
