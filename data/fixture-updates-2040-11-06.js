@@ -1,1 +1,1 @@
-(()=>{const row=(window.FM_FIXTURES||[]).find(x=>x[0]==='2040-11-02'&&x[2]==='Waterford');if(row)row[4]='3 - 0';})();
+(()=>{const fixtures=window.FM_FIXTURES||[];const waterford=fixtures.find(x=>x[0]==='2040-11-02'&&x[2]==='Waterford');if(waterford)waterford[4]='3 - 0';const heerenveen=fixtures.find(x=>x[0]==='2040-11-06'&&x[2]==='sc Heerenveen');if(heerenveen)heerenveen[4]='3 - 0';})();
