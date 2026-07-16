@@ -26,8 +26,7 @@ function populatePositions(){
 }
 
 function playerCard(player,index){
-  const searchable = [player.name,player.nation,player.position,player.role,player.status].join(' ').toLowerCase();
-  return `<article class="player-card" tabindex="0" role="button" data-index="${index}" data-search="${escapeHtml(searchable)}" data-position="${escapeHtml(player.position)}">
+  return `<article class="player-card" tabindex="0" role="button" data-index="${index}" data-position="${escapeHtml(player.position)}">
     <header><div><h3>${escapeHtml(player.name)}</h3><div class="meta">${escapeHtml(player.nation)} · ${player.age} Jahre</div></div><div class="rating" title="Wiki-Bewertung">${stars(player.rating)}</div></header>
     <div class="tags"><span class="tag">${escapeHtml(player.position)}</span><span class="tag">${escapeHtml(player.status)}</span><span class="tag">${escapeHtml(player.role)}</span></div>
     <p>${escapeHtml(player.summary)}</p>
@@ -47,33 +46,20 @@ function render(){
 function openPlayer(index){
   const player = players[index];
   if(!player) return;
-  const fileLink = player.file ? `<p><a class="text-link" href="${escapeHtml(player.file)}">Ausführliches Markdown-Profil öffnen →</a></p>` : '';
-  dialogContent.innerHTML = `<div class="dialog-hero"><p class="eyebrow">${escapeHtml(player.position)} · ${escapeHtml(player.nation)}</p><h2>${escapeHtml(player.name)}</h2><p>${escapeHtml(player.summary)}</p></div>
-  <div class="dialog-grid"><div><span>Alter</span><strong>${player.age}</strong></div><div><span>Kaderstatus</span><strong>${escapeHtml(player.status)}</strong></div><div><span>Ideale Rolle</span><strong>${escapeHtml(player.role)}</strong></div><div><span>Wiki-Bewertung</span><strong class="rating">${stars(player.rating)}</strong></div></div>
+  const profileLink = player.page ? `<div class="profile-actions"><a class="button button-blue" href="${escapeHtml(player.page)}">Vollständige Tiefenanalyse öffnen</a></div>` : '<p class="meta">Die vollständige Webanalyse wird noch aufgebaut.</p>';
+  dialogContent.innerHTML = `<div class="dialog-hero"><p class="kicker">${escapeHtml(player.position)} · ${escapeHtml(player.nation)}</p><h2>${escapeHtml(player.name)}</h2><p>${escapeHtml(player.summary)}</p></div>
+  <div class="dialog-body"><div class="dialog-grid"><div><span>Alter</span><strong>${player.age}</strong></div><div><span>Kaderstatus</span><strong>${escapeHtml(player.status)}</strong></div><div><span>Ideale Rolle</span><strong>${escapeHtml(player.role)}</strong></div><div><span>Wiki-Bewertung</span><strong class="rating">${stars(player.rating)}</strong></div></div>
   <div class="strengths"><div><h3>Stärken</h3><ul>${player.strengths.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div><h3>Risiken / Grenzen</h3><ul>${player.risks.map(item=>`<li>${escapeHtml(item)}</li>`).join('')}</ul></div></div>
-  <h3>Zukunftsplan</h3><p>${escapeHtml(player.future)}</p>${fileLink}`;
+  <h3>Zukunftsplan</h3><p>${escapeHtml(player.future)}</p>${profileLink}</div>`;
   dialog.showModal();
 }
 
 searchInput.addEventListener('input',render);
 positionFilter.addEventListener('change',render);
-grid.addEventListener('click',event=>{
-  const card = event.target.closest('.player-card');
-  if(card) openPlayer(Number(card.dataset.index));
-});
-grid.addEventListener('keydown',event=>{
-  const card = event.target.closest('.player-card');
-  if(card && (event.key === 'Enter' || event.key === ' ')){
-    event.preventDefault();
-    openPlayer(Number(card.dataset.index));
-  }
-});
+grid.addEventListener('click',event=>{ const card = event.target.closest('.player-card'); if(card) openPlayer(Number(card.dataset.index)); });
+grid.addEventListener('keydown',event=>{ const card = event.target.closest('.player-card'); if(card && (event.key === 'Enter' || event.key === ' ')){ event.preventDefault(); openPlayer(Number(card.dataset.index)); }});
 closeButton.addEventListener('click',()=>dialog.close());
-dialog.addEventListener('click',event=>{
-  const rect = dialog.getBoundingClientRect();
-  const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
-  if(outside) dialog.close();
-});
+dialog.addEventListener('click',event=>{ const rect = dialog.getBoundingClientRect(); const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom; if(outside) dialog.close(); });
 
 populateStats();
 populatePositions();
