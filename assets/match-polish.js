@@ -1,0 +1,1 @@
+(()=>{document.querySelectorAll('.event-timeline .event b').forEach(x=>{if(x.textContent.trim()==="null'")x.textContent='Minute offen';});})();
