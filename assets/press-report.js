@@ -21,11 +21,11 @@
       <small>${esc(r.location)}</small>
     </section>
     <section class="section-wrap press-layout">
-      <main>
+      <div class="press-main-column">
         <article class="press-lead"><p>${esc(r.intro)}</p></article>
         ${sections}
         <article class="content-card press-verdict"><p class="kicker dark">REDAKTIONELLES URTEIL</p><h2>Kein Anlass für einen Systemwechsel</h2><p>${esc(r.verdict)}</p></article>
-      </main>
+      </div>
       <aside>
         <article class="press-stat"><span>${esc(r.heroStat.label)}</span><strong>${esc(r.heroStat.value)}</strong><small>${esc(r.heroStat.note)}</small></article>
         <article class="content-card"><p class="kicker dark">WAHRSCHEINLICHE ELF</p><h2>Tottenhams 4-4-2</h2><div class="press-xi">${xi}</div></article>
