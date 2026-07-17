@@ -1,0 +1,1 @@
+(()=>{const n=window.FM_IRELAND?.nextMatch;if(!n?.opponentAnalysis)return;n.opponentAnalysis.summary='Belgien bringt einen hochkarätigen Kader aus Europas Spitzenklubs mit. Gleichzeitig liegen neun der elf voraussichtlichen Starter bei höchstens 69 Prozent Kondition. Das macht die Partie weniger zu einer Frage des Namensglanzes als des Tempos und der Belastungssteuerung.';})();
