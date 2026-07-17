@@ -3,41 +3,43 @@
     version:2,
     players:{
       base:[
-        'data/players-1.js',
-        'data/players-2.js',
-        'data/players-3.js',
-        'data/players-4.js',
-        'data/birthdates.js'
+        'data/players-1.js','data/players-2.js','data/players-3.js','data/players-4.js','data/birthdates.js'
       ],
       current:[
-        'data/player-updates-2040-11-06.js',
-        'data/player-results-2040-11-02.js',
-        'data/player-cormac-okane-2040-11-06.js',
-        'data/player-ben-barry-2040-11-09.js',
-        'data/player-jim-oneill-2040-11-11.js',
-        'data/player-jim-oneill-2040-11-15.js',
-        'data/player-jim-oneill-nationalteam-2040-11-16.js',
-        'data/player-ireland-result-2040-11-16.js',
-        'data/player-rouviere-vinicius-2040-11-17.js',
-        'data/player-champions-league-count-fix-2040-11-17.js',
+        'data/player-updates-2040-11-06.js','data/player-results-2040-11-02.js','data/player-cormac-okane-2040-11-06.js',
+        'data/player-ben-barry-2040-11-09.js','data/player-jim-oneill-2040-11-11.js','data/player-jim-oneill-2040-11-15.js',
+        'data/player-jim-oneill-nationalteam-2040-11-16.js','data/player-ireland-result-2040-11-16.js',
+        'data/player-rouviere-vinicius-2040-11-17.js','data/player-champions-league-count-fix-2040-11-17.js',
         'data/player-ireland-result-2040-11-19.js'
       ],
       optional:{
-        jakeRoberts:[
-          'data/player-jake-roberts-transfer-2040-11-17.js',
-          'data/player-jake-roberts-confirmed-2040-11-19.js'
-        ]
+        jakeRoberts:['data/player-jake-roberts-transfer-2040-11-17.js','data/player-jake-roberts-confirmed-2040-11-19.js']
       }
     },
     nationalTeam:{
       current:[
-        'data/ireland-2040-11-16.js',
-        'data/ireland-result-2040-11-16.js',
-        'data/ireland-group-finale-belgium.js',
-        'data/ireland-belgium-preview-adjustment-2040-11-16.js',
-        'data/ireland-result-2040-11-19-belgium.js'
+        'data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js',
+        'data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js'
       ]
     },
+    matches:{
+      current:['data/matches.js','data/matches-2.js','data/matches-3.js','data/matches-4.js']
+    },
+    fixtures:{
+      current:['data/fixtures.js','data/fixture-updates-2040-11-06.js','data/fixture-updates-2040-11-11.js']
+    },
+    clubs:{
+      current:[
+        'data/clubs.js','data/club-details.js','data/club-updates-2040-11-06.js','data/club-updates-2040-11-07.js',
+        'data/club-status-fixes-2040-11-07.js','data/tottenham-scouting-correction.js',
+        'data/tottenham-matchday-update-2040-11-23.js','data/club-shamrock-2040-11-11.js'
+      ]
+    },
+    seasons:{
+      current:['data/seasons.js','data/league-2040.js','data/squad-planning-2041.js']
+    },
+    staff:{current:['data/staff.js']},
+    press:{current:['data/press-reports.js']},
     flatten(key){
       const group=this[key];
       if(!group)return [];
