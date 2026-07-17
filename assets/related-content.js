@@ -5,6 +5,7 @@
   const params=new URLSearchParams(location.search);
   const queryId=params.get('id');
   const current=`${path}${location.search}`;
+  const contentPage=path==='presse.html'||path==='spiel.html';
   let entities=[];
   if(queryId)entities.push(queryId);
   if(path==='nationalteam.html')entities.push('ireland');
@@ -14,7 +15,7 @@
   if(currentEntry)entities.push(...(currentEntry.entities||[]));
   entities=[...new Set(entities.filter(Boolean))];
   if(!entities.length)return;
-  const related=items.filter(item=>item.href!==current&&(item.entities||[]).some(entity=>entities.includes(entity))).slice(0,6);
+  const related=items.filter(item=>(!contentPage||item.href!==current)&&(item.entities||[]).some(entity=>entities.includes(entity))).slice(0,6);
   if(!related.length)return;
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const formatDate=v=>new Date(`${v}T12:00:00`).toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'});
