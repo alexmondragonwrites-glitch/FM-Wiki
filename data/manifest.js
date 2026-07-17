@@ -8,14 +8,14 @@
         'data/player-ben-barry-2040-11-09.js','data/player-jim-oneill-2040-11-11.js','data/player-jim-oneill-2040-11-15.js',
         'data/player-jim-oneill-nationalteam-2040-11-16.js','data/player-ireland-result-2040-11-16.js',
         'data/player-rouviere-vinicius-2040-11-17.js','data/player-champions-league-count-fix-2040-11-17.js',
-        'data/player-ireland-result-2040-11-19.js'
+        'data/player-ireland-result-2040-11-19.js','data/player-evan-reilly-2040-11-28.js','data/player-injuries-2040-11-28.js'
       ],
       optional:{jakeRoberts:['data/player-jake-roberts-transfer-2040-11-17.js','data/player-jake-roberts-confirmed-2040-11-19.js']}
     },
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js']},
-    matches:{current:['data/matches.js','data/matches-2.js','data/matches-3.js','data/matches-4.js']},
-    fixtures:{current:['data/fixtures.js','data/fixture-updates-2040-11-06.js','data/fixture-updates-2040-11-11.js']},
-    clubs:{current:['data/clubs.js','data/club-details.js','data/club-updates-2040-11-06.js','data/club-updates-2040-11-07.js','data/club-status-fixes-2040-11-07.js','data/tottenham-scouting-correction.js','data/tottenham-matchday-update-2040-11-23.js','data/club-shamrock-2040-11-11.js']},
+    matches:{current:['data/matches.js','data/matches-2.js','data/matches-3.js','data/matches-4.js','data/matches-5.js']},
+    fixtures:{current:['data/fixtures.js','data/fixture-updates-2040-11-06.js','data/fixture-updates-2040-11-11.js','data/fixture-updates-2040-11-28.js']},
+    clubs:{current:['data/clubs.js','data/club-details.js','data/club-updates-2040-11-06.js','data/club-updates-2040-11-07.js','data/club-status-fixes-2040-11-07.js','data/tottenham-scouting-correction.js','data/tottenham-matchday-update-2040-11-23.js','data/club-shamrock-2040-11-11.js','data/club-tottenham-result-2040-11-28.js']},
     archive:{current:['data/seasons.js']},
     league:{current:['data/league-2040.js']},
     planning:{current:['data/squad-planning-2041.js']},
