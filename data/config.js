@@ -14,10 +14,11 @@
       clubs:'2040-11-28',
       matches:'2040-11-28',
       season:'2040-11-28',
+      news:'2040-11-28',
       staff:'2040-11-02'
     }),
     navigation:[
-      {id:'news',label:'News',href:'index.html'},
+      {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
