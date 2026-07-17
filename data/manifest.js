@@ -22,6 +22,7 @@
     planning:{current:['data/squad-planning-2041.js']},
     staff:{current:['data/staff-1.js','data/staff-2.js','data/staff-3.js','data/staff-4.js']},
     press:{current:['data/press-reports.js','data/press-reports-2040-11-28.js']},
+    news:{current:['data/news.js']},
     flatten(key){const group=this[key];if(!group)return [];return [...(group.base||[]),...(group.current||[])];}
   };
   window.FM_DATA_MANIFEST=manifest;
