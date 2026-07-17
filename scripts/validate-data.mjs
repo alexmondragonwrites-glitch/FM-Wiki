@@ -101,10 +101,18 @@ for(const match of matchContext.FM_MATCHES||[]){
 const fixtureContext=browserContext();
 (manifest?.fixtures?.current||[]).forEach(file=>runBrowserScript(file,fixtureContext));
 const fixtures=fixtureContext.FM_FIXTURES||[];
-validateIds('Spielplan-Eintrag',fixtures);
-for(const fixture of fixtures){
-  if(fixture.date&&!/^\d{4}-\d{2}-\d{2}$/.test(fixture.date))errors.push(`Ungültiges Spielplandatum bei ${fixture.id}: ${fixture.date}`);
+for(const [index,fixture] of fixtures.entries()){
+  if(!Array.isArray(fixture)||fixture.length<6){
+    errors.push(`Ungültiger Spielplan-Eintrag an Position ${index+1}`);
+    continue;
+  }
+  const [date,time,opponent,venue,,competition]=fixture;
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))errors.push(`Ungültiges Spielplandatum an Position ${index+1}: ${date}`);
+  if(!time||!opponent||!venue||!competition)errors.push(`Unvollständiger Spielplan-Eintrag am ${date||`Index ${index+1}`}`);
 }
+const fixtureKeys=fixtures.map(row=>Array.isArray(row)?`${row[0]}|${row[2]}|${row[3]}`:null);
+const duplicateFixtures=duplicates(fixtureKeys);
+if(duplicateFixtures.length)warnings.push(`Mögliche doppelte Spielplan-Einträge: ${duplicateFixtures.join(', ')}`);
 
 const clubContext=browserContext();
 (manifest?.clubs?.current||[]).forEach(file=>runBrowserScript(file,clubContext));
@@ -125,7 +133,7 @@ if(!staffContext.FM_STAFF.length)errors.push('Staff-Daten enthalten keine Eintr�
 
 const pressContext=browserContext();
 (manifest?.press?.current||[]).forEach(file=>runBrowserScript(file,pressContext));
-if(!pressContext.FM_PRESS_REPORTS&&!pressContext.FM_PRESS)warnings.push('Presseberichte konnten nicht über einen bekannten globalen Namen geprüft werden.');
+validateIds('Pressebericht',pressContext.FM_PRESS_REPORTS||[]);
 
 const localRef=/\b(?:href|src)=["']([^"']+)["']/g;
 for(const file of htmlFiles){
