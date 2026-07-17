@@ -1,0 +1,1 @@
+(()=>{const fixtures=window.FM_FIXTURES||[];const match=fixtures.find(x=>x[0]==='2040-11-28'&&x[2]==='Tottenham');if(match)match[4]='1 - 0';})();
