@@ -39,15 +39,12 @@ function validateIds(label,items){
   const ids=(items||[]).map(item=>item?.id);
   const duplicateIds=duplicates(ids);
   if(duplicateIds.length)errors.push(`Doppelte ${label}-IDs: ${duplicateIds.join(', ')}`);
-  (items||[]).forEach((item,index)=>{
-    if(!item?.id)errors.push(`${label} ohne ID an Position ${index+1}`);
-  });
+  (items||[]).forEach((item,index)=>{if(!item?.id)errors.push(`${label} ohne ID an Position ${index+1}`);});
 }
 
 const files=walk(root);
 const jsFiles=files.filter(file=>file.endsWith('.js')||file.endsWith('.mjs'));
 const htmlFiles=files.filter(file=>file.endsWith('.html'));
-
 for(const file of jsFiles){
   const result=spawnSync(process.execPath,['--check',file],{encoding:'utf8'});
   if(result.status!==0)errors.push(`JavaScript-Syntax: ${rel(file)}\n${result.stderr.trim()}`);
@@ -57,7 +54,6 @@ const manifestContext=browserContext();
 runBrowserScript('data/manifest.js',manifestContext);
 const manifest=manifestContext.FM_DATA_MANIFEST;
 if(!manifest)errors.push('data/manifest.js erzeugt kein FM_DATA_MANIFEST.');
-
 const manifestFiles=[];
 function collect(value){
   if(Array.isArray(value))manifestFiles.push(...value);
@@ -102,12 +98,20 @@ for(const match of matchContext.FM_MATCHES||[]){
   if(!match.home?.name||!match.away?.name)errors.push(`Spiel ohne vollständige Paarung: ${match.id}`);
 }
 
+const fixtureContext=browserContext();
+(manifest?.fixtures?.current||[]).forEach(file=>runBrowserScript(file,fixtureContext));
+const fixtures=fixtureContext.FM_FIXTURES||[];
+validateIds('Spielplan-Eintrag',fixtures);
+for(const fixture of fixtures){
+  if(fixture.date&&!/^\d{4}-\d{2}-\d{2}$/.test(fixture.date))errors.push(`Ungültiges Spielplandatum bei ${fixture.id}: ${fixture.date}`);
+}
+
 const clubContext=browserContext();
 (manifest?.clubs?.current||[]).forEach(file=>runBrowserScript(file,clubContext));
 validateIds('Klub',clubContext.FM_CLUBS);
 
 const seasonContext=browserContext({FM_PLAYERS:playerContext.FM_PLAYERS});
-(manifest?.seasons?.current||[]).forEach(file=>runBrowserScript(file,seasonContext));
+(manifest?.archive?.current||[]).forEach(file=>runBrowserScript(file,seasonContext));
 for(const season of seasonContext.FM_SEASONS||[]){
   if(!/^\d{4}-\d{2}-\d{2}$/.test(season.referenceDate||''))errors.push(`Ungültiges Referenzdatum der Saison ${season.year}: ${season.referenceDate}`);
   for(const id of season.squadIds||[]){
@@ -115,9 +119,13 @@ for(const season of seasonContext.FM_SEASONS||[]){
   }
 }
 
-const staffContext=browserContext();
+const staffContext=browserContext({FM_STAFF:[]});
 (manifest?.staff?.current||[]).forEach(file=>runBrowserScript(file,staffContext));
-if(!Array.isArray(staffContext.FM_STAFF)||!staffContext.FM_STAFF.length)warnings.push('Staff-Daten konnten nicht als FM_STAFF-Liste geprüft werden.');
+if(!staffContext.FM_STAFF.length)errors.push('Staff-Daten enthalten keine Einträge.');
+
+const pressContext=browserContext();
+(manifest?.press?.current||[]).forEach(file=>runBrowserScript(file,pressContext));
+if(!pressContext.FM_PRESS_REPORTS&&!pressContext.FM_PRESS)warnings.push('Presseberichte konnten nicht über einen bekannten globalen Namen geprüft werden.');
 
 const localRef=/\b(?:href|src)=["']([^"']+)["']/g;
 for(const file of htmlFiles){
@@ -142,6 +150,9 @@ runBrowserScript('data/config.js',configContext);
 const config=configContext.FM_CONFIG;
 if(!config)errors.push('data/config.js erzeugt kein FM_CONFIG.');
 if(config?.referenceDate&&!/^\d{4}-\d{2}-\d{2}$/.test(config.referenceDate))errors.push(`Ungültiger zentraler Stichtag: ${config.referenceDate}`);
+for(const [domain,date] of Object.entries(config?.dataDates||{})){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(date))errors.push(`Ungültiger Datenstand für ${domain}: ${date}`);
+}
 if(config?.schemaVersion!==2)warnings.push(`Unerwartete Schema-Version: ${config?.schemaVersion}`);
 const navIds=duplicates((config?.navigation||[]).map(item=>item.id));
 if(navIds.length)errors.push(`Doppelte Navigations-IDs: ${navIds.join(', ')}`);
@@ -164,4 +175,4 @@ if(errors.length){
   errors.forEach(message=>console.error(`- ${message}`));
   process.exit(1);
 }
-console.log(`Validierung erfolgreich: ${playerContext.FM_PLAYERS.length} Spieler, ${(matchContext.FM_MATCHES||[]).length} Spiele, ${(clubContext.FM_CLUBS||[]).length} Klubs, ${htmlFiles.length} HTML-Seiten.`);
+console.log(`Validierung erfolgreich: ${playerContext.FM_PLAYERS.length} Spieler, ${(matchContext.FM_MATCHES||[]).length} Spiele, ${(clubContext.FM_CLUBS||[]).length} Klubs, ${staffContext.FM_STAFF.length} Mitarbeiter, ${htmlFiles.length} HTML-Seiten.`);
