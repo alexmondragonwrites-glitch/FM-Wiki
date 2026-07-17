@@ -1,0 +1,22 @@
+(()=>{
+  const items=[...(window.FM_NEWS||[])].sort((a,b)=>b.date.localeCompare(a.date)||String(a.id).localeCompare(String(b.id)));
+  if(!items.length)return;
+  const path=location.pathname.split('/').pop()||'index.html';
+  const params=new URLSearchParams(location.search);
+  const queryId=params.get('id');
+  let entity=queryId;
+  if(path==='nationalteam.html')entity='ireland';
+  if(path==='saison.html')entity=`season-${window.FM_CONFIG?.currentSeason||2040}`;
+  if(path==='verein.html')entity='finn-harps';
+  if(!entity)return;
+  const current=`${path}${location.search}`;
+  const related=items.filter(item=>(item.entities||[]).includes(entity)&&item.href!==current).slice(0,6);
+  if(!related.length)return;
+  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const formatDate=v=>new Date(`${v}T12:00:00`).toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'});
+  const section=document.createElement('section');
+  section.className='related-news';
+  section.innerHTML=`<div class="related-news-head"><div><p class="kicker dark">VERBUNDENE CHRONIK</p><h2>Was davor und danach geschah.</h2></div><a class="arrow-link" href="news.html">Gesamtes Newsarchiv →</a></div><div class="related-news-list">${related.map(item=>`<a class="related-news-card" data-accent="${esc(item.accent||'blue')}" href="${esc(item.href)}"><time datetime="${esc(item.date)}">${esc(formatDate(item.date))} · ${esc(item.category)}</time><h3>${esc(item.title)}</h3><p>${esc(item.summary)}</p></a>`).join('')}</div>`;
+  const target=document.querySelector('main');
+  if(target)target.appendChild(section);
+})();
