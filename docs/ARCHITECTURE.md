@@ -12,7 +12,7 @@ Enthält globalen Referenzstichtag, aktuelle und nächste Saison, Schema-Version
 
 ### `data/manifest.js`
 
-Ist die einzige Quelle für die aktive Reihenfolge sämtlicher Datendomänen. Es registriert Spieler, Nationalteam, Matches, Spielplan, Klubs, Archive, Ligadaten, Kaderplanung, Staff und Presseberichte.
+Ist die einzige Quelle für die aktive Reihenfolge sämtlicher Datendomänen. Es registriert Spieler, Nationalteam, Matches, Spielplan, Klubs, Archive, Ligadaten, Kaderplanung, Staff, Presseberichte und die Newschronik.
 
 ### `assets/data-loader.js`
 
@@ -28,13 +28,35 @@ Ist der generische Einstiegspunkt für alle Domänen außerhalb der spezialisier
 
 Die tatsächlich geladenen Dateien stammen aus dem Manifest.
 
+### `data/news.js`
+
+Enthält die dauerhafte Ereignis- und Newschronik. Die Datei wird append-only gepflegt: Neue Einträge werden ergänzt, bestehende Einträge dürfen korrigiert werden, ältere Ereignisse werden aber nicht entfernt, nur weil sie nicht mehr auf der Startseite erscheinen.
+
+Jeder Eintrag besitzt mindestens:
+
+- eine eindeutige ID
+- ein ISO-Datum
+- Kategorie und redaktionelle Überschrift
+- Kurzbeschreibung und Zielseite
+- beteiligte Entitäten wie Spieler-, Klub-, Match- oder Nationalteam-IDs
+
+Die Entitäten ermöglichen Querverweise auf Spielerprofilen, Klubdossiers, Spielberichten, Pressetexten, Saison- und Nationalteamseiten.
+
+### `assets/news.js`
+
+Rendert das vollständige Newsarchiv in `news.html` und die neuesten Meldungen auf der Startseite. Die Startseite ist damit nur ein Fenster auf den Bestand, nicht mehr der einzige Speicherort einer Meldung.
+
+### `assets/related-content.js`
+
+Sucht News mit gemeinsamen Entitäten und ergänzt kontextbezogene Chronikblöcke. Ein Tottenham-Spiel kann dadurch gleichzeitig bei Ramsey, Reilly, Henrique, Tottenham und im Matchbericht wiedergefunden werden.
+
 ### `assets/site-shell.js`
 
 Erzeugt Navigation und Footer aus der zentralen Konfiguration. Aktive Menüpunkte werden anhand der aktuellen Seite bestimmt. Spezialfarben und Seitentypen bleiben davon unberührt.
 
 ### `scripts/validate-data.mjs`
 
-Prüft JavaScript-Syntax, Manifest-Verweise, lokale Links, Daten-IDs, Pflichtfelder, Datumsformate, Spielplanstruktur, Saisonreferenzen und die Einbindung der zentralen Seitenshell.
+Prüft JavaScript-Syntax, Manifest-Verweise, lokale Links, Daten-IDs, Pflichtfelder, Datumsformate, Spielplanstruktur, Saisonreferenzen, Newslinks und die Einbindung der zentralen Seitenshell.
 
 ## Datendomänen
 
@@ -49,7 +71,8 @@ Das Manifest kennt folgende Live-Domänen:
 7. **league**: Ligatabelle und Abschlussdaten.
 8. **planning**: Nachfolge- und Kaderplanung.
 9. **staff**: Mitarbeiterexporte.
-10. **press**: redaktionelle Vorberichte.
+10. **press**: redaktionelle Vorberichte und Kommentare.
+11. **news**: append-only Ereignischronik und Querverweise.
 
 ## Spielerdaten
 
@@ -65,6 +88,8 @@ Der spezialisierte Einstiegspunkt `data/players.js` nutzt dasselbe Manifest und 
 
 Datierte Ergänzungsdateien bleiben als nachvollziehbare Chronik erhalten. Live-Seiten laden nur die im Manifest als aktuell markierten Schichten. Kaderarchive greifen auf `data/seasons.js` und ihre eigenen Referenzdaten zu. Damit kann Saison 2041 wachsen, ohne den Abschlussstand 2040 umzuschreiben.
 
+Für sichtbare redaktionelle Ereignisse gilt zusätzlich das Append-only-Prinzip der Newsdomäne. Eine neue Meldung ersetzt keine ältere. Die Startseite rendert nur eine begrenzte aktuelle Auswahl, während `news.html` den gesamten Bestand filterbar ausgibt.
+
 ## Renderer
 
 Renderer sollen Daten unmittelbar korrekt ausgeben. Nachträgliche DOM-Reparaturen sind zu vermeiden. Spielerüberschriften, Altersberechnung und Quellenhinweise werden direkt in `assets/player.js` aus Daten und Konfiguration erzeugt. Die früheren Dateien `player-fixes.js` und `player-polish.js` wurden entfernt.
@@ -75,13 +100,16 @@ Die GitHub Action `.github/workflows/validate.yml` läuft bei Änderungen auf `m
 
 - Syntax aller JavaScript-Dateien
 - Existenz aller Manifest-Einträge
-- Spieler-, Match-, Klub- und Presse-IDs
+- Spieler-, Match-, Klub-, Presse- und News-IDs
 - Irland- und Staff-Daten
 - kompakte Spielplanzeilen
 - Saisonkader und unbekannte Spielerreferenzen
+- Newsdatumswerte und Zielseiten
 - lokale Links
 - zentrale Konfiguration und Seitenshell
 
 ## Nächste Ausbaustufe
 
 Wenn Saison 2041 deutlich wächst, können aktuelle Ebenen physisch nach `data/current/` und historische Momentaufnahmen nach `data/snapshots/<datum>/` verschoben werden. Da Seiten nur Domänennamen kennen, erfordert diese Verschiebung keinen erneuten Umbau der HTML-Dateien.
+
+Die Newschronik kann bei größerem Umfang analog nach Jahren oder Saisons aufgeteilt werden, etwa `data/news-2040.js` und `data/news-2041.js`. Die Manifestdomäne bleibt dabei unverändert.
