@@ -2,6 +2,12 @@
   --hero-title-size:clamp(3rem,5vw,4.8rem);
   --hero-title-line:.92;
   --hero-title-tracking:-.052em;
+  --section-title-size:clamp(2rem,3.4vw,3.15rem);
+  --card-title-size:clamp(1.35rem,2vw,1.85rem);
+  --space-section:clamp(54px,6vw,72px);
+  --card-pad:clamp(24px,2.5vw,34px);
+  --control-height:44px;
+  --surface-shadow:0 14px 38px rgba(6,35,55,.11);
 }
 
 /* Einheitliche Seitentitel über News, Archive, Klub-, Spieler- und Presseseiten. */
@@ -27,29 +33,73 @@
   max-width:900px;
 }
 
-.press-hero h1{
-  max-width:16ch;
+.press-hero h1{max-width:16ch}
+.club-hero,.page-hero,.profile-hero,.press-hero{min-height:350px}
+
+/* Eine klare Überschriften-Hierarchie. */
+.section-head h2,
+.lead-story h2,
+.dark-section h2,
+.archive-band h2,
+.report-lead h2{
+  font-size:var(--section-title-size)!important;
+  line-height:.98!important;
+  letter-spacing:-.042em!important;
+  text-wrap:balance;
 }
 
-.club-hero,
-.page-hero,
-.profile-hero,
-.press-hero{
-  min-height:350px;
+.content-card h2,
+.press-copy h2,
+.next-international h2,
+.coach-card h2,
+.focus-card h3{
+  font-size:var(--card-title-size)!important;
+  line-height:1.05!important;
+  letter-spacing:-.025em;
+  text-wrap:balance;
 }
+
+.content-card h3,
+.story-cards h3,
+.spotlight-card h3,
+.press-duels h3{
+  line-height:1.12;
+  text-wrap:balance;
+}
+
+/* Einheitlicher vertikaler Rhythmus. */
+.section-wrap{padding-top:var(--space-section);padding-bottom:var(--space-section)}
+.section-head{margin-bottom:28px}
+.content-card,.lead-story,.focus-card{padding:var(--card-pad)}
+.content-card,.lead-story,.focus-card,.spotlight-card,.story-cards article,.change-card,.core-card,.match-card,.press-duels article{
+  box-shadow:var(--surface-shadow);
+}
+
+/* Kartenfamilie: Blau neutral, Grün Erfolg, Gold Vorschau, Rot Risiko. */
+.content-card,.spotlight-card,.story-cards article,.change-card,.core-card,.match-card,.press-duels article{
+  border-top-width:6px;
+  border-top-style:solid;
+  border-top-color:var(--blue);
+}
+.lead-story,.coach-card,.transfer-status-panel,.match-card.win{border-top-color:var(--green)}
+.press-stat,.next-international,.match-card.upcoming{border-top-color:var(--gold)}
+.feature-list.risk li,.status-badge.red,.match-card.loss{border-color:var(--red)}
 
 /* Kennzahlen bleiben als echte Blöcke lesbar. */
 .quick-stats article,
 .dashboard-strip article{
   min-width:0;
+  min-height:96px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
-
 .quick-stats strong,
 .dashboard-strip strong{
   display:block;
   line-height:1.12;
+  overflow-wrap:anywhere;
 }
-
 .quick-stats small,
 .dashboard-strip small{
   display:block;
@@ -58,32 +108,88 @@
   line-height:1.35;
 }
 
-/* Navigation skaliert, ohne am rechten Rand abgeschnitten zu werden. */
-.site-header{
-  gap:24px;
+/* Buttons und Eingabefelder folgen einem gemeinsamen Raster. */
+.button{
+  min-height:var(--control-height);
+  padding:10px 16px;
+  line-height:1.1;
+  transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease;
+}
+.button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(6,35,55,.14)}
+.filters input,.filters select,.squad-toolbar input,.squad-toolbar select,.fixture-controls input,.fixture-controls select{
+  min-height:var(--control-height);
+  border:1px solid var(--line);
+  font:inherit;
 }
 
+/* Navigation: gleiche Reihenfolge, gleiche Sprache, kein Abschneiden. */
+.site-header{gap:24px}
 .main-nav{
   min-width:0;
   justify-content:flex-end;
-  gap:clamp(11px,1.35vw,23px);
-  font-size:clamp(.68rem,.7vw,.76rem);
+  gap:clamp(11px,1.2vw,22px);
+  font-size:clamp(.66rem,.68vw,.75rem);
 }
+.main-nav a{white-space:nowrap;order:50}
+.main-nav a[href="index.html"]{order:1}
+.main-nav a[href="kader.html"]{order:2}
+.main-nav a[href="kaderplanung.html"]{order:3}
+.main-nav a[href^="kaderarchiv.html"]{order:4}
+.main-nav a[href^="spieler.html"]{order:5}
+.main-nav a[href="nationalteam.html"]{order:6}
+.main-nav a[href="saison.html"]{order:7}
+.main-nav a[href="spiele.html"]{order:8}
+.main-nav a[href="klubs.html"]{order:9}
+.main-nav a[href^="presse.html"]{order:10}
+.main-nav a[href="verein.html"]{order:11}
+.main-nav a[href="mitarbeiter.html"]{order:12;font-size:0}
+.main-nav a[href="mitarbeiter.html"]::after{content:"MITARBEITER";font-size:clamp(.66rem,.68vw,.75rem)}
+.main-nav a[href="dokumentation.html"]{order:13;font-size:0}
+.main-nav a[href="dokumentation.html"]::after{content:"DOKUMENTATION";font-size:clamp(.66rem,.68vw,.75rem)}
+.main-nav a.active{font-weight:1000}
 
-.main-nav a{
-  white-space:nowrap;
+/* Header, Badges und Footer wirken wie ein gemeinsamer Rahmen. */
+.utility-bar{min-width:0;gap:18px}
+.utility-bar span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hero-score,.page-hero-badge{min-width:min(270px,100%)}
+footer{
+  min-height:78px;
+  padding:22px clamp(20px,4vw,72px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+  background:var(--navy);
+  color:#d6e6ef;
 }
+footer strong{letter-spacing:.1em;font-size:.75rem}
+footer span{font-size:0;color:#9db6c5;text-align:right}
+footer span::after{content:"Dynastie, Daten und Entscheidungen. Saison für Saison.";font-size:.76rem}
+
+/* Spezialwelten behalten ihren Akzent, aber nicht ihr eigenes Maßsystem. */
+.ireland-hero .page-hero-badge,.next-international{border-top-color:#ff883e}
+.press-hero{border-bottom-width:7px}
+.player-page .profile-shell{margin-top:-22px}
 
 @media(max-width:1100px){
   :root{--hero-title-size:clamp(2.75rem,6.5vw,4.3rem)}
   .site-header{align-items:flex-start;flex-direction:column}
-  .main-nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:thin}
+  .main-nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:3px;scrollbar-width:thin}
   .club-hero,.page-hero,.profile-hero,.press-hero{min-height:auto}
+  .hero-score,.page-hero-badge{min-width:230px}
+}
+
+@media(max-width:750px){
+  .club-hero,.page-hero{align-items:flex-start;flex-direction:column}
+  .hero-score,.page-hero-badge{width:100%;min-width:0}
+  footer{align-items:flex-start;flex-direction:column}
+  footer span{text-align:left}
 }
 
 @media(max-width:650px){
-  :root{--hero-title-size:clamp(2.25rem,12vw,3.35rem)}
+  :root{--hero-title-size:clamp(2.25rem,12vw,3.35rem);--section-title-size:clamp(1.8rem,9vw,2.6rem)}
   .club-hero h1,.page-hero h1,.profile-title h1,.press-hero h1{max-width:100%;text-wrap:wrap}
   .quick-stats,.dashboard-strip{grid-template-columns:1fr!important}
-  .quick-stats article,.dashboard-strip article{border-right:0;border-bottom:1px solid var(--line)}
+  .quick-stats article,.dashboard-strip article{border-right:0;border-bottom:1px solid var(--line);min-height:82px}
+  .content-card,.lead-story,.focus-card{padding:22px}
 }
