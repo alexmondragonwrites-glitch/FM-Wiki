@@ -135,6 +135,20 @@ const pressContext=browserContext();
 (manifest?.press?.current||[]).forEach(file=>runBrowserScript(file,pressContext));
 validateIds('Pressebericht',pressContext.FM_PRESS_REPORTS||[]);
 
+const newsContext=browserContext({FM_NEWS:[]});
+(manifest?.news?.current||[]).forEach(file=>runBrowserScript(file,newsContext));
+const news=newsContext.FM_NEWS||[];
+validateIds('News',news);
+for(const item of news){
+  if(!item.title)errors.push(`News ohne Titel: ${item.id||'unbekannt'}`);
+  if(!item.category)errors.push(`News ohne Kategorie: ${item.id||'unbekannt'}`);
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(item.date||''))errors.push(`Ungültiges Newsdatum bei ${item.id}: ${item.date}`);
+  if(!item.href)errors.push(`News ohne Zielseite: ${item.id||'unbekannt'}`);
+  const target=item.href?.split(/[?#]/)[0];
+  if(target&&!exists(target))errors.push(`Newslink zeigt auf fehlende Seite: ${item.id} → ${target}`);
+  if(item.entities&&!Array.isArray(item.entities))errors.push(`News-Entities müssen ein Array sein: ${item.id}`);
+}
+
 const localRef=/\b(?:href|src)=["']([^"']+)["']/g;
 for(const file of htmlFiles){
   const html=fs.readFileSync(file,'utf8');
@@ -183,4 +197,4 @@ if(errors.length){
   errors.forEach(message=>console.error(`- ${message}`));
   process.exit(1);
 }
-console.log(`Validierung erfolgreich: ${playerContext.FM_PLAYERS.length} Spieler, ${(matchContext.FM_MATCHES||[]).length} Spiele, ${(clubContext.FM_CLUBS||[]).length} Klubs, ${staffContext.FM_STAFF.length} Mitarbeiter, ${htmlFiles.length} HTML-Seiten.`);
+console.log(`Validierung erfolgreich: ${playerContext.FM_PLAYERS.length} Spieler, ${(matchContext.FM_MATCHES||[]).length} Spiele, ${(clubContext.FM_CLUBS||[]).length} Klubs, ${news.length} News, ${staffContext.FM_STAFF.length} Mitarbeiter, ${htmlFiles.length} HTML-Seiten.`);
