@@ -10,9 +10,10 @@ Die veröffentlichte GitHub-Pages-Seite verbindet inzwischen:
 - vollständige Spielerprofile mit Rollen- und Karriereanalyse
 - Saison- und Spielarchive
 - Gegner- und Klubdossiers
-- Pressevorberichte
+- Pressevorberichte und Pressekommentare
 - Transfer- und Nachfolgeplanung
 - Irlands Nationalmannschaft als zweite taktische Bühne
+- ein dauerhaftes, filterbares News- und Ereignisarchiv
 
 ```text
 https://alexmondragonwrites-glitch.github.io/FM-Wiki/
@@ -27,12 +28,15 @@ FM-Wiki/
 ├── data/
 │   ├── config.js                 # Saison, Referenzdatum, Bereichsstände und Navigation
 │   ├── manifest.js               # einzige Quelle für die Reihenfolge aller Datendomänen
-│   ├── domain.js                 # generischer Manifest-Lader für Spiele, Klubs, Staff usw.
+│   ├── domain.js                 # generischer Manifest-Lader für Spiele, Klubs, News, Staff usw.
+│   ├── news.js                   # append-only Chronik für alle sichtbaren Ereignisse
 │   ├── players.js                # Spieler-Einstiegspunkt mit Kompatibilitätsmodus
 │   └── nationalteam.js           # Irland-Einstiegspunkt
 ├── assets/
 │   ├── data-loader.js            # sequenzielles Laden ohne unkontrollierte Parallelität
 │   ├── site-shell.js             # zentrale Navigation und Footer
+│   ├── news.js                   # Newsarchiv und aktuelle Startseitenmeldungen
+│   ├── related-content.js        # Querverweise auf Spieler-, Klub-, Match- und Presseseiten
 │   ├── layout-consistency.css    # gemeinsames Designsystem
 │   └── player.js                 # direkter Renderer ohne spätere DOM-Reparaturen
 ├── scripts/
@@ -57,6 +61,7 @@ FM-Wiki/
 - Kaderplanung
 - Mitarbeiter
 - Presseberichte
+- News und Ereignischronik
 
 HTML-Seiten nennen nur noch die benötigte Domäne:
 
@@ -75,6 +80,8 @@ Neue datierte Ergänzungen werden dadurch im Manifest einsortiert, nicht mehr au
 5. Altersberechnung nutzt den zentralen Stichtag oder den Stichtag eines Saison-Snapshots.
 6. Renderer erzeugen Inhalte unmittelbar korrekt. Nachträgliche Reparaturskripte werden vermieden.
 7. Änderungen müssen die automatische Validierung bestehen.
+8. News werden append-only gepflegt: neue Einträge kommen hinzu, ältere bleiben dauerhaft in `data/news.js` erhalten.
+9. Jeder News-Eintrag besitzt beteiligte Entitäten. Dadurch kann dieselbe Meldung im Newsarchiv und auf passenden Spieler-, Klub-, Match- oder Nationalteamseiten erscheinen.
 
 ## Qualitätssicherung
 
@@ -89,7 +96,7 @@ Sie prüft unter anderem:
 - JavaScript-Syntax
 - fehlende Manifest-Dateien
 - defekte lokale Links
-- Spieler-, Match-, Klub- und Presse-IDs
+- Spieler-, Match-, Klub-, Presse- und News-IDs
 - Spielplanstruktur
 - Saisonkader und unbekannte Spielerreferenzen
 - Nationalteam- und Staff-Daten
@@ -98,7 +105,7 @@ Sie prüft unter anderem:
 
 ## Aktueller Datenstand
 
-Globaler Referenzstichtag: **23. November 2040**  
+Globaler Referenzstichtag: **28. November 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
