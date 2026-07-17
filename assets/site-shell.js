@@ -3,7 +3,7 @@
   const nav=config.navigation||[];
   const path=location.pathname.split('/').pop()||'index.html';
   const activeId=(()=>{
-    if(path==='news.html')return 'news';
+    if(path==='index.html'||path===''||path==='news.html')return 'news';
     if(path==='kader.html')return 'squad';
     if(path==='kaderplanung.html')return 'planning';
     if(path==='kaderarchiv.html')return 'archive';
