@@ -7,6 +7,15 @@
     updatedAt:'2040-11-23',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
+    dataDates:Object.freeze({
+      players:'2040-11-19',
+      transfers:'2040-11-19',
+      nationalTeam:'2040-11-19',
+      clubs:'2040-11-23',
+      matches:'2040-11-11',
+      season:'2040-11-11',
+      staff:'2040-11-02'
+    }),
     navigation:[
       {id:'news',label:'News',href:'index.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
