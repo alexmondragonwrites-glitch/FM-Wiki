@@ -20,36 +20,61 @@ https://alexmondragonwrites-glitch.github.io/FM-Wiki/
 
 ## Technisches Modell
 
-Das Wiki bleibt eine statische Anwendung ohne Server und Datenbank. Die Architektur wurde in Version 2 in zentrale Schichten aufgeteilt:
+Das Wiki bleibt eine statische Anwendung ohne Server und Datenbank. Architekturversion 2 trennt Konfiguration, Datenreihenfolge, Darstellung und Qualitätssicherung:
 
 ```text
 FM-Wiki/
 ├── data/
-│   ├── config.js                 # Stichtag, Saison, Navigation und Schema-Version
-│   ├── manifest.js               # Reihenfolge der Basis- und Aktualisierungsdaten
-│   ├── players.js                # manifestgesteuerter Spieler-Einstiegspunkt
-│   └── nationalteam.js           # manifestgesteuerter Irland-Einstiegspunkt
+│   ├── config.js                 # Saison, Referenzdatum, Bereichsstände und Navigation
+│   ├── manifest.js               # einzige Quelle für die Reihenfolge aller Datendomänen
+│   ├── domain.js                 # generischer Manifest-Lader für Spiele, Klubs, Staff usw.
+│   ├── players.js                # Spieler-Einstiegspunkt mit Kompatibilitätsmodus
+│   └── nationalteam.js           # Irland-Einstiegspunkt
 ├── assets/
-│   ├── data-loader.js            # sequenzielles Laden der Datendateien
+│   ├── data-loader.js            # sequenzielles Laden ohne unkontrollierte Parallelität
 │   ├── site-shell.js             # zentrale Navigation und Footer
 │   ├── layout-consistency.css    # gemeinsames Designsystem
-│   └── player.js                 # direkter Spieler-Renderer ohne DOM-Reparaturschichten
+│   └── player.js                 # direkter Renderer ohne spätere DOM-Reparaturen
 ├── scripts/
-│   └── validate-data.mjs         # Syntax-, Daten-, ID- und Linkprüfung
+│   └── validate-data.mjs         # Syntax-, Daten-, ID-, Manifest- und Linkprüfung
 ├── .github/workflows/
 │   └── validate.yml              # automatische Prüfung bei Änderungen
 └── docs/
-    └── ARCHITECTURE.md           # ausführliche Architektur und Pflegeprinzipien
+    └── ARCHITECTURE.md           # Architektur und Pflegeprinzipien
 ```
+
+## Datendomänen
+
+`data/manifest.js` registriert die aktiven Dateien für:
+
+- Spieler
+- Nationalmannschaft
+- Matches
+- Spielplan
+- Klubs
+- Kaderarchive
+- Ligadaten
+- Kaderplanung
+- Mitarbeiter
+- Presseberichte
+
+HTML-Seiten nennen nur noch die benötigte Domäne:
+
+```html
+<script src="data/domain.js" data-domain="matches"></script>
+```
+
+Neue datierte Ergänzungen werden dadurch im Manifest einsortiert, nicht mehr auf jeder Seite einzeln.
 
 ## Datenprinzipien
 
 1. Fakten aus Screenshots und Exporten werden von Interpretation getrennt.
 2. Datierte Korrekturen bleiben historisch nachvollziehbar.
 3. Der aktuelle Live-Stand wird zentral über `data/manifest.js` bestimmt.
-4. Altersberechnung und Saisonstichtage stammen aus `data/config.js` oder dem jeweiligen Saison-Snapshot.
-5. Nachträgliche DOM-Reparaturen werden vermieden. Renderer sollen Daten unmittelbar korrekt ausgeben.
-6. Änderungen müssen die automatische Validierung bestehen.
+4. Globale und bereichsspezifische Datenstände stammen aus `data/config.js`.
+5. Altersberechnung nutzt den zentralen Stichtag oder den Stichtag eines Saison-Snapshots.
+6. Renderer erzeugen Inhalte unmittelbar korrekt. Nachträgliche Reparaturskripte werden vermieden.
+7. Änderungen müssen die automatische Validierung bestehen.
 
 ## Qualitätssicherung
 
@@ -64,14 +89,17 @@ Sie prüft unter anderem:
 - JavaScript-Syntax
 - fehlende Manifest-Dateien
 - defekte lokale Links
-- doppelte Spieler-IDs
+- Spieler-, Match-, Klub- und Presse-IDs
+- Spielplanstruktur
+- Saisonkader und unbekannte Spielerreferenzen
+- Nationalteam- und Staff-Daten
 - Pflichtfelder und Datumsformate
-- Navigationsziele
+- zentrale Navigation und Seitenshell
 
 ## Aktueller Datenstand
 
-Zentraler Referenzstichtag: **23. November 2040**  
+Globaler Referenzstichtag: **23. November 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
-Das Wiki wächst weiter mit jedem Screenshot, Export, Spielbericht und Transferentscheid.
+Die einzelnen Bereiche besitzen zusätzlich eigene Aktualitätsstände. Dadurch wird ein neues Tottenham-Dossier nicht fälschlich als neuer Spieler- oder Staff-Export ausgegeben.
