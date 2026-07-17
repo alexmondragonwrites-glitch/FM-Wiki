@@ -1,67 +1,77 @@
 # Finn Harps FM Wiki
 
-Ein lebendes Vereinsarchiv für den Finn-Harps-Langzeitsave in Football Manager.
+Ein lebendes Vereins- und Nationalmannschaftsarchiv für den Finn-Harps-Langzeitsave in Football Manager.
 
 ## Weboberfläche
 
-Die Startseite des Repositories ist eine responsive, interaktive Kaderdatenbank:
+Die veröffentlichte GitHub-Pages-Seite verbindet inzwischen:
 
-- Suche nach Spieler, Nation, Rolle oder Status
-- Filter nach Position
-- Spielerprofile als Detaildialog
-- Kaderkennzahlen und Talenteübersicht
-- Visualisierung des Mittelfelddreiecks
-- Nachfolgeplanung
-
-Nach Aktivierung von GitHub Pages ist sie erreichbar unter:
+- aktuelle und historische Kaderstände
+- vollständige Spielerprofile mit Rollen- und Karriereanalyse
+- Saison- und Spielarchive
+- Gegner- und Klubdossiers
+- Pressevorberichte
+- Transfer- und Nachfolgeplanung
+- Irlands Nationalmannschaft als zweite taktische Bühne
 
 ```text
 https://alexmondragonwrites-glitch.github.io/FM-Wiki/
 ```
 
-Die Einrichtung ist in [`docs/WEB-DOKUMENTATION.md`](docs/WEB-DOKUMENTATION.md) beschrieben.
+## Technisches Modell
 
-## Struktur
+Das Wiki bleibt eine statische Anwendung ohne Server und Datenbank. Die Architektur wurde in Version 2 in zentrale Schichten aufgeteilt:
 
 ```text
 FM-Wiki/
-├── index.html                  # Web-Dashboard
-├── assets/
-│   ├── styles.css              # Gestaltung
-│   └── app.js                  # Suche, Filter, Dialoge
 ├── data/
-│   └── players.js              # Zentrale Spielerdatenbank
-├── docs/
-│   └── WEB-DOKUMENTATION.md    # Technik und Pflegeprozess
-├── spieler/                    # Ausführliche Tiefenprofile
-├── saisonen/                   # Saisonchroniken
-├── taktik/                     # System- und Rollenanalyse
-├── kader/                      # Kaderübersichten
-├── transfers/                  # Nachfolge- und Transferplanung
-└── verein/                     # Philosophie und Vereinsidentität
+│   ├── config.js                 # Stichtag, Saison, Navigation und Schema-Version
+│   ├── manifest.js               # Reihenfolge der Basis- und Aktualisierungsdaten
+│   ├── players.js                # manifestgesteuerter Spieler-Einstiegspunkt
+│   └── nationalteam.js           # manifestgesteuerter Irland-Einstiegspunkt
+├── assets/
+│   ├── data-loader.js            # sequenzielles Laden der Datendateien
+│   ├── site-shell.js             # zentrale Navigation und Footer
+│   ├── layout-consistency.css    # gemeinsames Designsystem
+│   └── player.js                 # direkter Spieler-Renderer ohne DOM-Reparaturschichten
+├── scripts/
+│   └── validate-data.mjs         # Syntax-, Daten-, ID- und Linkprüfung
+├── .github/workflows/
+│   └── validate.yml              # automatische Prüfung bei Änderungen
+└── docs/
+    └── ARCHITECTURE.md           # ausführliche Architektur und Pflegeprinzipien
 ```
 
-## Leitbild
+## Datenprinzipien
 
-Dieses Wiki dokumentiert nicht nur Ergebnisse. Es hält fest, warum Spieler funktionieren, wie Rollen ineinandergreifen und wie aus einem irischen Außenseiter eine europäische Spitzenmannschaft geworden ist.
+1. Fakten aus Screenshots und Exporten werden von Interpretation getrennt.
+2. Datierte Korrekturen bleiben historisch nachvollziehbar.
+3. Der aktuelle Live-Stand wird zentral über `data/manifest.js` bestimmt.
+4. Altersberechnung und Saisonstichtage stammen aus `data/config.js` oder dem jeweiligen Saison-Snapshot.
+5. Nachträgliche DOM-Reparaturen werden vermieden. Renderer sollen Daten unmittelbar korrekt ausgeben.
+6. Änderungen müssen die automatische Validierung bestehen.
 
-Die Analyse folgt vier Grundsätzen:
+## Qualitätssicherung
 
-1. Fakten aus Screenshots werden von Interpretation getrennt.
-2. Systemfit zählt mehr als Sterne allein.
-3. Spielerentwicklung wird historisch nachvollziehbar dokumentiert.
-4. Kaderplanung betrachtet Gegenwart, nächste Generation und Nachfolge gleichzeitig.
+Die Validierung kann lokal ausgeführt werden:
 
-## Aktueller Kern
+```bash
+node scripts/validate-data.mjs
+```
 
-- Justin Ramsey
-- Daryl Frame
-- Cormac O’Kane
-- Jim O’Neill
-- Paulo Henrique
-- Torric Bruce
-- Dom Docherty
+Sie prüft unter anderem:
 
-## Datenstand
+- JavaScript-Syntax
+- fehlende Manifest-Dateien
+- defekte lokale Links
+- doppelte Spieler-IDs
+- Pflichtfelder und Datumsformate
+- Navigationsziele
 
-Oktober 2040. Neue Screenshots und Entscheidungen werden fortlaufend in der Webdatenbank und den Markdown-Profilen ergänzt.
+## Aktueller Datenstand
+
+Zentraler Referenzstichtag: **23. November 2040**  
+Aktuelle Saison: **2040**  
+Vorbereitete nächste Saison: **2041**
+
+Das Wiki wächst weiter mit jedem Screenshot, Export, Spielbericht und Transferentscheid.
