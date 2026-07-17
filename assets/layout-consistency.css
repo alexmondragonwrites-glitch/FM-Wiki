@@ -1,0 +1,89 @@
+:root{
+  --hero-title-size:clamp(3rem,5vw,4.8rem);
+  --hero-title-line:.92;
+  --hero-title-tracking:-.052em;
+}
+
+/* Einheitliche Seitentitel über News, Archive, Klub-, Spieler- und Presseseiten. */
+.club-hero h1,
+.page-hero h1,
+.profile-title h1,
+.press-hero h1{
+  font-size:var(--hero-title-size)!important;
+  line-height:var(--hero-title-line)!important;
+  letter-spacing:var(--hero-title-tracking)!important;
+  text-transform:uppercase;
+  max-width:15ch;
+  margin:0 0 16px!important;
+  text-wrap:balance;
+  overflow-wrap:normal;
+  hyphens:none;
+}
+
+.club-hero .hero-content,
+.page-hero>div:first-child,
+.profile-title>div:first-child{
+  min-width:0;
+  max-width:900px;
+}
+
+.press-hero h1{
+  max-width:16ch;
+}
+
+.club-hero,
+.page-hero,
+.profile-hero,
+.press-hero{
+  min-height:350px;
+}
+
+/* Kennzahlen bleiben als echte Blöcke lesbar. */
+.quick-stats article,
+.dashboard-strip article{
+  min-width:0;
+}
+
+.quick-stats strong,
+.dashboard-strip strong{
+  display:block;
+  line-height:1.12;
+}
+
+.quick-stats small,
+.dashboard-strip small{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  line-height:1.35;
+}
+
+/* Navigation skaliert, ohne am rechten Rand abgeschnitten zu werden. */
+.site-header{
+  gap:24px;
+}
+
+.main-nav{
+  min-width:0;
+  justify-content:flex-end;
+  gap:clamp(11px,1.35vw,23px);
+  font-size:clamp(.68rem,.7vw,.76rem);
+}
+
+.main-nav a{
+  white-space:nowrap;
+}
+
+@media(max-width:1100px){
+  :root{--hero-title-size:clamp(2.75rem,6.5vw,4.3rem)}
+  .site-header{align-items:flex-start;flex-direction:column}
+  .main-nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:thin}
+  .club-hero,.page-hero,.profile-hero,.press-hero{min-height:auto}
+}
+
+@media(max-width:650px){
+  :root{--hero-title-size:clamp(2.25rem,12vw,3.35rem)}
+  .club-hero h1,.page-hero h1,.profile-title h1,.press-hero h1{max-width:100%;text-wrap:wrap}
+  .quick-stats,.dashboard-strip{grid-template-columns:1fr!important}
+  .quick-stats article,.dashboard-strip article{border-right:0;border-bottom:1px solid var(--line)}
+}
