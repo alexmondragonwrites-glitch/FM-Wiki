@@ -1,6 +1,7 @@
 (()=>{
   const p=(window.FM_PLAYERS||[]).find(x=>x.id==='jake-roberts');
   if(!p)return;
+  const preTransferSeasonSplits=[...(p.seasonSplits||[])];
   Object.assign(p,{
     selectedPosition:'Mittelfeld',
     info:'Finn-Harps-Spieler seit 01.12.2040',
@@ -34,7 +35,11 @@
     futureClub:null,
     profileDate:'2040-12-02',
     currentAbility:'14',
-    potentialAbility:'17–19'
+    potentialAbility:'17–19',
+    preTransferSeasonSplits,
+    seasonSplits:[
+      {competition:'Finn Harps · Pflichtspiele',appearances:'0',goals:0,assists:0,pom:0,rating:'–'}
+    ]
   });
   p.careerSeasons=[
     {season:'2040',club:'Finn Harps',league:'Premier Division',appearances:0,goals:0,assists:0,pom:0,rating:'–'},
