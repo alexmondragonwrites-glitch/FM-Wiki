@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2040-11-28',
+    referenceDate:'2040-11-30',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2040-11-28',
+    updatedAt:'2040-11-30',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
       players:'2040-11-28',
       transfers:'2040-11-19',
       nationalTeam:'2040-11-19',
-      clubs:'2040-11-28',
+      clubs:'2040-11-30',
       matches:'2040-11-28',
       season:'2040-11-28',
-      news:'2040-11-28',
+      news:'2040-11-30',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2040-11-28-ramsey-grosse-buehne'},
+      {id:'press',label:'Presse',href:'presse.html?id=2040-11-30-celta-vigo-vorbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
