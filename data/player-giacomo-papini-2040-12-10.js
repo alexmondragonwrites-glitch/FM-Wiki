@@ -1,0 +1,133 @@
+(()=>{
+  const p=(window.FM_PLAYERS||[]).find(x=>x.id==='giacomo-papini');
+  if(!p)return;
+  Object.assign(p,{
+    profileDate:'2040-12-10',
+    birthDate:'2013-05-03',
+    birthPlace:'Eschen, Liechtenstein',
+    nation:'Italien',
+    nationCode:'ITA',
+    age:27,
+    height:'195 cm',
+    weight:'87 kg',
+    preferredFoot:'Rechts sehr stark · links gut',
+    personality:'Perfektionist',
+    mediaDescription:'Flügelspieler',
+    international:'Italien · 0 A-Länderspiele / 0 Tore',
+    youthInternational:'Italien U21 · 7 Länderspiele / 2 Tore',
+    contractUntil:'31.12.2045',
+    wage:'€140.000 pro Woche',
+    agent:'Sacha Erni',
+    currentAbility:'19',
+    potentialAbility:'19',
+    selectedPosition:'OMR',
+    positionCode:'M (RZ), OM (R)',
+    bestRole:'Flügelspieler',
+    systemRole:'Flügelspieler auf Unterstützung',
+    role:'Rechter Weltklasse-Flügelspieler',
+    status:'Starspieler',
+    rating:5,
+    conditionLabel:'Ausgezeichnet',
+    condition:'96%',
+    matchSharpness:'95%',
+    morale:'Perfekt',
+    appearances:'29 (9)',
+    goals:7,
+    assists:16,
+    avgRating:7.36,
+    xg:6.97,
+    xa:14.14,
+    playerOfMatch:4,
+    transferValue:'€39 Mio. – €47 Mio.',
+    availability:'Einsatzbereit · Belastung wegen sehr hoher Verletzungsanfälligkeit steuern',
+    summary:'Giacomo Papini ist der italienische Riese auf Finn Harps’ rechter Seite: 195 Zentimeter groß, Beweglichkeit 19, Sprunghöhe 19 und trotzdem ein technisch feiner Flügelspieler. In der Saison 2040 stehen sieben Tore, 16 Vorlagen und eine Durchschnittsnote von 7,36. Trotz Weltklassebewertung wartet der 27-Jährige weiterhin auf sein erstes A-Länderspiel für Italien.',
+    analysis:'Papini verbindet Eigenschaften, die normalerweise nicht im selben Körper wohnen. Er besitzt die Statur eines Zielspielers, bewegt sich mit Beweglichkeit 19 und Schnelligkeit 16 aber wie ein kleiner Dribbler. Flanken 16, Technik 17, Ballannahme 16, Flair 16 und Ohne Ball 16 machen ihn zum rechten Kreativzentrum. Seine größte Begrenzung ist nicht spielerisch, sondern biologisch: Der Scout stuft seine Verletzungsanfälligkeit als sehr hoch ein. Hinzu kommt das paradoxe Luftspiel. Sprunghöhe 19 und 195 Zentimeter erzeugen Präsenz, Kopfballtechnik 8 verhindert jedoch, dass daraus ein verlässlicher Zielspieler wird.',
+    strengths:[
+      'Weltklassefähigkeit 19 von 19',
+      'Beweglichkeit 19 trotz 195 Zentimetern Körpergröße',
+      'Flanken 16, Technik 17 und Ballannahme 16',
+      'Ohne Ball 16, Flair 16 und Antizipation 15',
+      'Schnelligkeit 16 und Antritt 15',
+      'Sehr konstanter Spieler und Liebhaber großer Spiele',
+      'Perfektionist mit hoher Einsatzfreude 16',
+      'Sieben Tore und 16 Vorlagen in 29 Startelf- und neun Jokereinsätzen 2040',
+      'Zweifacher Champions-League-Sieger und Olympiasieger',
+      'Von den Fans geliebt'
+    ],
+    risks:[
+      'Sehr hohe Verletzungsanfälligkeit',
+      'Wiederkehrende Wadenverhärtungen und Verletzungen an der Oberschenkelrückseite',
+      'Kopfballtechnik 8 macht ihn trotz Größe und Sprunghöhe zu keinem zuverlässigen Luftziel',
+      'Mit 27 Jahren ist kein nennenswertes Entwicklungspotenzial mehr vorhanden',
+      'Passt laut Scout sozial eher in eine Nebengruppe als in die Kerngruppe',
+      'Trotz Weltklasseprofil weiterhin ohne A-Länderspiel für Italien'
+    ],
+    future:'Papini bleibt bis mindestens 2042 ein klarer Stammspieler und großer-Spiele-Spezialist. Billy Walker soll parallel als langfristige Nachfolge wachsen, aber nicht auf Kosten von Papinis Gegenwart. Belastung, Regeneration und individuelle Prävention sind wichtiger als zusätzliches Volumentraining. Im Individualtraining bietet sich das Angriffsdrittel an, während seine Rolle als breiter Flügelspieler und Vorlagengeber unangetastet bleiben sollte.',
+    verdict:'Weltklasse, von Italien übersehen',
+    attributes:{
+      Techniken:{Abschluss:9,Ballannahme:16,Deckung:7,Dribbling:15,Ecken:13,Elfmeter:13,Flanken:16,Freistöße:14,Kopfballtechnik:8,Passen:14,Tackling:7,Technik:17,'Weite Einwürfe':11,Weitschüsse:11},
+      Mental:{Aggressivität:6,Antizipation:15,Einsatzfreude:16,Entscheidungen:14,Flair:16,Führungsqualitäten:13,Konzentration:10,Mut:8,Nervenstärke:12,'Ohne Ball':16,Stellungsspiel:9,Teamwork:13,Übersicht:14,Zielstrebigkeit:15},
+      Physis:{Antritt:15,Ausdauer:14,Balance:17,Beweglichkeit:19,Grundfitness:13,Kraft:14,Schnelligkeit:16,Sprunghöhe:19}
+    },
+    traits:[
+      'Spielt lieber ab, als selbst zu schießen',
+      'Legt den Ball am Gegner vorbei',
+      'Bleibt an der Linie',
+      'Dribbelt häufig'
+    ],
+    seasonSplits:[
+      {competition:'UEFA Champions League',appearances:'6 (0)',goals:2,assists:2,pom:1,rating:7.33},
+      {competition:'UEFA-Superpokal',appearances:'1 (0)',goals:1,assists:0,pom:0,rating:7.30},
+      {competition:'Premier Division',appearances:'19 (6)',goals:2,assists:13,pom:3,rating:7.37},
+      {competition:'Sports Direct FAI Cup',appearances:'2 (3)',goals:2,assists:1,pom:0,rating:7.36},
+      {competition:"President's Cup",appearances:'1 (0)',goals:0,assists:0,pom:0,rating:7.10},
+      {competition:'Sonstige Spiele',appearances:'1 (1)',goals:1,assists:1,pom:0,rating:7.45},
+      {competition:'Gesamt Verein',appearances:'29 (9)',goals:7,assists:16,pom:4,rating:7.36}
+    ],
+    careerTitle:'Vom Basler Nachwuchs zur Ikone von Ballybofey',
+    careerSeasons:[
+      {season:'2040',club:'Finn Harps',league:'Premier Division',appearances:25,goals:2,assists:13,pom:3,rating:7.37},
+      {season:'2039',club:'Finn Harps',league:'Premier Division',appearances:18,goals:1,assists:8,pom:0,rating:7.28},
+      {season:'2038',club:'Finn Harps',league:'Premier Division',appearances:26,goals:9,assists:6,pom:4,rating:7.43},
+      {season:'2037',club:'Finn Harps',league:'Premier Division',appearances:30,goals:7,assists:9,pom:1,rating:7.23},
+      {season:'2036',club:'Finn Harps',league:'Premier Division',appearances:10,goals:1,assists:2,pom:1,rating:7.17},
+      {season:'2035/36',club:'Bayer Leverkusen',league:'Bundesliga',appearances:0,goals:0,assists:0,pom:0,rating:null},
+      {season:'2034/35',club:'Bayer Leverkusen',league:'Bundesliga',appearances:0,goals:0,assists:0,pom:0,rating:null},
+      {season:'2033/34',club:'Bayer Leverkusen',league:'Bundesliga',appearances:3,goals:0,assists:0,pom:0,rating:6.70},
+      {season:'2032/33',club:'Bayer Leverkusen',league:'Bundesliga',appearances:2,goals:0,assists:0,pom:0,rating:6.50},
+      {season:'2032/33',club:'Basel',league:'Raiffeisen Super League',appearances:11,goals:2,assists:1,pom:1,rating:6.98},
+      {season:'2031/32',club:'Basel',league:'Raiffeisen Super League',appearances:5,goals:1,assists:0,pom:0,rating:6.80},
+      {season:'2030/31',club:'Basel U21',league:'Schweiz',appearances:5,goals:0,assists:2,pom:0,rating:8.02},
+      {season:'2029/30',club:'Basel U21',league:'Schweiz',appearances:18,goals:2,assists:3,pom:1,rating:7.52}
+    ],
+    careerTotals:{appearances:153,goals:25,assists:44,pom:11,rating:7.32},
+    careerNarrativeTitle:'Der Umweg, der Finn Harps eine Weltklasse-Ikone schenkte',
+    careerNarrative:[
+      'Papini begann seine Laufbahn beim FC Basel 1893. Im August 2029 debütierte er für Basels U21, 2031 schaffte er den Sprung in die erste Mannschaft und gewann 2032 die Schweizer Meisterschaft.',
+      'Im Januar 2033 wechselte er für €12 Mio. zu Bayer Leverkusen. In Deutschland blieb der Durchbruch aus: In drei Spielzeiten kamen lediglich fünf Bundesligaeinsätze zustande.',
+      '2036 öffnete Finn Harps die Tür. Nach einer Leihphase wurde Papini für €20 Mio. fest verpflichtet. Aus dem Leverkusener Randspieler wurde in Ballybofey ein Weltklassespieler.',
+      'Für Finn Harps absolvierte er bis Ende 2040 insgesamt 109 Ligaspiele und erzielte 20 Ligatore. Vier Meisterschaften, vier FAI Cups, zwei Champions-League-Titel, zwei UEFA-Superpokale und der Klub-WM-Titel prägen seine Vereinsgeschichte.',
+      'Mit Italiens U23 gewann Papini 2040 olympisches Gold und wurde Zweiter bei der Wahl zum besten Spieler des Turniers. Für die italienische A-Nationalmannschaft besitzt er trotzdem weiterhin kein einziges Länderspiel.',
+      'Die Karrierechronik führt 19 Titel. Sein sportlicher Status ist damit eindeutig, auch wenn die italienische Nationalmannschaft so tut, als müsse sie noch Beweise sammeln.'
+    ],
+    honours:[
+      {year:'2040',type:'Titel und Auszeichnungen',items:['UEFA Champions League','UEFA-Superpokal','Olympische Spiele mit Italien U23','SSE Airtricity League Premier Division','Sports Direct FAI Cup',"President's Cup",'In Finn Harps’ beste Elf der Saison aufgenommen','Dritter bei Irlands Premier-Division-Spieler des Jahres','Zweiter beim besten Spieler der Olympischen Spiele']},
+      {year:'2039',type:'Irische Dominanz',items:['SSE Airtricity League Premier Division','Sports Direct FAI Cup',"President's Cup",'In Finn Harps’ beste Elf der Saison aufgenommen']},
+      {year:'2038',type:'Europäischer Durchbruch',items:['UEFA Champions League','UEFA-Superpokal','SSE Airtricity League Premier Division','Sports Direct FAI Cup',"President's Cup",'Irlands Premier-Division-Spieler des Jahres','In Finn Harps’ beste Elf der Saison aufgenommen']},
+      {year:'2037',type:'Erste goldene Saison',items:['FIFA Club World Cup','SSE Airtricity League Premier Division','Sports Direct FAI Cup',"President's Cup",'In Finn Harps’ beste Elf der Saison aufgenommen','Dritter bei Irlands Premier-Division-Spieler des Jahres']},
+      {year:'2036',type:'Ankunft in Ballybofey',items:['SSE Airtricity League Premier Division','Sports Direct FAI Cup','Für €20 Mio. von Bayer Leverkusen verpflichtet']},
+      {year:'2032',type:'Basler Fundament',items:['Meister der Raiffeisen Super League']},
+      {year:'2030',type:'Nachwuchstitel',items:['Meister der Swiss U19 Elite League','Schweizer U18-Cup-Sieger']}
+    ],
+    deepAnalysisTitle:'Warum Papini einer der ungewöhnlichsten Weltklassespieler des Saves ist',
+    deepAnalysis:[
+      {title:'Der Riese, der sich wie ein Flügelspieler bewegt',text:'195 Zentimeter, 87 Kilogramm und Sprunghöhe 19 würden zunächst einen Zielspieler vermuten lassen. Beweglichkeit 19, Schnelligkeit 16, Dribbling 15 und die Eigenschaft, den Ball am Gegner vorbeizulegen, erzählen jedoch das Gegenteil. Papini gewinnt nicht durch Wucht, sondern durch überraschende Leichtigkeit.'},
+      {title:'Finn Harps’ rechte Kreativzentrale',text:'Flanken 16, Technik 17, Ballannahme 16, Flair 16 und Ohne Ball 16 erklären seine Vorlagenproduktion. Er bleibt häufig breit, bindet den gegnerischen Außenverteidiger und entscheidet dann zwischen Dribbling, früher Hereingabe oder Rückpass in den Halbraum.'},
+      {title:'Das Luftspiel-Paradox',text:'Papini kommt mit 195 Zentimetern und Sprunghöhe 19 an viele Bälle. Kopfballtechnik 8 bedeutet aber, dass er diese Ausgangslage selten sauber verwertet. Er ist optisch ein Zielspieler, funktional jedoch ein technischer Flügelmann.'},
+      {title:'Das eigentliche Risiko liegt zwischen den Spielen',text:'Der Scout bewertet seine Verletzungsanfälligkeit als sehr hoch und nennt wiederkehrende Waden- sowie Oberschenkelprobleme. Papinis Qualität muss deshalb nicht durch mehr Training gesteigert, sondern durch kluge Belastungssteuerung verfügbar gehalten werden.'},
+      {title:'Weltklasse, aber für Italien nicht gut genug?',text:'Sieben U21-Länderspiele, zwei Tore, olympisches Gold und Weltklassefähigkeit 19 stehen null A-Länderspielen gegenüber. Sportlich lässt sich diese Leerstelle kaum noch erklären. Sie ist inzwischen weniger Bewertung als Kuriosität seiner Karriere.'},
+      {title:'Vermächtnis und Nachfolge',text:'Billy Walker besitzt das Potenzial, langfristig die rechte Seite zu übernehmen. Papini ist aber noch kein Auslaufmodell. Seine Konstanz, Erfahrung in großen Spielen und kreative Produktion machen ihn weiterhin zum Maßstab, an dem der Nachfolger erst wachsen muss.'}
+    ],
+    dataQualityNote:'Die beiden Football-Manager-Statistikansichten weisen bei den Vorlagen 2040 unterschiedliche Summen aus. Das Wettbewerbsprofil zeigt 16 Vorlagen; die Karriere-Gesamtansicht zeigt 21. Für das aktuelle Leistungsprofil wird die detaillierte Wettbewerbsaufschlüsselung verwendet.'
+  });
+})();
