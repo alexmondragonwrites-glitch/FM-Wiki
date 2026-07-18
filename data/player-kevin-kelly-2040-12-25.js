@@ -38,7 +38,7 @@
     avgRating:7.04,
     xg:1.71,
     xa:2.57,
-    playerOfMatch:2,
+    playerOfMatch:0,
     transferValue:'€22 Mio. – €30 Mio.',
     availability:'Einsatzbereit · im Urlaub · relativ verletzungsanfällig',
     summary:'Kevin Kelly ist kein spektakulärer Sprinter auf der Außenbahn, sondern ein verlässlicher linksseitiger Systemverteidiger. Technik 17, Teamwork 18, Antizipation 15 und Sprunghöhe 16 machen ihn besonders wertvoll, wenn der Linksverteidiger ins Zentrum einrückt oder als zusätzlicher Innenverteidiger absichert. Als in Irland und bei Finn Harps ausgebildeter Nationalspieler erfüllt er zudem zentrale Registrierungsregeln.',
@@ -81,7 +81,7 @@
       {competition:'Premier Division',appearances:'21 (5)',goals:0,assists:3,pom:0,rating:7.03},
       {competition:'Sports Direct FAI Cup',appearances:'0 (2)',goals:0,assists:0,pom:0,rating:6.95},
       {competition:'UEFA Nations League A',appearances:'4 (1)',goals:0,assists:0,pom:0,rating:6.64},
-      {competition:'Gesamt',appearances:'28 (7)',goals:1,assists:4,pom:2,rating:7.04}
+      {competition:'Gesamt',appearances:'28 (7)',goals:1,assists:4,pom:0,rating:7.04}
     ],
     careerTitle:'Vom Debüt gegen Shamrock Rovers zum Europameister',
     careerSeasons:[
