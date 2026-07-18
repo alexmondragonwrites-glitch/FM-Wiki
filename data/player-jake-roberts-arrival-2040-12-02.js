@@ -19,7 +19,7 @@
     appearances:'0',
     goals:0,
     assists:0,
-    avgRating:null,
+    avgRating:'–',
     contractUntil:'31.12.2044 bei Finn Harps',
     wage:'€42.000 pro Woche',
     transferStatus:'Transfer vollzogen · Finn Harps',
@@ -37,7 +37,7 @@
     potentialAbility:'17–19'
   });
   p.careerSeasons=[
-    {season:'2040',club:'Finn Harps',league:'Premier Division',appearances:0,goals:0,assists:0,pom:0,rating:null},
+    {season:'2040',club:'Finn Harps',league:'Premier Division',appearances:0,goals:0,assists:0,pom:0,rating:'–'},
     ...(p.careerSeasons||[]).filter(x=>x.club!=='Finn Harps')
   ];
   p.careerNarrative=[
