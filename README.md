@@ -84,6 +84,8 @@ Neue datierte Ergänzungen werden dadurch im Manifest einsortiert, nicht mehr au
 9. Jeder News-Eintrag besitzt beteiligte Entitäten. Dadurch kann dieselbe Meldung im Newsarchiv und auf passenden Spieler-, Klub-, Match- oder Nationalteamseiten erscheinen.
 10. Ein vollzogener Transfer wird aus optionalen Transferdaten in die reguläre Spielerdomäne verschoben. Dadurch erscheint der Spieler zuverlässig in Profilen, Kaderansichten, Archiven und Querverweisen.
 11. Ein abgeschlossenes Spiel aktualisiert gemeinsam Matchakte, Spielplan, beteiligte Spieler, Gegnerdossier, Saisonübersicht, Presse und Newschronik.
+12. Vollprofile dokumentieren Attribute, Rollen, Wettbewerbssplits, Karriere, Titel, Risiken und redaktionelle Einordnung. Widersprüche zwischen Football-Manager-Ansichten werden sichtbar notiert statt still geglättet.
+13. Infrastrukturentscheidungen werden als datierte Vereinsprojekte mit Kosten, Bauzeit und Begründung archiviert.
 
 ## Qualitätssicherung
 
@@ -107,8 +109,8 @@ Sie prüft unter anderem:
 
 ## Aktueller Datenstand
 
-Globaler Referenzstichtag: **5. Dezember 2040**  
+Globaler Referenzstichtag: **10. Dezember 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
-Finn Harps gewann das letzte Spiel des Jahres bei RC Celta de Vigo mit 3:1 und steht nach sechs Champions-League-Ligaphasenspielen bei 18 Punkten und 14:2 Toren. Die Matchakte, der Spielplan, das Celta-Dossier, die Saison- und Startseite sowie die Profile von Evan Reilly, Justin Ramsey, Giacomo Papini, Eduardo Blanco, Romano Maisto und Cormac O’Kane wurden fortgeschrieben. Jake Roberts ist seit dem 1. Dezember als aktiver Finn-Harps-Spieler registriert.
+Giacomo Papini besitzt nun ein vollständiges Weltklasse-Dossier mit exaktem Geburtsdatum, Attributen, Rollen, Wettbewerbssplits, Karriereverlauf, 19 Titeln laut FM-Chronik und der dokumentierten Kuriosität von null A-Länderspielen für Italien. Parallel wurde der Ausbau der Trainingseinrichtungen erfasst: €2,9 Mio. Investition, Baubeginn am 7. Februar 2041 und geplanter Abschluss im März 2041 während der irischen Winterpause. Der sportliche Stand bleibt der 3:1-Sieg bei RC Celta de Vigo mit 18 Punkten und 14:2 Toren aus sechs Champions-League-Ligaphasenspielen.
