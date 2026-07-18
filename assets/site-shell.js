@@ -30,5 +30,14 @@
     if(strong)strong.textContent=config.siteName||'Finn Harps FM Wiki';
     if(span)span.textContent=config.footerText||'Dynastie, Daten und Entscheidungen. Saison für Saison.';
   }
+  const visibleDate=config.updatedAt||config.referenceDate;
+  if(visibleDate){
+    const formatted=new Date(`${visibleDate}T12:00:00`).toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'});
+    document.querySelectorAll('.utility-bar span').forEach(span=>{
+      const text=span.textContent||'';
+      if(!/(?:DATENSTAND|\bSTAND\b|REFERENZDATUM)/i.test(text))return;
+      if(/\d{1,2}[./-]\d{1,2}[./-]\d{4}/.test(text))span.textContent=text.replace(/\d{1,2}[./-]\d{1,2}[./-]\d{4}/,formatted);
+    });
+  }
   document.documentElement.dataset.schemaVersion=String(config.schemaVersion||1);
 })();
