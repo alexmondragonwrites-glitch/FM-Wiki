@@ -109,8 +109,10 @@ Sie prüft unter anderem:
 
 ## Aktueller Datenstand
 
-Globaler Referenzstichtag: **10. Dezember 2040**  
+Globaler Referenzstichtag: **20. Dezember 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
-Giacomo Papini besitzt nun ein vollständiges Weltklasse-Dossier mit exaktem Geburtsdatum, Attributen, Rollen, Wettbewerbssplits, Karriereverlauf, 19 Titeln laut FM-Chronik und der dokumentierten Kuriosität von null A-Länderspielen für Italien. Parallel wurde der Ausbau der Trainingseinrichtungen erfasst: €2,9 Mio. Investition, Baubeginn am 7. Februar 2041 und geplanter Abschluss im März 2041 während der irischen Winterpause. Der sportliche Stand bleibt der 3:1-Sieg bei RC Celta de Vigo mit 18 Punkten und 14:2 Toren aus sechs Champions-League-Ligaphasenspielen.
+Diego Fernández besitzt nun ein vollständiges Dossier auf Basis des Profils vom 20. Dezember 2040: Fähigkeit 18, Potenzial 18–20, acht A-Länderspiele für Argentinien, sämtliche Attribute, Vereinssplits, Ligakarriere, Titelchronik und eine klare Rollenbewertung als zurückgezogener Spielmacher beziehungsweise inverser Außenverteidiger. Das Archiv ordnet ihn als „Stammspielerprofil im Rotationsmantel“ ein und dokumentiert sowohl seine außergewöhnliche Athletik als auch die offenen Punkte Konstanz, soziale Einbindung und Vertragslaufzeit bis Ende 2043.
+
+Der sportliche Stand bleibt der 3:1-Sieg bei RC Celta de Vigo mit 18 Punkten und 14:2 Toren aus sechs Champions-League-Ligaphasenspielen. Für Januar 2041 sind vier Testspiele sowie die Ligaphasen-Heimspiele gegen Young Boys und Paris Saint-Germain eingetragen.
