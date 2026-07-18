@@ -11,7 +11,8 @@
         'data/player-ireland-result-2040-11-19.js','data/player-evan-reilly-2040-11-28.js','data/player-injuries-2040-11-28.js',
         'data/player-justin-ramsey-2040-11-28.js','data/player-jake-roberts-transfer-2040-11-17.js',
         'data/player-jake-roberts-confirmed-2040-11-19.js','data/player-jake-roberts-arrival-2040-12-02.js',
-        'data/player-celta-result-2040-12-05.js','data/player-giacomo-papini-2040-12-10.js'
+        'data/player-celta-result-2040-12-05.js','data/player-giacomo-papini-2040-12-10.js',
+        'data/player-diego-fernandez-2040-12-20.js'
       ]
     },
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js']},
@@ -23,7 +24,7 @@
     planning:{current:['data/squad-planning-2041.js']},
     staff:{current:['data/staff-1.js','data/staff-2.js','data/staff-3.js','data/staff-4.js']},
     press:{current:['data/press-reports.js','data/press-reports-2040-11-28.js','data/press-reports-2040-11-30-celta.js','data/press-reports-2040-12-05-celta.js','data/press-reports-2040-12-10-season-opening-2041.js']},
-    news:{current:['data/news.js','data/news-2040-11-30-celta.js','data/news-2040-12-02-roberts.js','data/news-2040-12-05-celta-result.js','data/news-2040-12-10-papini-facilities.js','data/news-2040-12-10-season-opening-2041.js']},
+    news:{current:['data/news.js','data/news-2040-11-30-celta.js','data/news-2040-12-02-roberts.js','data/news-2040-12-05-celta-result.js','data/news-2040-12-10-papini-facilities.js','data/news-2040-12-10-season-opening-2041.js','data/news-2040-12-20-diego-fernandez.js']},
     flatten(key){const group=this[key];if(!group)return [];return [...(group.base||[]),...(group.current||[])];}
   };
   window.FM_DATA_MANIFEST=manifest;
