@@ -1,13 +1,15 @@
 window.FM_SQUAD_PLANNING={
-  referenceDate:'09.11.2040',
-  headline:'Rouvières Nachfolge ist eine Kaderfrage, keine Positionskopie.',
-  verdict:'Jake Roberts beobachten und nur zum richtigen Preis verpflichten. Ben Barry bleibt Stürmer. Rouvière wird nicht vorschnell abgegeben.',
-  decision:'watch',
+  referenceDate:'02.12.2040',
+  headline:'Roberts ist da. Jetzt beginnt die Rollenentwicklung.',
+  verdict:'Jake Roberts wurde für €25,5 Mio. verpflichtet und ist seit dem 1. Dezember Spieler von Finn Harps. Die Nachfolgeplanung wechselt damit von der Marktfrage zur Integrationsfrage.',
+  decision:'signed',
+  decisionLabel:'VERPFLICHTET',
   recommendation:[
-    'Roberts vollständig scouten und Persönlichkeit sowie Anpassungsfähigkeit prüfen.',
-    'Eine Verpflichtung ist bis etwa €22–24 Mio. attraktiv; bei €30 Mio. trägt Finn Harps fast das gesamte Entwicklungsrisiko.',
-    'Rouvière mindestens bis zur ersten Hälfte 2041 behalten, damit Roberts nicht sofort Champions-League-Rotation liefern muss.',
-    'Ben Barry ausschließlich als Neuner weiterentwickeln und nicht für eine kreative Achterrolle verbiegen.'
+    'Roberts zunächst als linken zentralen Mittelfeldspieler auf Unterstützen und als zurückgezogenen Spielmacher auf Unterstützen trainieren.',
+    'Rouvière mindestens bis zur ersten Hälfte 2041 behalten, damit Roberts ohne sofortigen Champions-League-Druck wachsen kann.',
+    'Einsatzminuten gezielt gegen kontrollierbare Gegner und in klaren Spielständen aufbauen.',
+    'Ben Barry ausschließlich als Neuner weiterentwickeln und nicht für eine kreative Achterrolle verbiegen.',
+    'Die jährliche Gehaltssteigerung von zehn Prozent bei der mittelfristigen Kaderkostenplanung berücksichtigen.'
   ],
   candidates:[
     {
@@ -17,16 +19,16 @@ window.FM_SQUAD_PLANNING={
       risks:['29 Jahre','Defensive Werte begrenzt','Sprunghöhe 2','Nur noch rund eine Saison Vertragslaufzeit','Als Spezialist schwer eins zu eins zu ersetzen'],
       attributes:{Passen:16,Technik:16,Ballannahme:15,Übersicht:15,Flair:17,Entscheidungen:17,Dribbling:16,'Ohne Ball':14,Teamwork:12,Tackling:7,Antritt:13,Schnelligkeit:14},
       fit:{creative8:92,twoWay8:56,mezzala:76,immediate:88,development:25},
-      conclusion:'Behalten, solange kein Nachfolger sofort dieselbe kreative Entlastung bietet.'
+      conclusion:'Behalten, solange Roberts noch nicht dieselbe kreative Entlastung auf Champions-League-Niveau liefern kann.'
     },
     {
-      id:'jake-roberts',type:'target',name:'Jake Roberts',club:'Liverpool U21',age:19,nation:'Wales',position:'M (Z) / M (L)',role:'Kontrollierender Achter mit Entwicklungspotenzial',foot:'Links sehr stark · rechts passabel',ability:'14',potential:'18–19',value:'€26–30 Mio.',wage:'€38.000/Woche',contract:'30.06.2041',status:'Talent vor Durchbruch',
-      summary:'Technisch sauberer Linksfuß mit perfektionistischer Persönlichkeit. Eher langfristiger Verbindungsspieler als direkter Rouvière-Klon.',
-      strengths:['Passen 16','Technik 16','Ballannahme 15','Übersicht 15','Nervenstärke 16','Zielstrebigkeit 16','Balance 17','Perfektionist'],
-      risks:['Nur ein Premier-League-Einsatz','Antritt und Schnelligkeit jeweils 12','Flair 10 und Dribbling 11','Tackling 8','Sprunghöhe 5','Medienumgang: unberechenbar, medienfreundlich und streitlustig','Hoher Preis für aktuelle Fähigkeit 14'],
+      id:'jake-roberts',type:'signed',name:'Jake Roberts',club:'Finn Harps',age:19,nation:'Wales',position:'M (Z) / M (L)',role:'Kontrollierender Achter mit Entwicklungspotenzial',foot:'Links sehr stark · rechts passabel',ability:'14',potential:'17–19',value:'€26–30 Mio.',wage:'€42.000/Woche',contract:'31.12.2044',status:'Talent vor Durchbruch · seit 01.12.2040 im Kader',
+      summary:'Technisch sauberer Linksfuß mit perfektionistischer Persönlichkeit. Seit dem 1. Dezember ist er Finn-Harps-Spieler und wird als langfristiger Verbindungsspieler aufgebaut, nicht als direkte Rouvière-Kopie.',
+      strengths:['Passen 16','Technik 16','Ballannahme 15','Übersicht 15','Nervenstärke 16','Zielstrebigkeit 16','Balance 17','Perfektionist','Medizincheck: ausgezeichneter Gesundheitszustand'],
+      risks:['Nur ein Premier-League-Einsatz','Noch kein Pflichtspiel für Finn Harps','Antritt und Schnelligkeit jeweils 12','Flair 10 und Dribbling 11','Tackling 8','Sprunghöhe 5','Jährliche Gehaltssteigerung von 10 Prozent'],
       attributes:{Passen:16,Technik:16,Ballannahme:15,Übersicht:15,Flair:10,Entscheidungen:13,Dribbling:11,'Ohne Ball':12,Teamwork:17,Tackling:8,Antritt:12,Schnelligkeit:12},
       fit:{creative8:75,twoWay8:72,mezzala:67,immediate:54,development:94},
-      conclusion:'Guter Nachfolgebaustein, aber kein fertiger Champions-League-Rotationsspieler und keine Kopie Rouvières.'
+      conclusion:'Verpflichtet für €25,5 Mio. Der sportliche Erfolg des Deals hängt nun an Einsatzsteuerung, Rollenstabilität und Geduld.'
     },
     {
       id:'ben-barry',type:'internal',name:'Ben Barry',club:'Finn Harps',age:17,nation:'Irland',position:'ST (Z)',role:'Stoßstürmer',foot:'Rechts sehr stark · links gut',ability:'14',potential:'18–20',value:'€16,5–21 Mio.',wage:'€2.400/Woche',contract:'31.12.2042',status:'Perspektivspieler',
