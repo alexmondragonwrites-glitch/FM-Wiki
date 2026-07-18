@@ -1,0 +1,1 @@
+(()=>{const fixtures=window.FM_FIXTURES||[];const match=fixtures.find(x=>x[0]==='2040-12-05'&&x[2]==='Celta Vigo');if(match)match[4]='3 - 1';})();
