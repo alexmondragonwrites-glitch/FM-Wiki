@@ -12,7 +12,8 @@
         'data/player-justin-ramsey-2040-11-28.js','data/player-jake-roberts-transfer-2040-11-17.js',
         'data/player-jake-roberts-confirmed-2040-11-19.js','data/player-jake-roberts-arrival-2040-12-02.js',
         'data/player-celta-result-2040-12-05.js','data/player-giacomo-papini-2040-12-10.js',
-        'data/player-diego-fernandez-2040-12-20.js'
+        'data/player-diego-fernandez-2040-12-20.js','data/player-kevin-kelly-2040-12-25.js',
+        'data/player-gustavo-da-silva-2040-12-25.js'
       ]
     },
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js']},
