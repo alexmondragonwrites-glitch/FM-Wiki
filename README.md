@@ -83,6 +83,7 @@ Neue datierte Ergänzungen werden dadurch im Manifest einsortiert, nicht mehr au
 8. News werden append-only gepflegt: neue Einträge kommen hinzu, ältere bleiben dauerhaft in `data/news.js` erhalten.
 9. Jeder News-Eintrag besitzt beteiligte Entitäten. Dadurch kann dieselbe Meldung im Newsarchiv und auf passenden Spieler-, Klub-, Match- oder Nationalteamseiten erscheinen.
 10. Ein vollzogener Transfer wird aus optionalen Transferdaten in die reguläre Spielerdomäne verschoben. Dadurch erscheint der Spieler zuverlässig in Profilen, Kaderansichten, Archiven und Querverweisen.
+11. Ein abgeschlossenes Spiel aktualisiert gemeinsam Matchakte, Spielplan, beteiligte Spieler, Gegnerdossier, Saisonübersicht, Presse und Newschronik.
 
 ## Qualitätssicherung
 
@@ -106,8 +107,8 @@ Sie prüft unter anderem:
 
 ## Aktueller Datenstand
 
-Globaler Referenzstichtag: **2. Dezember 2040**  
+Globaler Referenzstichtag: **5. Dezember 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
-Jake Roberts ist seit dem 1. Dezember 2040 vollständig als Spieler von Finn Harps registriert. Spieler-, Transfer-, Kaderplanungs-, Saisonarchiv- und Newsdaten wurden auf diesen Stand gebracht. Der Klub-, Presse- und Gegnerbereich enthält außerdem den Celta-Vigo-Scoutbericht vom 30. November für das letzte Spiel des Jahres.
+Finn Harps gewann das letzte Spiel des Jahres bei RC Celta de Vigo mit 3:1 und steht nach sechs Champions-League-Ligaphasenspielen bei 18 Punkten und 14:2 Toren. Die Matchakte, der Spielplan, das Celta-Dossier, die Saison- und Startseite sowie die Profile von Evan Reilly, Justin Ramsey, Giacomo Papini, Eduardo Blanco, Romano Maisto und Cormac O’Kane wurden fortgeschrieben. Jake Roberts ist seit dem 1. Dezember als aktiver Finn-Harps-Spieler registriert.
