@@ -16,13 +16,13 @@
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js']},
     matches:{current:['data/matches.js','data/matches-2.js','data/matches-3.js','data/matches-4.js','data/matches-5.js']},
     fixtures:{current:['data/fixtures.js','data/fixture-updates-2040-11-06.js','data/fixture-updates-2040-11-11.js','data/fixture-updates-2040-11-28.js']},
-    clubs:{current:['data/clubs.js','data/club-details.js','data/club-updates-2040-11-06.js','data/club-updates-2040-11-07.js','data/club-status-fixes-2040-11-07.js','data/tottenham-scouting-correction.js','data/tottenham-matchday-update-2040-11-23.js','data/club-shamrock-2040-11-11.js','data/club-tottenham-result-2040-11-28.js']},
+    clubs:{current:['data/clubs.js','data/club-details.js','data/club-updates-2040-11-06.js','data/club-updates-2040-11-07.js','data/club-status-fixes-2040-11-07.js','data/tottenham-scouting-correction.js','data/tottenham-matchday-update-2040-11-23.js','data/club-shamrock-2040-11-11.js','data/club-tottenham-result-2040-11-28.js','data/club-celta-vigo-2040-11-30.js']},
     archive:{current:['data/seasons.js']},
     league:{current:['data/league-2040.js']},
     planning:{current:['data/squad-planning-2041.js']},
     staff:{current:['data/staff-1.js','data/staff-2.js','data/staff-3.js','data/staff-4.js']},
-    press:{current:['data/press-reports.js','data/press-reports-2040-11-28.js']},
-    news:{current:['data/news.js']},
+    press:{current:['data/press-reports.js','data/press-reports-2040-11-28.js','data/press-reports-2040-11-30-celta.js']},
+    news:{current:['data/news.js','data/news-2040-11-30-celta.js']},
     flatten(key){const group=this[key];if(!group)return [];return [...(group.base||[]),...(group.current||[])];}
   };
   window.FM_DATA_MANIFEST=manifest;
