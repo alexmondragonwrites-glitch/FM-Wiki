@@ -9,9 +9,9 @@
         'data/player-jim-oneill-nationalteam-2040-11-16.js','data/player-ireland-result-2040-11-16.js',
         'data/player-rouviere-vinicius-2040-11-17.js','data/player-champions-league-count-fix-2040-11-17.js',
         'data/player-ireland-result-2040-11-19.js','data/player-evan-reilly-2040-11-28.js','data/player-injuries-2040-11-28.js',
-        'data/player-justin-ramsey-2040-11-28.js'
-      ],
-      optional:{jakeRoberts:['data/player-jake-roberts-transfer-2040-11-17.js','data/player-jake-roberts-confirmed-2040-11-19.js']}
+        'data/player-justin-ramsey-2040-11-28.js','data/player-jake-roberts-transfer-2040-11-17.js',
+        'data/player-jake-roberts-confirmed-2040-11-19.js','data/player-jake-roberts-arrival-2040-12-02.js'
+      ]
     },
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js']},
     matches:{current:['data/matches.js','data/matches-2.js','data/matches-3.js','data/matches-4.js','data/matches-5.js']},
@@ -22,7 +22,7 @@
     planning:{current:['data/squad-planning-2041.js']},
     staff:{current:['data/staff-1.js','data/staff-2.js','data/staff-3.js','data/staff-4.js']},
     press:{current:['data/press-reports.js','data/press-reports-2040-11-28.js','data/press-reports-2040-11-30-celta.js']},
-    news:{current:['data/news.js','data/news-2040-11-30-celta.js']},
+    news:{current:['data/news.js','data/news-2040-11-30-celta.js','data/news-2040-12-02-roberts.js']},
     flatten(key){const group=this[key];if(!group)return [];return [...(group.base||[]),...(group.current||[])];}
   };
   window.FM_DATA_MANIFEST=manifest;
