@@ -105,8 +105,8 @@ Sie prüft unter anderem:
 
 ## Aktueller Datenstand
 
-Globaler Referenzstichtag: **28. November 2040**  
+Globaler Referenzstichtag: **30. November 2040**  
 Aktuelle Saison: **2040**  
 Vorbereitete nächste Saison: **2041**
 
-Die einzelnen Bereiche besitzen zusätzlich eigene Aktualitätsstände. Dadurch wird ein neues Tottenham-Dossier nicht fälschlich als neuer Spieler- oder Staff-Export ausgegeben.
+Die Spieler- und Matchdaten stehen weiterhin auf dem 28. November 2040. Der Klub-, Presse- und Newsbereich enthält zusätzlich den Celta-Vigo-Scoutbericht vom 30. November für das letzte Spiel des Jahres.
