@@ -34,11 +34,11 @@
   setText('#scheduleAway',away.length);
   setText('#scheduleOpen',open.length);
 
-  const next=fixtures[0];
+  const next=fixtures.find(f=>!f.result);
   const nextBox=document.querySelector('#next2041');
   if(next&&nextBox){
     const date=dateParts(next.date);
-    nextBox.innerHTML=`<div><p class="kicker">SAISONAUFTAKT</p><h2>${esc(next.opponent)}</h2><p>${esc(date.long)} · ${esc(next.time)} · ${esc(next.venue)}</p><small>${esc(next.competition)}</small></div><strong>vs.</strong>`;
+    nextBox.innerHTML=`<div><p class="kicker">NÄCHSTES SPIEL</p><h2>${esc(next.opponent)}</h2><p>${esc(date.long)} · ${esc(next.time)} · ${esc(next.venue)}</p><small>${esc(next.competition)}</small></div><strong>vs.</strong>`;
   }
 
   const search=document.querySelector('#scheduleSearch');
@@ -52,7 +52,7 @@
     const query=(search?.value||'').trim().toLowerCase();
     const competitionValue=competition?.value||'all';
     const venueValue=venue?.value||'all';
-    const filtered=fixtures.filter(f=>(!query||`${f.opponent} ${f.competition} ${f.venue}`.toLowerCase().includes(query))&&(competitionValue==='all'||f.competition===competitionValue)&&(venueValue==='all'||f.venue===venueValue));
+    const filtered=fixtures.filter(f=>(!query||`${f.opponent} ${f.competition} ${f.venue} ${f.result||''}`.toLowerCase().includes(query))&&(competitionValue==='all'||f.competition===competitionValue)&&(venueValue==='all'||f.venue===venueValue));
     const groups=new Map();
     filtered.forEach(f=>{const key=f.date.slice(0,7);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(f);});
 
@@ -63,10 +63,13 @@
           ${items.map(f=>{
             const date=dateParts(f.date);
             const place=venueMeta(f.venue);
-            return `<article class="fixture-row upcoming">
+            const played=Boolean(f.result);
+            const timeOrResult=played?`<span class="fixture-time" aria-label="Endstand ${esc(f.result)}"><strong>${esc(f.result)}</strong></span>`:`<time class="fixture-time" datetime="${esc(`${f.date}T${f.time}`)}">${esc(f.time)}</time>`;
+            const opponentMeta=`${esc(f.venue)}${played?` · Anstoß ${esc(f.time)}`:''}${f.tv?' · TV-Übertragung':''}`;
+            return `<article class="fixture-row ${played?'played':'upcoming'}">
               <div class="fixture-date"><span>${esc(date.weekday)}</span><strong>${esc(date.short)}</strong></div>
-              <time class="fixture-time" datetime="${esc(`${f.date}T${f.time}`)}">${esc(f.time)}</time>
-              <div class="fixture-opponent"><b>${esc(f.opponent)}</b><small>${esc(f.venue)}${f.tv?' · TV-Übertragung':''}</small></div>
+              ${timeOrResult}
+              <div class="fixture-opponent"><b>${esc(f.opponent)}</b><small>${opponentMeta}</small></div>
               <span class="venue-badge ${place.className}" title="${esc(f.venue)}">${place.label}</span>
               <span class="competition-badge ${competitionClass(f.competition)}">${esc(f.competition)}</span>
             </article>`;
