@@ -1,0 +1,90 @@
+window.FM_PRESS_REPORTS=window.FM_PRESS_REPORTS||[];window.FM_PRESS_REPORTS.push({
+  id:'2041-01-27-paris-saint-germain-vorbericht',
+  type:'Pressevorbericht',
+  date:'2041-01-27',
+  competition:'UEFA Champions League · Ligaphase',
+  fixtureDate:'29.01.2041 · 20:00',
+  home:'Finn Harps',
+  away:'Paris Saint-Germain',
+  location:'Donegal Stadium · Heimspiel · letztes Spiel der Ligaphase',
+  headline:'Die Flügelmaschine kommt nach Donegal',
+  subheadline:'Paris Saint-Germain reist als nahezu gleichstarker Gegner, Dritter der Ligue 1 und Mannschaft mit enormer individueller Qualität an. Das Flügelspiel, William Diallos Kreativität und die außergewöhnliche Laufleistung der Offensive bilden den Kern der französischen Gefahr.',
+  label:'CHAMPIONS LEAGUE · 27.01.2041',
+  heroStat:{label:'Kaderwertspanne',value:'€1,31–1,66 Mrd.',note:'ohne zwei nicht zum Verkauf stehende Spieler'},
+  backlink:{href:'klub.html?id=paris-saint-germain',label:'← ZUM PSG-DOSSIER'},
+  intro:'Nach dem kontrollierten 2:0 gegen Young Boys wartet zum Abschluss der Ligaphase eine andere Größenordnung. Paris Saint-Germain besitzt keinen einzelnen simplen Angriffspunkt, sondern ein dichtes Netz aus Laufstärke, kreativen Flügelspielern, inversen Außenverteidigern und technisch starken Mittelfeldakteuren. Das Datencenter erwartet ein Spiel zweier nahezu gleichstarker Mannschaften. PSG wird weder tief mauern noch kopflos anlaufen, sondern aus einer ausgewogenen Grundhaltung über die Außenbahnen Druck erzeugen.',
+  probableXI:[
+    {zone:'TW',name:'Guillaume Restes',role:'Mitspielender Torwart'},
+    {zone:'LV',name:'Maximiliano Acosta',role:'Inverser Außenverteidiger'},
+    {zone:'IV',name:'Abdelrahman Hussein',role:'Kompromissloser Innenverteidiger'},
+    {zone:'IV',name:'Tiago Costa',role:'Innenverteidiger'},
+    {zone:'RV',name:'David Bauduin',role:'Inverser Flügelverteidiger'},
+    {zone:'DM',name:'Hassane Alzouma',role:'Abräumer'},
+    {zone:'ZM',name:'Milan Kresoja',role:'Mezzala'},
+    {zone:'ZM',name:'Eden Mbombo',role:'Mezzala'},
+    {zone:'LA',name:'Pouria Yousefi',role:'Inverser Außenstürmer'},
+    {zone:'RA',name:'William Diallo',role:'Flügelspieler'},
+    {zone:'ST',name:'Luís Abreu',role:'Hängende Spitze'}
+  ],
+  xiHeading:'PSG im 4-3-3 mit defensivem Mittelfeld',
+  sections:[
+    {title:'Ein Gegner, der den Platz breit und gleichzeitig eng macht',text:'PSG versucht, den Ball früh auf den Flügeln zu gewinnen. Die Außenverteidiger hinterlaufen, während die offensiven Außenspieler entweder Breite halten oder in die Halbräume ziehen. Dadurch entsteht ein unangenehmer Widerspruch: Finn Harps muss außen doppeln, darf dabei aber das Zentrum vor Alzouma, Kresoja und Mbombo nicht öffnen.'},
+    {title:'Diallo ist der Spieler, der aus Struktur Improvisation macht',text:'William Diallo kommt auf sieben Tore, sechs Vorlagen und eine Durchschnittsnote von 7,34. Das Datencenter bewertet seine Kreativität für die Rolle deutlich überdurchschnittlich. Er kann als klassischer Flügelspieler Breite geben, aber auch in den Halbraum ziehen und den letzten Pass suchen. Ein isoliertes Eins-gegen-eins wäre für Finn Harps das falsche Duell.'},
+    {title:'Das Zentrum ist erfahren, beweglich und teuer',text:'João Domingos Coentrão steuerte sechs Vorlagen bei, Milan Kresoja kommt auf drei Tore und drei Assists, Eden Mbombo auf zwei Tore und drei Vorlagen. Dahinter stabilisiert Hassane Alzouma. PSG besitzt damit mehrere Wege, den Ball aus dem ersten Aufbau ins letzte Drittel zu transportieren, ohne sich auf einen einzigen Spielmacher verlassen zu müssen.'},
+    {title:'Die Unterschiede zwischen Datencenter und Scout-Bestelf sind relevant',text:'Das Datencenter zeigt João Coentrão und Warren Zaïre-Emery sowie Modeste Mbombo in der Abwehr, während die Scout-Bestelf Acosta, Tiago Costa, Kresoja, Eden Mbombo und Yousefi aufführt. Der Kaderexport ergänzt zudem Maik de Bone als formstarke Sturmalternative. Die genaue Elf ist daher offen, das Grundprinzip mit defensivem Mittelfeld, zwei Achtern und breiter Offensive bleibt jedoch stabil.'},
+    {title:'Die erste Halbzeit bietet ein konkretes Druckfenster',text:'Fünf der letzten 13 Gegentore kassierte Paris zwischen der 16. und 30. Minute. Das ist kein magischer Schwachpunkt, aber ein wiederkehrendes Muster. Finn Harps sollte nach einer kontrollierten Anfangsphase genau dort Tempo und Pressinghöhe steigern, bevor PSG seine Ballzirkulation vollständig etabliert.'},
+    {title:'Restes ist stark, aber die Luft gehört ihm nicht vollständig',text:'Guillaume Restes erreicht in den defensiven Torwartkategorien überdurchschnittliche Werte. Gleichzeitig nennt der Scoutbericht hohe Bälle, Lufthoheit und die Tendenz zum Fausten als Schwachpunkte der Pariser Torhüter. Finn Harps sollte deshalb nicht blind flanken, aber zweite Bälle nach hohen Hereingaben und Standards gezielt überladen.'}
+  ],
+  strengthsTitle:'WAS PARIS TRÄGT',
+  strengthsHeading:'Qualität, Laufleistung und mehrere kreative Ebenen',
+  strengths:[
+    'Deutlich überdurchschnittliche Gesamtleistung in allen Mannschaftsbereichen',
+    'Laufintensive Offensive mit frühem Druck auf den Außenbahnen',
+    'William Diallo mit sieben Toren, sechs Vorlagen und Note 7,34',
+    'Guillaume Restes mit überdurchschnittlichen defensiven Torwartwerten',
+    'Hohe Einsatzfreude, Konzentration, Grundfitness und Aggressivität',
+    'Starke Entscheidungen, Antizipation, Übersicht und Tackling im gesamten Kader',
+    'Mehrere flexible Spieler, die zwischen Außenbahn, Halbraum und Zentrum wechseln können'
+  ],
+  vulnerabilitiesTitle:'WO FINN HARPS ANSETZEN KANN',
+  vulnerabilitiesHeading:'Wenige Risse, aber echte Ansatzpunkte',
+  vulnerabilities:[
+    'Torhüter bei hohen Bällen und in der Lufthoheit nicht auf Spitzenniveau',
+    'Tendenz zum Fausten schafft Chancen auf zweite Bälle',
+    'Fünf der letzten 13 Gegentore zwischen Minute 16 und 30',
+    'Vier von zehn Gegentorvorlagen entstanden innerhalb des Strafraums',
+    'Daniel Anav mit Formnote 6,26 über die letzten fünf Spiele',
+    'Luís Abreu führt die interne Torjägerliste nur mit sieben Treffern an',
+    'Yousefi, Ramírez und Guanipa sind im aktuellen Export verletzt'
+  ],
+  keyDuelsTitle:'SCHLÜSSELDUELLE',
+  keyDuelsHeading:'Vier Räume, in denen das Spiel kippen kann',
+  keyDuels:[
+    {title:'Finn Harps’ linke Seite gegen Diallo',text:'Diallo darf nicht nur dem Außenverteidiger überlassen werden. Linker Achter und Flügelspieler müssen seine Ballannahmen und Bauduins Hinterlaufen gemeinsam kontrollieren.'},
+    {title:'O’Neill gegen Abreu und die Mezzalas',text:'Abreu fällt als hängende Spitze zurück, während Kresoja und Mbombo nachstoßen. O’Neill muss den Raum sichern, ohne sich von einem einzelnen Gegenspieler aus dem Zentrum ziehen zu lassen.'},
+    {title:'Ramsey gegen Hussein und Tiago Costa',text:'Die Pariser Innenverteidiger sind robust, aber nicht unverwundbar. Ramsey sollte sie mit diagonalen Läufen auseinanderziehen, damit die Flügel in die entstehenden Schnittstellen eindringen können.'},
+    {title:'Zweite Bälle gegen Restes',text:'Restes ist ein starker Torwart, doch bei hohen Bällen und Faustabwehren entstehen mögliche zweite Aktionen. Der ballferne Achter muss genau diese Rückräume besetzen.'}
+  ],
+  matchPlanTitle:'MATCHPLAN FINN HARPS',
+  matchPlanHeading:'Acht Leitplanken für das Schwergewicht',
+  matchPlan:[
+    'Die ersten fünfzehn Minuten kontrolliert beginnen und Paris auf eine Außenbahn lenken.',
+    'Zwischen Minute 16 und 30 Pressinghöhe und Angriffstempo bewusst steigern.',
+    'Diallo stets mit Außenverteidiger plus Achter oder Flügelspieler doppeln.',
+    'O’Neill zentral halten und Abreus Zurückfallen übergeben, statt ihm blind zu folgen.',
+    'Nach Ballgewinnen sofort die Räume hinter den aufrückenden Außenverteidigern attackieren.',
+    'Hohe Hereingaben nur mit klarer Besetzung für zweite Bälle spielen; keine hoffnungslosen Flanken gegen geordnete Innenverteidiger.',
+    'Die Pariser Mezzalas nicht gleichzeitig frei in den Strafraum nachstoßen lassen.',
+    'Auch bei Führung aktiv bleiben, weil PSG einen tiefen Block mit Laufstärke und Kreativität dauerhaft überladen kann.'
+  ],
+  verdictHeading:'Der erste echte Gradmesser des neuen Jahres',
+  verdict:'Young Boys verlangte Struktur, Paris verlangt nahezu alles gleichzeitig. Finn Harps kann dieses Spiel gewinnen, aber nicht allein durch allgemeine Überlegenheit. Die Partie wird über saubere Flügelverteidigung, O’Neills Raumkontrolle und die Nutzung der offenen Zonen hinter den Außenverteidigern entschieden. PSG besitzt den teureren Kader und mehr individuelle Ausweichlösungen. Finn Harps besitzt dafür eine eingespielte europäische Ordnung, Heimvorteil und die Gewissheit, dass selbst große Namen im Donegal Stadium nicht automatisch größer spielen.',
+  sourcesHeading:'Scoutbericht und Kaderexport vom 27. Januar 2041',
+  sourcesNote:'Der Vorbericht basiert auf dem FM-Datencenter, der Scout-Bestelf und dem vollständigen 27-Spieler-Kaderexport. Taktische Leitplanken und Schlussfolgerungen sind redaktionelle Ableitungen aus diesen Angaben.',
+  sources:[
+    'FM-Datencenter Finn Harps – Paris Saint-Germain, 27.01.2041',
+    'Scout-Bestelf sowie Stärken- und Schwächenübersicht von PSG',
+    'Kaderexport Paris Saint-Germain mit 27 Spielern',
+    'Spielplan 2041: Finn Harps – Paris Saint-Germain am 29.01.2041'
+  ]
+});
