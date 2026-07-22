@@ -1,0 +1,72 @@
+window.FM_MATCHES=window.FM_MATCHES||[];window.FM_MATCHES.push({
+  id:'2041-02-09-derry-city',date:'2041-02-09',competition:"President's Cup",stage:'Finale · Saisoneröffnung 2041',
+  home:{id:'finn-harps',name:'Finn Harps',short:'FH',score:2,formation:'4-3-3'},
+  away:{id:'derry-city',name:'Derry City',short:'DER',score:0,formation:'4-4-2'},
+  venue:'Donegal Stadium',location:'Stranorlar, Irland',attendance:'12.800',weather:'Starker Wind · Nieselregen · 14 °C',referee:'Jason Forde',
+  headline:'Blanco eröffnet 2041 mit einem Doppelpack.',
+  standfirst:'Finn Harps gewinnt den President’s Cup mit 2:0 gegen Derry City. Eduardo Blanco entscheidet das Finale mit zwei Treffern vor der Pause, während die Harps 73 Prozent Ballbesitz, 2,00 xG und eine nahezu vollständige defensive Kontrolle verbuchen.',
+  verdict:'Der erste Titel fällt ohne Zittern',reportStatus:'complete',
+  events:[
+    {minute:6,type:'injury',team:'Derry City',player:'Keil Else',text:'Verletzungsbedingte Auswechslung'},
+    {minute:33,type:'goal',team:'Finn Harps',player:'Eduardo Blanco',text:'1:0 · Vorlage Vinícius'},
+    {minute:43,type:'substitution',team:'Finn Harps',player:'Giacomo Papini',text:'Für Billy Walker eingewechselt'},
+    {minute:'45+4',type:'goal',team:'Finn Harps',player:'Eduardo Blanco',text:'2:0 · Elfmeter'},
+    {minute:58,type:'substitution',team:'Finn Harps',player:'Gustavo da Silva',text:'Für Kevin Kelly eingewechselt'},
+    {minute:58,type:'substitution',team:'Finn Harps',player:'Ben Barry',text:'Für Eduardo Blanco eingewechselt'},
+    {minute:58,type:'substitution',team:'Finn Harps',player:'Basile Rouvière',text:'Für Romano Maisto eingewechselt'},
+    {minute:72,type:'substitution',team:'Finn Harps',player:'Callum Brennan',text:'Für Diego Fernández eingewechselt'},
+    {minute:76,type:'yellow',team:'Derry City',player:'Kavanagh Hamici',text:'Verwarnung'},
+    {minute:77,type:'yellow',team:'Derry City',player:'Glenn Bolger',text:'Verwarnung'}
+  ],
+  stats:[
+    {label:'Tore',home:2,away:0,kind:'number'},
+    {label:'Schüsse',home:10,away:2,kind:'number'},
+    {label:'Schüsse aufs Tor',home:4,away:1,kind:'number'},
+    {label:'xG',home:2.00,away:0.09,kind:'decimal'},
+    {label:'Großchancen',home:0,away:0,kind:'number'},
+    {label:'Ballbesitz',home:73,away:27,kind:'percent'},
+    {label:'Angekommene Pässe',home:622,away:229,kind:'number',homeDetail:'89 % · 622/699',awayDetail:'79 % · 229/291'},
+    {label:'Ecken',home:7,away:3,kind:'number'},
+    {label:'Fouls',home:10,away:14,kind:'number'},
+    {label:'Gewonnene Zweikämpfe',home:77,away:79,kind:'percent',homeDetail:'23/29',awayDetail:'22/28'},
+    {label:'Gewonnene Kopfbälle',home:50,away:48,kind:'percent',homeDetail:'27/54',awayDetail:'25/52'},
+    {label:'Gelbe Karten',home:0,away:2,kind:'number'},
+    {label:'Rote Karten',home:0,away:0,kind:'number'},
+    {label:'Intensive Sprints',home:105,away:91,kind:'number'}
+  ],
+  xgTimeline:[{minute:0,home:0,away:0},{minute:33,home:1.11,away:0.03},{minute:45,home:1.85,away:0.03},{minute:90,home:2.00,away:0.09}],
+  analysis:{
+    summary:'Finn Harps kontrollierte die Saisoneröffnung vom ersten Aufbaupass bis zum Schlusspfiff. Derry City kam trotz seiner Doppelspitze nur zu zwei Abschlüssen und 0,09 xG. Eduardo Blanco verwandelte die Überlegenheit bereits vor der Pause in einen klaren Vorsprung.',
+    possession:'73 Prozent Ballbesitz und 622 angekommene Pässe zeigen, wie deutlich Finn Harps das Tempo bestimmte. Derry musste lange ohne Ball arbeiten und fand kaum Möglichkeiten, Yates oder Hamici kontrolliert einzusetzen.',
+    chanceCreation:'Zehn Abschlüsse, vier Schüsse aufs Tor und 2,00 xG ergaben zwei Treffer. Blanco war mit drei Abschlüssen, drei Schüssen aufs Tor und zwei Toren der präzise Endpunkt, den die Mannschaft gegen PSG noch vermisst hatte.',
+    defensive:'Derry erzeugte lediglich 0,09 xG, einen Schuss aufs Tor und keine Großchance. Evan Reilly blieb bei seinem Pflichtspielauftakt 2041 ohne Gegentor, während Bruce und Andrews Hamicis Tiefenläufe weitgehend neutralisierten.',
+    turningPoint:'Blancos Führungstreffer in der 33. Minute brach Derrys Widerstand. Der Elfmeter in der vierten Minute der Nachspielzeit machte aus einer kontrollierten ersten Hälfte bereits vor dem Kabinengang eine entschiedene Partie.',
+    nuance:'Das Ergebnis war souverän, ohne dass Finn Harps permanent ins Risiko gehen musste. Nach der Pause verwaltete die Mannschaft den Vorsprung, verteilte Minuten und ließ Derry dennoch keinen Weg zurück ins Spiel.'
+  },
+  keyPerformers:[
+    {player:'Eduardo Blanco',rating:8.1,role:'Stürmer Finn Harps',note:'Erzielte beide Treffer, verwandelte den Elfmeter und brachte alle drei Abschlüsse auf das Tor.'},
+    {player:'Evan Reilly',rating:7.3,role:'Torwart Finn Harps',note:'Blieb ohne Gegentor und eröffnete das Pflichtspieljahr mit einem ruhigen, fehlerfreien Auftritt.'},
+    {player:'Darcy Andrews',rating:7.3,role:'Innenverteidiger Finn Harps',note:'Gewann seine direkten Duelle und hielt Derry gemeinsam mit Torric Bruce bei 0,09 xG.'},
+    {player:'Vinícius',rating:7.2,role:'Zentrales Mittelfeld Finn Harps',note:'Gab die Vorlage zum 1:0 und half, das Spiel mit hoher Passsicherheit zu kontrollieren.'}
+  ],
+  finnHarpsLineup:[
+    {player:'Evan Reilly',position:'TW',minutes:90,rating:7.3,goals:0,assists:0},
+    {player:'Diego Fernández',position:'VR',minutes:72,rating:6.9,goals:0,assists:0},
+    {player:'Torric Bruce',position:'VZ',minutes:90,rating:7.2,goals:0,assists:0},
+    {player:'Darcy Andrews',position:'VZ',minutes:90,rating:7.3,goals:0,assists:0},
+    {player:'Kevin Kelly',position:'VL',minutes:58,rating:7.0,goals:0,assists:0},
+    {player:"Jim O'Neill",position:'DM',minutes:90,rating:6.8,goals:0,assists:0},
+    {player:'Jake Roberts',position:'MZ',minutes:90,rating:6.7,goals:0,assists:0},
+    {player:'Vinícius',position:'MZ',minutes:90,rating:7.2,goals:0,assists:1},
+    {player:'Billy Walker',position:'OMR',minutes:43,rating:7.0,goals:0,assists:0},
+    {player:'Romano Maisto',position:'OML',minutes:58,rating:6.9,goals:0,assists:0},
+    {player:'Eduardo Blanco',position:'ST',minutes:58,rating:8.1,goals:2,assists:0},
+    {player:'Giacomo Papini',position:'OMR',minutes:47,rating:6.8,goals:0,assists:0,sub:true},
+    {player:'Gustavo da Silva',position:'VL',minutes:32,rating:6.7,goals:0,assists:0,sub:true},
+    {player:'Ben Barry',position:'ST',minutes:32,rating:6.8,goals:0,assists:0,sub:true},
+    {player:'Basile Rouvière',position:'OML',minutes:32,rating:6.5,goals:0,assists:0,sub:true},
+    {player:'Callum Brennan',position:'VR',minutes:18,rating:7.0,goals:0,assists:0,sub:true}
+  ],
+  homeLineup:[],awayLineup:[],
+  sources:['Spielübersicht Finn Harps – Derry City, 09.02.2041','Finn-Harps-Spielerstatistiken und Noten','President’s-Cup-Finale im Donegal Stadium']
+});
