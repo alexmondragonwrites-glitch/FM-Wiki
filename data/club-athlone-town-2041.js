@@ -1,0 +1,76 @@
+(()=>{
+  window.FM_CLUBS=window.FM_CLUBS||[];
+  if(window.FM_CLUBS.some(club=>club.id==='athlone-town'))return;
+
+  window.FM_CLUBS.push({
+    id:'athlone-town',
+    name:'Athlone Town',
+    short:'ATH',
+    country:'Irland',
+    league:'Premier Division',
+    scope:['Irland'],
+    status:'partial',
+    completion:52,
+    season:2041,
+    summary:'Athlone Town startet mit einem 28 Spieler starken Kader in die Premier-Division-Saison 2041. Der aktuelle Export zeigt eine erfahrene Achse, mehrere junge Callum-Talente und eine wahrscheinliche 4-4-2-Grundordnung.',
+    manager:'Offen',
+    stadium:'Offen',
+    formation:'4-4-2 breit',
+    squadValue:'Nicht im Export',
+    avgAge:'25,0',
+    keyPlayers:['Stephen Sheedy','Callum Cantwell','Ben Campbell','Jordan Bennett'],
+    tags:['Premier Division 2041','28 Spieler','4-4-2 breit','Kader-Snapshot'],
+    meetings:[
+      {date:'15.03.2041',venue:'A',result:'offen'},
+      {date:'10.05.2041',venue:'H',result:'offen'},
+      {date:'26.07.2041',venue:'A',result:'offen'},
+      {date:'11.10.2041',venue:'H',result:'offen'}
+    ],
+    checklist:{profile:false,squad:true,tactics:true,transfers:false,meetings:true,history:false},
+    squadDataLevel:'selection',
+    squadMeta:{count:28,xiAvgAge:'25,5',knownValue:'Nicht im Export',contracts2041:'–'},
+    probableXI:[
+      {name:'Stephen Sheedy',role:'Torwart',zone:'TW'},
+      {name:"Keith O'Brien",role:'Rechter Verteidiger',zone:'VR'},
+      {name:'Callum Cantwell',role:'Zentraler Verteidiger',zone:'VZR'},
+      {name:'Vladyslav Protsiv',role:'Zentraler Verteidiger',zone:'VZL'},
+      {name:'Faton Dervishi',role:'Linker Verteidiger',zone:'VL'},
+      {name:'Quentin Rioch',role:'Rechtes Mittelfeld',zone:'MR'},
+      {name:'Callum Gallagher',role:'Zentrales Mittelfeld',zone:'MZR'},
+      {name:'Ben Campbell',role:'Zentrales Mittelfeld',zone:'MZL'},
+      {name:'Callum Bonner',role:'Linkes Mittelfeld',zone:'ML'},
+      {name:'Jordan Bennett',role:'Zentraler Stürmer',zone:'STZR'},
+      {name:'Sam Mukisa',role:'Zentraler Stürmer',zone:'STZL'}
+    ],
+    squad:[
+      {slot:'TW',role:'Torwart',info:'',name:'Stephen Sheedy',position:'TW',age:29,height:'186 cm',condition:'91%',morale:'Wirklich gut'},
+      {slot:'VR',role:'Verteidiger (Rechts)',info:'',name:"Keith O'Brien",position:'V (R)',age:28,height:'163 cm',condition:'92%',morale:'Sehr gut'},
+      {slot:'VZR',role:'Verteidiger (Zentral)',info:'',name:'Callum Cantwell',position:'V (RZ), M (Z)',age:24,height:'187 cm',condition:'89%',morale:'Ziemlich gut'},
+      {slot:'VZL',role:'Verteidiger (Zentral)',info:'',name:'Vladyslav Protsiv',position:'V (Z)',age:25,height:'187 cm',condition:'93%',morale:'Wirklich gut'},
+      {slot:'VL',role:'Verteidiger (Links)',info:'',name:'Faton Dervishi',position:'V/FV (L)',age:27,height:'175 cm',condition:'90%',morale:'Ziemlich gut'},
+      {slot:'MR',role:'Mittelfeldspieler (Rechts)',info:'',name:'Quentin Rioch',position:'M/OM (R)',age:28,height:'177 cm',condition:'80%',morale:'Scouting erforderlich'},
+      {slot:'MZR',role:'Mittelfeldspieler (Zentral)',info:'',name:'Callum Gallagher',position:'M/OM (Z)',age:19,height:'171 cm',condition:'92%',morale:'Gut'},
+      {slot:'MZL',role:'Mittelfeldspieler (Zentral)',info:'',name:'Ben Campbell',position:'M/OM (Z)',age:29,height:'179 cm',condition:'90%',morale:'Sehr gut'},
+      {slot:'ML',role:'Mittelfeldspieler (Links)',info:'',name:'Callum Bonner',position:'M/OM (L)',age:20,height:'183 cm',condition:'93%',morale:'Wirklich gut'},
+      {slot:'STZR',role:'Stürmer (Zentral)',info:'',name:'Jordan Bennett',position:'ST (Z)',age:27,height:'179 cm',condition:'83%',morale:'Ziemlich gut'},
+      {slot:'STZL',role:'Stürmer (Zentral)',info:'',name:'Sam Mukisa',position:'M/OM (R), ST (Z)',age:25,height:'182 cm',condition:'84%',morale:'Scouting erforderlich'},
+      {slot:'E1',role:'Torwart',info:'',name:'Callum Doyle',position:'TW',age:29,height:'183 cm',condition:'100%',morale:'Okay'},
+      {slot:'E2',role:'Abwehr',info:'',name:'Callum Smith',position:'V (LZ), FV (L)',age:19,height:'174 cm',condition:'100%',morale:'Okay'},
+      {slot:'E3',role:'Mittelfeld',info:'Une',name:'Callum Walsh',position:'M (R), OM (RZ)',age:26,height:'166 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E4',role:'Angriff',info:'TL',name:'Cliff Gallagher',position:'OM (R), ST (Z)',age:31,height:'177 cm',condition:'95%',morale:'Okay'},
+      {slot:'E5',role:'Mittelfeld/Angriff',info:'Une',name:'Callum Dunne',position:'M/OM (Z), ST (Z)',age:25,height:'175 cm',condition:'90%',morale:'Scouting erforderlich'},
+      {slot:'E6',role:'Abwehr',info:'',name:'Callum Birrane',position:'V (LZ)',age:23,height:'173 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E7',role:'Flügel',info:'',name:"Martin O'Driscoll",position:'M (RL), OM (R)',age:32,height:'171 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E8',role:'Sturm',info:'',name:'Callum Byrne',position:'ST (Z)',age:20,height:'185 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E9',role:'Mittelfeld',info:'',name:'Callum Hannon',position:'M/OM (Z)',age:24,height:'179 cm',condition:'91%',morale:'Gut'},
+      {slot:'E10',role:'Abwehr',info:'',name:'Harrison Mole',position:'V (RLZ)',age:33,height:'181 cm',condition:'100%',morale:'Scouting erforderlich'},
+      {slot:'E11',role:'Mittelfeld',info:'Une',name:'Michael Sandland',position:'M (Z)',age:16,height:'175 cm',condition:'100%',morale:'Scouting erforderlich'},
+      {slot:'E12',role:'Mittelfeld/Angriff',info:'',name:'Ibrahim Aljourni',position:'M (Z), OM (RZ), ST (Z)',age:29,height:'181 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E13',role:'Flügel',info:'Jug',name:'Dean Kavanagh',position:'M/OM (L)',age:16,height:'173 cm',condition:'100%',morale:'Relativ gut'},
+      {slot:'E14',role:'Abwehr',info:'Jug',name:'Mikie Wiseman',position:'V/FV (R)',age:17,height:'162 cm',condition:'100%',morale:'Okay'},
+      {slot:'E15',role:'Abwehr/Mittelfeld',info:'',name:'Richard Hammond',position:'V (RZ), DM, M (Z)',age:27,height:'187 cm',condition:'100%',morale:'Scouting erforderlich'},
+      {slot:'-',role:'Torwart',info:'',name:'Callum Tomney',position:'TW',age:22,height:'188 cm',condition:'100%',morale:'Ziemlich gut'},
+      {slot:'-',role:'Angriff',info:'',name:'Jordan Griffiths',position:'OM (RZ), ST (Z)',age:30,height:'182 cm',condition:'100%',morale:'Ziemlich gut'}
+    ]
+  });
+})();
