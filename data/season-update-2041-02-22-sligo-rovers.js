@@ -5,7 +5,7 @@
   season.referenceDate='2041-02-22';
   season.snapshotDate='2041-02-22';
   season.headline='Zwei Ligaspiele, zwei Siege, zweimal 4:0';
-  season.summary='Finn Harps folgt dem 4:0 gegen Cork City mit einem 4:0 bei Sligo Rovers. Diego Fernández trifft nach zwei Minuten, Justin Ramsey liefert als Joker Tor und Vorlage, Daryl Frame und Kevin Kelly vollenden einen Auswärtssieg mit 77 Prozent Ballbesitz und 804 angekommene Pässen.';
+  season.summary='Finn Harps folgt dem 4:0 gegen Cork City mit einem 4:0 bei Sligo Rovers. Diego Fernández trifft nach zwei Minuten, Justin Ramsey liefert als Joker Tor und Vorlage, Daryl Frame und Kevin Kelly vollenden einen Auswärtssieg mit 77 Prozent Ballbesitz und 804 angekommenen Pässen.';
   season.changes=season.changes||{incoming:[],outgoing:[],promoted:[],notes:[]};
   season.changes.notes=[
     ...(season.changes.notes||[]).filter(note=>!String(note).includes('Sligo Rovers')&&!String(note).includes('zwei Ligaspiele')),
