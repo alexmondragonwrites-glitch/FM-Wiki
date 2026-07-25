@@ -37,7 +37,7 @@ window.FM_MATCHES=window.FM_MATCHES||[];window.FM_MATCHES.push({
     {label:'Mannschaftsnote',home:6.20,away:7.43,kind:'decimal'},
     {label:'Intensive Sprints',home:73,away:83,kind:'number'}
   ],
-  xgTimeline:[{minute:0,home:0,away:0},{minute:2,home:0,away:0.10},{minute:63,home:0.56,away:1.45},{minute:65,home:0.56,away:1.83},{minute:82,home:0.56,away:2.58}],
+  xgTimeline:[{minute:0,home:0,away:0},{minute:90,home:0.56,away:2.58}],
   analysis:{
     summary:'Diego Fernández nahm dem Showgrounds-Abend nach nur zwei Minuten jede Ruhe. Danach kontrollierte Finn Harps Ball und Raum nahezu vollständig, musste auf das zweite Tor aber bis zur 63. Minute warten. Ramseys Elfmeter und Frames Treffer nur zwei Minuten später zerlegten den letzten Widerstand, Kellys Kopfball machte erneut ein 4:0 daraus.',
     possession:'77 Prozent Ballbesitz, 804 angekommene Pässe und eine Passquote von 91 Prozent zeigen eine außergewöhnlich saubere Auswärtskontrolle. Sligo kam lediglich auf 234 erfolgreiche Pässe und verbrachte den Großteil des Spiels ohne längere Entlastungsphasen.',
