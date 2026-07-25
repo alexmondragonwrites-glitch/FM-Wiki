@@ -6,7 +6,7 @@ window.FM_PRESS_REPORTS=window.FM_PRESS_REPORTS||[];window.FM_PRESS_REPORTS.push
   fixtureDate:'15.02.2041 · 19:45',
   home:'Finn Harps',
   away:'Cork City FC',
-  location:'Finn Park · 1. Spieltag der Premier Division',
+  location:'Donegal Stadium · 1. Spieltag der Premier Division',
   headline:'Der Ligamarathon beginnt gegen Corks enge Formation',
   subheadline:'Fünf Tage nach dem President\'s-Cup-Erfolg beginnt die Titelverteidigung gegen einen Gegner, dessen 4-3-2-1 das Zentrum verdichtet und dessen wertvollste Talente noch am Anfang ihrer Entwicklung stehen.',
   label:'PREMIER DIVISION · 10.02.2041',
@@ -33,7 +33,7 @@ window.FM_PRESS_REPORTS=window.FM_PRESS_REPORTS||[];window.FM_PRESS_REPORTS.push
     {title:'Brown gibt der Abwehr Größe und Wert',text:'Callum Brown ist erst 21 Jahre alt, 1,92 Meter groß und besitzt mit 1,4 bis 2,8 Millionen Euro eine der höchsten Wertspannen des Kaders. Hohe, statische Flanken spielen ihm eher in die Karten. Flache Kombinationen und Läufe in die Schnittstellen versprechen mehr.'},
     {title:'Erfahrung sitzt direkt hinter Deakin',text:'Kapitän Finley Habergham ist 32, Mikey Quinn und Christian Talbot sind jeweils 30. Diese Achse kennt die Liga und kann ein Spiel beruhigen. Gleichzeitig zeigte der Export vom 10. Februar bei Habergham, Quinn und Gannon nur 76, 74 und 75 Prozent Athletik. Bis zum Spiel kann sich das ändern, doch hohes Tempo bleibt ein logischer Prüfstein.'},
     {title:'Corks Kader ist flexibel, aber vertraglich unruhig',text:'Mehrere Spieler decken zwei oder drei Zonen ab. Das erleichtert Michael Duffy Umstellungen während des Spiels. Zugleich laufen 14 der 32 dokumentierten Verträge Ende 2041 aus. Für den Ligastart sagt das wenig über die Tagesform, aber viel über einen Klub, dessen sportliche und wirtschaftliche Zukunft noch nicht vollständig festgezurrt ist.'},
-    {title:'Turners Cross wartet später, zuerst kommt Finn Park',text:'Cork trägt seine Heimspiele im 7.368 Zuschauer fassenden Turners Cross aus. Der erste Vergleich der neuen Saison findet jedoch bei Finn Harps statt. Nach vier Siegen in den vier dokumentierten Ligaduellen 2040 liegt der psychologische Vorteil beim Meister, doch ein Auftaktspiel besitzt seine eigene Schwerkraft.'}
+    {title:'Turners Cross wartet später, zuerst kommt das Donegal Stadium',text:'Cork trägt seine Heimspiele im 7.368 Zuschauer fassenden Turners Cross aus. Der erste Vergleich der neuen Saison findet jedoch bei Finn Harps statt. Nach vier Siegen in den vier dokumentierten Ligaduellen 2040 liegt der psychologische Vorteil beim Meister, doch ein Auftaktspiel besitzt seine eigene Schwerkraft.'}
   ],
   strengthsTitle:'WAS CORK CITY TRÄGT',
   strengthsHeading:'Junge Werte, erfahrene Achse, dichtes Zentrum',
