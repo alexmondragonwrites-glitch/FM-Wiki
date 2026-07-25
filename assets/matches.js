@@ -1,1 +1,53 @@
-const matches=window.FM_MATCHES||[];const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));const search=document.querySelector('#matchSearch'),competition=document.querySelector('#matchCompetition'),grid=document.querySelector('#matchGrid');[...new Set(matches.map(m=>m.competition))].sort().forEach(v=>competition.insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(v)}</option>`));const getXg=m=>m.stats.find(s=>s.label==='xG');function render(){const q=search.value.toLowerCase().trim(),c=competition.value;const list=matches.filter(m=>(!q||[m.home.name,m.away.name,m.competition,m.stage,m.headline,m.events.map(e=>e.player).join(' ')].join(' ').toLowerCase().includes(q))&&(c==='all'||m.competition===c));grid.innerHTML=list.map(m=>{const xg=getXg(m);return `<a class="match-card" href="spiel.html?id=${m.id}"><div class="match-card-top"><span>${esc(m.competition)}</span><time>${new Date(m.date+'T12:00:00').toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})}</time></div><div class="match-score"><div><b>${esc(m.home.short)}</b><small>${esc(m.home.name)}</small></div><strong>${m.home.score}:${m.away.score}</strong><div><b>${esc(m.away.short)}</b><small>${esc(m.away.name)}</small></div></div><h3>${esc(m.headline)}</h3><p>${esc(m.standfirst)}</p><div class="match-card-stats"><span>xG ${xg.home.toFixed(2).replace('.',',')} : ${xg.away.toFixed(2).replace('.',',')}</span><span>${esc(m.verdict)}</span></div></a>`}).join('')||'<div class="content-card"><b>Keine Berichte für diesen Filter.</b></div>'}search.addEventListener('input',render);competition.addEventListener('change',render);render();document.querySelector('#reportCount').textContent=matches.filter(m=>m.reportStatus==='complete').length;document.querySelector('#matchCount').textContent=matches.length;document.querySelector('#matchWins').textContent=matches.filter(m=>m.away.name==='Finn Harps'?m.away.score>m.home.score:m.home.score>m.away.score).length;document.querySelector('#matchGoals').textContent=matches.reduce((s,m)=>s+(m.away.name==='Finn Harps'?m.away.score:m.home.score),0);document.querySelector('#cleanSheets').textContent=matches.filter(m=>(m.away.name==='Finn Harps'?m.home.score:m.away.score)===0).length;document.querySelector('#avgXg').textContent=(matches.reduce((s,m)=>{const x=getXg(m);return s+(m.away.name==='Finn Harps'?x.away:x.home)},0)/Math.max(matches.length,1)).toFixed(2).replace('.',',');
+(()=>{
+  const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const search=document.querySelector('#matchSearch');
+  const competition=document.querySelector('#matchCompetition');
+  const grid=document.querySelector('#matchGrid');
+
+  function renderArchive(){
+    const matches=[...(window.FM_MATCHES||[])].sort((a,b)=>b.date.localeCompare(a.date)||String(b.id).localeCompare(String(a.id)));
+    if(!search||!competition||!grid)return;
+
+    competition.querySelectorAll('option:not([value="all"])').forEach(option=>option.remove());
+    [...new Set(matches.map(match=>match.competition))].sort((a,b)=>a.localeCompare(b,'de')).forEach(value=>{
+      competition.insertAdjacentHTML('beforeend',`<option value="${esc(value)}">${esc(value)}</option>`);
+    });
+
+    const getXg=match=>(match.stats||[]).find(stat=>stat.label==='xG')||{home:0,away:0};
+    const render=()=>{
+      const query=search.value.toLowerCase().trim();
+      const selectedCompetition=competition.value;
+      const visible=matches.filter(match=>{
+        const players=(match.events||[]).map(event=>event.player).join(' ');
+        const haystack=[match.home?.name,match.away?.name,match.competition,match.stage,match.headline,players].join(' ').toLowerCase();
+        return (!query||haystack.includes(query))&&(selectedCompetition==='all'||match.competition===selectedCompetition);
+      });
+
+      grid.innerHTML=visible.map(match=>{
+        const xg=getXg(match);
+        return `<a class="match-card" href="spiel.html?id=${esc(match.id)}"><div class="match-card-top"><span>${esc(match.competition)}</span><time>${new Date(`${match.date}T12:00:00`).toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})}</time></div><div class="match-score"><div><b>${esc(match.home.short)}</b><small>${esc(match.home.name)}</small></div><strong>${match.home.score}:${match.away.score}</strong><div><b>${esc(match.away.short)}</b><small>${esc(match.away.name)}</small></div></div><h3>${esc(match.headline)}</h3><p>${esc(match.standfirst)}</p><div class="match-card-stats"><span>xG ${Number(xg.home||0).toFixed(2).replace('.',',')} : ${Number(xg.away||0).toFixed(2).replace('.',',')}</span><span>${esc(match.verdict)}</span></div></a>`;
+      }).join('')||'<div class="content-card"><b>Keine Berichte für diesen Filter.</b></div>';
+    };
+
+    search.addEventListener('input',render);
+    competition.addEventListener('change',render);
+    render();
+
+    const finnGoals=match=>match.away?.id==='finn-harps'?match.away.score:match.home.score;
+    const opponentGoals=match=>match.away?.id==='finn-harps'?match.home.score:match.away.score;
+    const finnXg=match=>{const xg=getXg(match);return match.away?.id==='finn-harps'?Number(xg.away||0):Number(xg.home||0);};
+    document.querySelector('#reportCount').textContent=matches.filter(match=>match.reportStatus==='complete').length;
+    document.querySelector('#matchCount').textContent=matches.length;
+    document.querySelector('#matchWins').textContent=matches.filter(match=>finnGoals(match)>opponentGoals(match)).length;
+    document.querySelector('#matchGoals').textContent=matches.reduce((sum,match)=>sum+finnGoals(match),0);
+    document.querySelector('#cleanSheets').textContent=matches.filter(match=>opponentGoals(match)===0).length;
+    document.querySelector('#avgXg').textContent=(matches.reduce((sum,match)=>sum+finnXg(match),0)/Math.max(matches.length,1)).toFixed(2).replace('.',',');
+  }
+
+  const ready=window.FM_DOMAIN_READY?.matches;
+  if(ready&&typeof ready.then==='function')ready.then(renderArchive).catch(error=>{
+    console.error('Spieldaten konnten nicht vollständig geladen werden.',error);
+    renderArchive();
+  });
+  else renderArchive();
+})();
