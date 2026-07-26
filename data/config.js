@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-03-18',
+    referenceDate:'2041-03-22',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-03-18',
+    updatedAt:'2041-03-22',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-03-18',
+      players:'2041-03-22',
       transfers:'2041-02-16',
       nationalTeam:'2040-11-19',
-      clubs:'2041-03-18',
-      matches:'2041-03-18',
-      season:'2041-03-18',
-      news:'2041-03-18',
+      clubs:'2041-03-22',
+      matches:'2041-03-22',
+      season:'2041-03-22',
+      news:'2041-03-22',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-03-18-athlone-town-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-03-22-shelbourne-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
