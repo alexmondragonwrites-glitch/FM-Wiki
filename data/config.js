@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-03-08',
+    referenceDate:'2041-03-13',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-03-08',
+    updatedAt:'2041-03-13',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-03-08',
+      players:'2041-03-13',
       transfers:'2041-02-16',
       nationalTeam:'2040-11-19',
-      clubs:'2041-03-08',
-      matches:'2041-03-08',
-      season:'2041-03-08',
-      news:'2041-03-08',
+      clubs:'2041-03-13',
+      matches:'2041-03-13',
+      season:'2041-03-13',
+      news:'2041-03-13',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-03-08-waterford-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-03-13-as-roma-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
