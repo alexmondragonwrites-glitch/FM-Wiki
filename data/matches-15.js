@@ -1,0 +1,73 @@
+window.FM_MATCHES=window.FM_MATCHES||[];window.FM_MATCHES.push({
+  id:'2041-03-13-as-roma',date:'2041-03-13',competition:'UEFA Champions League',stage:'Achtelfinale · Rückspiel',
+  home:{id:'finn-harps',name:'Finn Harps',short:'FH',score:2,formation:'4-3-3'},
+  away:{id:'as-roma',name:'A.S. Roma',short:'ROM',score:0,formation:'Dreierkettenbasierte Formation'},
+  aggregate:{home:3,away:2,label:'Gesamt 3:2 für Finn Harps'},
+  venue:'Donegal Stadium',location:'Stranorlar, Irland',attendance:'10.000 · 500 Gästefans',weather:'9 °C',referee:'Nicht bekannt',
+  headline:'Gedreht: Finn Harps schlägt Roma 2:0 und steht im Viertelfinale.',
+  standfirst:'Nach dem 1:2 im Stadio Olimpico gewinnt Finn Harps das Rückspiel im Donegal Stadium mit 2:0. Justin Ramsey trifft früh per Elfmeter, Jim O’Neill vollendet noch vor der Pause mit einem Volleyschuss aus rund 20 Metern. Das Gesamtergebnis lautet 3:2.',
+  verdict:'Ein kontrollierter europäischer Wendepunkt',reportStatus:'complete',
+  events:[
+    {minute:8,type:'goal',team:'Finn Harps',player:'Justin Ramsey',text:'1:0 · Verwandelt einen nach VAR-Eingriff bestätigten Elfmeter'},
+    {minute:41,type:'goal',team:'Finn Harps',player:'Jim O’Neill',text:'2:0 · Volleyschuss aus rund 20 Metern in den Winkel'},
+    {minute:53,type:'substitution',team:'Finn Harps',player:'Callum Brennan',text:'Eingewechselt; Diego Fernández verlässt das Feld'},
+    {minute:53,type:'substitution',team:'Finn Harps',player:'Eduardo Blanco',text:'Eingewechselt; Giacomo Papini verlässt das Feld'},
+    {minute:58,type:'substitution',team:'Finn Harps',player:'Cormac O’Kane',text:'Eingewechselt; Vinícius verlässt das Feld'},
+    {minute:58,type:'substitution',team:'Finn Harps',player:'Basile Rouvière',text:'Eingewechselt; Romano Maisto verlässt das Feld'},
+    {minute:73,type:'substitution',team:'Finn Harps',player:'Amir Mašić',text:'Eingewechselt; Jim O’Neill verlässt das Feld'}
+  ],
+  stats:[
+    {label:'Tore',home:2,away:0,kind:'number'},
+    {label:'Schüsse',home:15,away:5,kind:'number'},
+    {label:'Schüsse aufs Tor',home:4,away:1,kind:'number'},
+    {label:'xG',home:2.28,away:0.70,kind:'decimal'},
+    {label:'Schüsse neben das Tor',home:6,away:1,kind:'number'},
+    {label:'Großchancen',home:1,away:2,kind:'number'},
+    {label:'Ballbesitz',home:56,away:44,kind:'percent'},
+    {label:'Angekommene Pässe',home:521,away:415,kind:'number',homeDetail:'89 % · 521/583',awayDetail:'86 % · 415/481'},
+    {label:'Ecken',home:9,away:5,kind:'number'},
+    {label:'Fouls',home:17,away:14,kind:'number'},
+    {label:'Gewonnene Zweikämpfe',home:78,away:61,kind:'percent',homeDetail:'18/23',awayDetail:'19/31'},
+    {label:'Gewonnene Kopfbälle',home:50,away:43,kind:'percent',homeDetail:'18/36',awayDetail:'15/35'},
+    {label:'Gelbe Karten',home:0,away:0,kind:'number'},
+    {label:'Rote Karten',home:0,away:0,kind:'number'},
+    {label:'Mannschaftsnote',home:7.03,away:6.49,kind:'decimal'},
+    {label:'Intensive Sprints',home:98,away:79,kind:'number'}
+  ],
+  xgTimeline:[{minute:0,home:0,away:0},{minute:90,home:2.28,away:0.70}],
+  analysis:{
+    summary:'Finn Harps drehte das Achtelfinale bereits vor der Pause. Ramsey verwandelte in der 8. Minute den Elfmeter zum Ausgleich im Gesamtergebnis. O’Neill setzte in der 41. Minute mit einem sauberen Volleyschuss das 2:0 nach und brachte die Harps erstmals in diesem Duell nach vorne.',
+    possession:'56 Prozent Ballbesitz und 521 angekommene Pässe bei 89 Prozent Genauigkeit zeigen, dass Finn Harps nicht nur über Intensität kam. Die Mannschaft kontrollierte den Ball und zwang Roma zu längeren Phasen ohne Zugriff.',
+    chanceCreation:'15 Abschlüsse, vier Schüsse aufs Tor, neun Ecken und 2,28 xG dokumentieren die offensive Präsenz. Der frühe Elfmeter öffnete das Spiel, O’Neills Treffer vor der Pause gab Finn Harps die notwendige Kontrolle über das Gesamtergebnis.',
+    defensive:'Roma blieb bei fünf Abschlüssen und einem Schuss aufs Tor. Trotz zweier ausgewiesener Großchancen erzeugten die Gäste nur 0,70 xG. Paulo Henrique blieb ohne Gegentor, während die Harps 78 Prozent ihrer Zweikämpfe gewannen.',
+    turningPoint:'Jim O’Neills Treffer in der 41. Minute war der emotionale und taktische Kipppunkt. Statt mit einem offenen 1:0 in die Pause zu gehen, führte Finn Harps im Gesamtergebnis und konnte Roma anschließend kommen lassen.',
+    nuance:'Das Rückspiel war kein wilder Kraftakt. Finn Harps gewann Schüsse, Ballbesitz, Passzahl, Zweikämpfe und xG. Nach der unglücklichen Niederlage im Hinspiel wurde das Achtelfinale nicht durch Zufall, sondern durch eine klar bessere Gesamtleistung gedreht.'
+  },
+  keyPerformers:[
+    {player:'Jim O’Neill',rating:7.5,role:'Defensiver Mittelfeldspieler Finn Harps',note:'Erzielte das entscheidende 2:0, brachte 91 Prozent seiner Pässe an und wurde Spieler des Spiels.'},
+    {player:'Paulo Henrique',rating:7.4,role:'Torwart Finn Harps',note:'Blieb ohne Gegentor und gab der Rückspielkontrolle die nötige Ruhe.'},
+    {player:'Darcy Andrews',rating:7.3,role:'Innenverteidiger Finn Harps',note:'Stabilisierte die letzte Linie und gewann seine direkten Duelle.'},
+    {player:'Daryl Frame',rating:7.2,role:'Zentraler Mittelfeldspieler Finn Harps',note:'Trug die Ballzirkulation mit 67 Pässen und hielt die rechte Achterzone unter Kontrolle.'},
+    {player:'Justin Ramsey',rating:7.1,role:'Stürmer Finn Harps',note:'Verwandelte den frühen Elfmeter und brachte das Gesamtergebnis bereits nach acht Minuten wieder auf Gleichstand.'}
+  ],
+  finnHarpsLineup:[
+    {player:'Paulo Henrique',position:'TW',minutes:90,rating:7.4,goals:0,assists:0,cleanSheet:true},
+    {player:'Diego Fernández',position:'VR',minutes:53,rating:6.9,goals:0,assists:0},
+    {player:'Torric Bruce',position:'VZ',minutes:90,rating:6.9,goals:0,assists:0},
+    {player:'Darcy Andrews',position:'VZ',minutes:90,rating:7.3,goals:0,assists:0},
+    {player:'Kevin Kelly',position:'VL',minutes:90,rating:7.1,goals:0,assists:0},
+    {player:'Jim O’Neill',position:'DM',minutes:73,rating:7.5,goals:1,assists:0},
+    {player:'Daryl Frame',position:'MZ',minutes:90,rating:7.2,goals:0,assists:0},
+    {player:'Vinícius',position:'MZ',minutes:58,rating:6.8,goals:0,assists:0},
+    {player:'Giacomo Papini',position:'OMR',minutes:53,rating:6.9,goals:0,assists:0},
+    {player:'Romano Maisto',position:'OML',minutes:58,rating:6.8,goals:0,assists:0},
+    {player:'Justin Ramsey',position:'ST',minutes:90,rating:7.1,goals:1,assists:0},
+    {player:'Amir Mašić',position:'DM',minutes:17,rating:6.8,goals:0,assists:0,sub:true},
+    {player:'Cormac O’Kane',position:'MZ',minutes:32,rating:6.7,goals:0,assists:0,sub:true},
+    {player:'Callum Brennan',position:'VR',minutes:37,rating:6.8,goals:0,assists:0,sub:true},
+    {player:'Eduardo Blanco',position:'OMR',minutes:37,rating:6.7,goals:0,assists:0,sub:true},
+    {player:'Basile Rouvière',position:'OML',minutes:32,rating:6.6,goals:0,assists:0,sub:true}
+  ],
+  homeLineup:[],awayLineup:[],
+  sources:['Spielübersicht Finn Harps – A.S. Roma, 13.03.2041','Finn-Harps-Spielerstatistiken und Noten','Champions-League-Achtelfinalrückspiel im Donegal Stadium']
+});
