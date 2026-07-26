@@ -2,8 +2,9 @@
   const club=(window.FM_CLUBS||[]).find(item=>item.id==='as-roma');
   if(!club)return;
   club.completion=97;
+  club.stadium='Stadio Olimpico · Spielansicht 69.110 Plätze; Vereinsansicht zuvor 89.110';
   club.summary='A.S. Roma gewann das Hinspiel des Champions-League-Achtelfinals am 5. März 2041 im Stadio Olimpico mit 2:1 gegen Finn Harps. Kevin Kelly brachte die Gäste in Führung, doch Andrea Schiavo und Carmelo Torchio drehten die Partie rund um die Pause. Das Ergebnis fiel gemessen an 0,54 zu 2,16 xG deutlich günstiger für Roma aus als der Spielverlauf.';
-  club.tags=[...(club.tags||[]).filter(tag=>!String(tag).includes('Achtelfinale 2041')),'2:1 im Achtelfinalhinspiel','0,54 xG gegen 2,16 xG','Schiavo und Torchio treffen','66.300 Zuschauer'];
+  club.tags=[...(club.tags||[]).filter(tag=>!String(tag).includes('Achtelfinale 2041')&&!String(tag).includes('Stadio Olimpico')),'2:1 im Achtelfinalhinspiel','0,54 xG gegen 2,16 xG','Schiavo und Torchio treffen','66.300 Zuschauer','Stadionkapazität in FM-Ansichten widersprüchlich: 69.110 / 89.110'];
   club.meetings=[
     {date:'05.03.2041',venue:'A',result:'2:1'},
     ...(club.meetings||[]).filter(item=>item.date!=='05.03.2041'&&!String(item.date).includes('Hinspiel'))
