@@ -1,0 +1,92 @@
+window.FM_PRESS_REPORTS=window.FM_PRESS_REPORTS||[];window.FM_PRESS_REPORTS.push({
+  id:'2041-02-26-shamrock-rovers-vorbericht',
+  type:'Pressevorbericht',
+  date:'2041-02-26',
+  competition:'Premier Division',
+  fixtureDate:'01.03.2041 · 19:45',
+  home:'Finn Harps',
+  away:'Shamrock Rovers FC',
+  location:'Donegal Stadium · 3. Ligaspiel der Saison 2041',
+  headline:'Shamrocks Flanken treffen auf Harps’ makellosen Ligastart',
+  subheadline:'Finn Harps empfängt nach zwei 4:0-Siegen einen erfahrenen Gegner mit wertvoller rechter Seite, zwei Stürmern und klarer Flankenroute. Im Strafraum, in der Athletik und unter Druck besitzt Shamrock jedoch sichtbare Risse.',
+  label:'PREMIER DIVISION · 26.02.2041',
+  heroStat:{label:'Flankentore',value:'9 von 29',note:'in den letzten 20 analysierten Spielen'},
+  backlink:{href:'klub.html?id=shamrock-rovers',label:'← ZUM SHAMROCK-ROVERS-DOSSIER'},
+  intro:'Acht Tore, kein Gegentor und zweimal derselbe Endstand: Finn Harps hat die Premier Division mit zwei 4:0-Siegen eröffnet. Am 1. März kommt mit Shamrock Rovers nun ein Gegner ins Donegal Stadium, der mehr individuelle Klasse und größere taktische Erfahrung besitzt als Cork City oder Sligo. Der Scout zeigt ein breites 4-4-2, zwei komplementäre Stürmer und wiederkehrende Gefahr über Flanken sowie Pässe aus der Tiefe. Gleichzeitig wirkt die ausgewählte Achse körperlich noch nicht vollständig auf Ligatemperatur.',
+  probableXI:[
+    {zone:'TW',name:'Callum Daly',role:'Mitspielender Torwart'},
+    {zone:'VR',name:'Kern Nicholas-French',role:'Außenverteidiger'},
+    {zone:'IVR',name:'Andy Kirkwood',role:'Kompromissloser Innenverteidiger'},
+    {zone:'IVL',name:'Willie McCluskey',role:'Kompromissloser Innenverteidiger'},
+    {zone:'VL',name:'Kyle Campbell',role:'Flügelverteidiger · im Export verletzt'},
+    {zone:'MR',name:'Colm Heary',role:'Flügelspieler'},
+    {zone:'MZR',name:'Steve Williams',role:'Zentraler Mittelfeldspieler'},
+    {zone:'MZL',name:'Callum Ryan',role:'Vorgeschobener Spielmacher'},
+    {zone:'ML',name:'Tom Hayes',role:'Flügelspieler'},
+    {zone:'STR',name:'Leeroy Garcia',role:'Hängende Spitze'},
+    {zone:'STL',name:'Widlin Glinton',role:'Knipser'}
+  ],
+  xiHeading:'Shamrock im breiten 4-4-2 mit zwei klar getrennten Stürmerrollen',
+  sections:[
+    {title:'Die Breite ist kein Schmuck, sondern der Hauptangriff',text:'Neun der letzten 29 Shamrock-Tore wurden nach Flanken vorbereitet. Heary und Hayes halten die Seiten, Campbell schiebt links nach und Garcia kann als hängende Spitze den ballfernen Raum vorbereiten. Finn Harps darf die Flankengeber deshalb nicht erst am Strafraumeck aufnehmen. Die erste Verteidigung muss bereits im Mittelfeld beginnen.'},
+    {title:'Baldé ist die größte individuelle Unbekannte',text:'Der Mannschaftsexport führt Alioune Baldé auf der rechten Seite mit zwei Vorlagen aus zwei Einsätzen und einer Wertspanne von 17 bis 21 Millionen Euro. Im grafischen Scoutbericht erscheint dagegen Colm Heary in der besten Elf. Diese Abweichung ist sportlich relevant: Baldé wäre der deutlich explosivere und wertvollere Starter, Heary die erfahrenere, strukturtreuere Variante.'},
+    {title:'Páez bringt Tore, obwohl die beste Elf ihn nicht zeigt',text:'Auch Kendry Páez fehlt in der grafischen Bestbesetzung, obwohl der Export zwei Tore aus zwei Einsätzen und eine Durchschnittsnote von 7,50 dokumentiert. Der 33-Jährige kann zentral, im Halbraum oder auf beiden offensiven Seiten spielen. Seine mögliche Rückkehr würde Shamrocks Kreativität zwischen Finn Harps’ Mittelfeld- und Abwehrlinie erhöhen.'},
+    {title:'Glinton und Garcia teilen Tiefe und Verbindung',text:'Glinton besetzt als Knipser die letzte Linie, Garcia lässt sich als hängende Spitze eher fallen. Damit entsteht die klassische Zwickmühle eines 4-4-2: Folgt ein Innenverteidiger Garcia, öffnet sich Raum für Glinton; bleibt die Kette stehen, kann Garcia im Zwischenraum aufdrehen. Die Übergaben zwischen O’Neill und den Innenverteidigern müssen glasklar sein.'},
+    {title:'Der Joker trägt zwei frühe Tore',text:'Fionn Forde kommt im Export auf zwei Treffer in drei Einwechslungen. Mit 1,90 Metern und frischen Beinen verändert er die Statik der Partie, besonders wenn Shamrock spät auf Flanken und zweite Bälle umstellt. Ein kontrolliertes Spiel gegen Glinton und Garcia ist deshalb noch nicht automatisch ein kontrolliertes Schlussviertel.'},
+    {title:'Die Startelf trägt Erfahrung, aber auch schwere Beine',text:'Die grafische beste Elf kommt auf ein Durchschnittsalter von rund 29,4 Jahren. Gleichzeitig lagen Nicholas-French und Williams bei 69 Prozent Athletik, Páez bei 70, Baldé bei 73 und mehrere weitere mögliche Starter zwischen 76 und 80 Prozent. Vier Tage vor dem Spiel ist das kein endgültiges Fitnessurteil, aber ein klares Argument für Tempo, Richtungswechsel und eine aggressive zweite Halbzeit.'},
+    {title:'Der Strafraum ist Shamrocks eigentliche Bruchstelle',text:'17 der letzten 30 Gegentore fielen innerhalb des Strafraums. Nur 14 der 30 Gegentorvorlagen kamen von außerhalb. Das spricht nicht für hoffnungslose Distanzschüsse, sondern für Angriffe, die bis zur Grundlinie oder in den Rückraum getragen werden. Flache Hereingaben und Cutbacks sollten höher gewichtet werden als frühe Flanken auf die beiden robusten Innenverteidiger.'}
+  ],
+  strengthsTitle:'WAS SHAMROCK ROVERS TRÄGT',
+  strengthsHeading:'Erfahrung, Flanken und mehrere kreative Wege',
+  strengths:[
+    'Neun der letzten 29 Tore nach Flanken',
+    'Neun der letzten 29 Vorlagen aus der Tiefe',
+    'Alioune Baldé mit zwei Vorlagen und 17 bis 21 Millionen Euro Wertspanne',
+    'Kendry Páez mit zwei Toren und Note 7,50 im bisherigen Saisonstart',
+    'Fionn Forde mit zwei Jokertoren aus drei Einwechslungen',
+    'Torhüter mit guten Reflexen und Bereitschaft zum Herauslaufen',
+    'Erfahrene beste Elf mit einem Durchschnittsalter von rund 29,4 Jahren',
+    'Scoutbericht bewertet die Leistungen gegen 4-4-2-Formationen positiv'
+  ],
+  vulnerabilitiesTitle:'WO FINN HARPS ANSETZEN KANN',
+  vulnerabilitiesHeading:'Druck auf den Torwart, Tempo gegen die Achse, Läufe bis in den Strafraum',
+  vulnerabilities:[
+    'Halten, Abwurf, Abschlag und Fausten werden bei den Torhütern kritisch bewertet',
+    'Mut, Aggressivität, Tackling und Führungsqualitäten zählen nicht zu den Kaderstärken',
+    '17 der letzten 30 Gegentore entstanden innerhalb des Strafraums',
+    'Mehrere mögliche Stammspieler lagen am 26. Februar unter 80 Prozent Athletik',
+    'Kyle Campbell ist im Export als verletzt markiert',
+    'Willie Warde gilt rechts als verbesserungsfähige Defensivoption',
+    '17 von 39 Verträgen laufen bereits Ende 2041 aus',
+    'Die sichtbaren Ergebnisse schwanken zwischen einem 4:3 gegen Waterford und einem 1:2 gegen Bohemian'
+  ],
+  keyDuelsTitle:'SCHLÜSSELDUELLE',
+  keyDuelsHeading:'Vier Zonen, in denen das Spiel seine Form finden dürfte',
+  keyDuels:[
+    {title:'Finn Harps links gegen Baldé oder Heary',text:'Baldé bringt deutlich mehr individuelle Qualität, Heary mehr Ordnung. Die Besetzung entscheidet darüber, ob Finn Harps dort eher doppeln oder aggressiv überladen kann.'},
+    {title:'O’Neill gegen Garcias Zurückfallen',text:'Der Sechser muss Garcia aufnehmen, ohne sich aus dem Zentrum ziehen zu lassen. Die Innenverteidiger sollten Glintons Tiefenlauf priorisieren.'},
+    {title:'Frame und O’Kane gegen Williams und Ryan',text:'Shamrocks Zweierzentrum kann gegen Finn Harps’ drei Mittelfeldrollen numerisch unter Druck geraten. Schnelle Positionswechsel sollen verhindern, dass Williams die Achse stabilisiert.'},
+    {title:'Ramsey und die Flügel gegen Dalys Strafraum',text:'Daly besitzt gute Reflexe, doch das Torhüterkollektiv wird beim Halten und bei hohen Entscheidungen kritisch bewertet. Nachschüsse, zweite Bälle und druckvolle Rückgaben können wichtiger werden als der erste Abschluss.'}
+  ],
+  matchPlanTitle:'MATCHPLAN FINN HARPS',
+  matchPlanHeading:'Sieben Leitplanken gegen Shamrocks 4-4-2',
+  matchPlan:[
+    'Die Flügelspieler schon vor der Flankenzone stellen und klare Zwei-gegen-eins-Situationen gegen die eigenen Außenverteidiger vermeiden.',
+    'Garcias Bewegung zwischen den Linien übergeben, während Glinton konsequent von der Tiefe getrennt wird.',
+    'Shamrocks Zweierzentrum mit O’Neill, O’Kane und Frame überladen und Williams zu vielen seitlichen Wegen zwingen.',
+    'Nicholas-French und die ältere Achse mit hohem Tempo, Seitenwechseln und wiederholten Tiefenläufen auf ihre Athletik prüfen.',
+    'Bis zur Grundlinie kombinieren und mit Cutbacks die dokumentierte Schwäche innerhalb des Strafraums angreifen.',
+    'Daly bei Rückpässen anlaufen und unsaubere Abschläge oder Fausteinlagen provozieren.',
+    'Für Fionn Fordes mögliche Einwechslung eine klare Zuordnung bei hohen Bällen und zweiten Bällen bereithalten.'
+  ],
+  verdictHeading:'Der erste echte Ligatest verlangt mehr als bloße Fortsetzung',
+  verdict:'Finn Harps ist nach acht Toren ohne Gegentreffer der klare Favorit, doch Shamrock besitzt mehr Wege zum Tor als die ersten beiden Ligagegner. Baldé, Páez, die Flankenroute und Fordes Jokertore können einzelne Situationen kippen. Gleichzeitig spricht fast jede strukturelle Schwäche für das Spiel der Harps: ein numerisch unterlegenes Zentrum, niedrige Athletikwerte, Probleme im eigenen Strafraum und Torhüter, die unter Druck Fehler anbieten. Gelingt es, die Flankenquelle zu schließen und Shamrocks erfahrene Achse laufen zu lassen, sollte Finn Harps auch diesen Gegner kontrollieren. Ein drittes 4:0 wäre allerdings keine Erwartung, sondern schon ein kleines Naturphänomen.',
+  sourcesHeading:'Scoutbericht und vollständiger Mannschaftsexport vom 26. Februar 2041',
+  sourcesNote:'Die grafische beste Elf und die im Mannschaftsexport ausgewählten Positionen stimmen im Mittelfeld nicht vollständig überein. Der Bericht behandelt Baldé, Páez und Judge deshalb als realistische Startoptionen, nicht als bestätigte Aufstellung.',
+  sources:[
+    'FM-Scoutbericht Shamrock Rovers FC, 26.02.2041',
+    'FM-Mannschaftsexport Shamrock Rovers FC, 26.02.2041',
+    'Spielplan 2041: Finn Harps – Shamrock Rovers am 01.03.2041 um 19:45 Uhr',
+    'Saisonarchiv 2041 nach den 4:0-Siegen gegen Cork City und Sligo Rovers'
+  ]
+});
