@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-03-25',
+    referenceDate:'2041-03-27',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-03-25',
+    updatedAt:'2041-03-27',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
       players:'2041-03-25',
       transfers:'2041-02-16',
-      nationalTeam:'2040-11-19',
+      nationalTeam:'2041-03-27',
       clubs:'2041-03-25',
       matches:'2041-03-25',
       season:'2041-03-25',
-      news:'2041-03-25',
+      news:'2041-03-27',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-03-25-bohemian-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-03-27-czechia-vorbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
