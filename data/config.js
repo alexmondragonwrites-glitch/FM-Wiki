@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-04-05',
+    referenceDate:'2041-04-06',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-04-05',
+    updatedAt:'2041-04-06',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
       players:'2041-04-05',
       transfers:'2041-02-16',
       nationalTeam:'2041-04-01',
-      clubs:'2041-04-05',
+      clubs:'2041-04-06',
       matches:'2041-04-05',
       season:'2041-04-05',
-      news:'2041-04-05',
+      news:'2041-04-06',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-04-05-st-patricks-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-04-06-bayern-vorbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
