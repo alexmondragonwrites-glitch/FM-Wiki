@@ -21,7 +21,7 @@
         'data/player-updates-2041-03-08-waterford.js','data/player-updates-2041-03-13-as-roma.js',
         'data/player-updates-2041-03-18-athlone-town.js','data/player-updates-2041-03-22-shelbourne.js',
         'data/player-updates-2041-03-25-bohemian.js','data/player-ireland-result-2041-03-29-czechia.js','data/player-ireland-result-2041-04-01-croatia.js',
-        'data/player-updates-2041-04-05-st-patricks.js','data/bayern-result-2041-04-16.js'
+        'data/player-updates-2041-04-05-st-patricks.js','data/bayern-result-2041-04-16.js','data/player-daryl-frame-profile-2041-04-17.js'
       ]
     },
     nationalTeam:{current:['data/ireland-2040-11-16.js','data/ireland-result-2040-11-16.js','data/ireland-group-finale-belgium.js','data/ireland-belgium-preview-adjustment-2040-11-16.js','data/ireland-result-2040-11-19-belgium.js','data/ireland-czechia-preview-2041-03-27.js','data/ireland-result-2041-03-29-czechia.js','data/ireland-croatia-preview-2041-03-30.js','data/ireland-result-2041-04-01-croatia.js']},
