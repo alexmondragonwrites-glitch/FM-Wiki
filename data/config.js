@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-04-19',
+    referenceDate:'2041-04-22',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-04-19',
+    updatedAt:'2041-04-22',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-04-19',
+      players:'2041-04-22',
       transfers:'2041-02-16',
       nationalTeam:'2041-04-01',
-      clubs:'2041-04-19',
-      matches:'2041-04-19',
-      season:'2041-04-19',
-      news:'2041-04-19',
+      clubs:'2041-04-22',
+      matches:'2041-04-22',
+      season:'2041-04-22',
+      news:'2041-04-22',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-04-19-cork-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-04-22-derry-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
@@ -36,15 +36,19 @@
   };
   window.FM_CONFIG=Object.freeze(config);
   document.addEventListener('DOMContentLoaded',()=>{
-    if(window.__FM_CORK_20410419_LOADED__)return;
-    try{
-      const request=new XMLHttpRequest();
-      request.open('GET','data/cork-result-2041-04-19.js',false);
-      request.send(null);
-      if(request.status===200||request.status===0){
-        window.__FM_CORK_20410419_LOADED__=true;
-        (0,eval)(request.responseText);
-      }
-    }catch(error){console.warn('Cork result data could not be loaded',error);}
+    const latestFiles=['data/cork-result-2041-04-19.js','data/derry-result-2041-04-22.js'];
+    latestFiles.forEach(path=>{
+      const flag='__FM_'+path.replace(/\W/g,'_').toUpperCase()+'_LOADED__';
+      if(window[flag])return;
+      try{
+        const request=new XMLHttpRequest();
+        request.open('GET',path,false);
+        request.send(null);
+        if(request.status===200||request.status===0){
+          window[flag]=true;
+          (0,eval)(request.responseText);
+        }
+      }catch(error){console.warn('Latest result data could not be loaded',path,error);}
+    });
   });
 })();
