@@ -4,7 +4,8 @@
   const files=[
     'data/manchester-united-result-2041-05-01.js',
     'data/waterford-result-2041-05-04.js',
-    'data/manchester-united-result-2041-05-07.js'
+    'data/manchester-united-result-2041-05-07.js',
+    'data/ryan-flannigan-pressconference-2041-05-07.js'
   ];
   const add=domain=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
