@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-04-22',
+    referenceDate:'2041-04-25',
     currentSeason:2040,
     nextSeason:2041,
-    updatedAt:'2041-04-22',
+    updatedAt:'2041-04-25',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-04-22',
+      players:'2041-04-25',
       transfers:'2041-02-16',
       nationalTeam:'2041-04-01',
-      clubs:'2041-04-22',
-      matches:'2041-04-22',
-      season:'2041-04-22',
-      news:'2041-04-22',
+      clubs:'2041-04-25',
+      matches:'2041-04-25',
+      season:'2041-04-25',
+      news:'2041-04-25',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-04-22-derry-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-04-25-shamrock-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
@@ -36,7 +36,7 @@
   };
   window.FM_CONFIG=Object.freeze(config);
   document.addEventListener('DOMContentLoaded',()=>{
-    const latestFiles=['data/cork-result-2041-04-19.js','data/derry-result-2041-04-22.js'];
+    const latestFiles=['data/cork-result-2041-04-19.js','data/derry-result-2041-04-22.js','data/shamrock-result-2041-04-25.js'];
     latestFiles.forEach(path=>{
       const flag='__FM_'+path.replace(/\W/g,'_').toUpperCase()+'_LOADED__';
       if(window[flag])return;
