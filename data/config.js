@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-05-07',
+    referenceDate:'2041-05-10',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-05-07',
+    updatedAt:'2041-05-10',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-05-07',
+      players:'2041-05-10',
       transfers:'2041-02-16',
       nationalTeam:'2041-04-01',
-      clubs:'2041-05-07',
-      matches:'2041-05-07',
-      season:'2041-05-07',
-      news:'2041-05-07',
+      clubs:'2041-05-10',
+      matches:'2041-05-10',
+      season:'2041-05-10',
+      news:'2041-05-10',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-05-07-ryan-flannigan-pressekonferenz'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-05-10-athlone-town-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
