@@ -7,12 +7,13 @@
     'data/manchester-united-result-2041-05-07.js',
     'data/ryan-flannigan-pressconference-2041-05-07.js',
     'data/athlone-town-result-2041-05-10.js',
-    'data/shelbourne-result-2041-05-17.js'
+    'data/shelbourne-result-2041-05-17.js',
+    'data/transfer-rumours-2041-05-18.js'
   ];
   const add=domain=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
     group.current=group.current||[];
     files.forEach(file=>{if(!group.current.includes(file))group.current.push(file);});
   };
-  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(add);
+  ['players','matches','fixtures','clubs','archive','league','transfers','press','news'].forEach(add);
 })();
