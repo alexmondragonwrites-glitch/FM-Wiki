@@ -8,7 +8,7 @@
     id:'2041-05-17-shelbourne',date:'2041-05-17',season:2041,competition:'SSE Airtricity League Premier Division',round:'Ligaspiel',
     home:'Finn Harps',away:'Shelbourne',score:'9:1',homeGoals:9,awayGoals:1,venue:'Donegal Stadium',attendance:12800,
     report:'presse.html?id=2041-05-17-shelbourne-spielbericht',
-    scorers:['Daryl Frame 4., 90+1.','Justin Ramsey 20. (Elfmeter), 39.','Kevin Kelly 26.','Cormac O’Kane 51.','Torric Bruce 56.','Gustavo da Silva','Billy Walker','Jordan Nowakowski 58. (Shelbourne)'],
+    scorers:['Daryl Frame 4., 90+1.','Justin Ramsey 20. (Elfmeter), 39.','Kevin Kelly 26.','Cormac O’Kane 51.','Torric Bruce 56.','Gustavo da Silva 85.','Billy Walker 89.','Jordan Nowakowski 58. (Shelbourne)'],
     incidents:['Mareks Istrankins Gelb 57.'],
     stats:{shots:'29:4',shotsOnTarget:'19:2',xG:'5,29:0,25',possession:'74:26',passesCompleted:'547:190',passCompletion:'89:73',corners:'12:3',fouls:'18:18',bigChances:'5:0',wonTackles:'77:76',wonHeaders:'58:41'},
     summary:'Finn Harps zerlegt Shelbourne im Donegal Stadium mit 9:1. Frame und Ramsey treffen doppelt, fünf weitere Harps-Spieler tragen sich in die Torschützenliste ein. 29:4 Schüsse, 19:2 Abschlüsse aufs Tor und 5,29 xG machen die totale Überlegenheit sichtbar.',
@@ -36,10 +36,10 @@
     ['daryl-frame','Daryl Frame erzielte beim 9:1 gegen Shelbourne am 17. Mai 2041 zwei Tore, bereitete einen weiteren Treffer vor und wurde mit der Note 9,4 zum Spieler des Spiels.'],
     ['justin-ramsey','Justin Ramsey traf beim 9:1 gegen Shelbourne doppelt, darunter per Elfmeter, und erhielt die Note 8,6.'],
     ['cormac-okane','Cormac O’Kane steuerte beim 9:1 gegen Shelbourne ein Tor und eine Vorlage bei und wurde mit 8,8 bewertet.'],
-    ['billy-walker','Billy Walker erzielte beim 9:1 gegen Shelbourne ein Tor, bereitete zwei weitere Treffer vor und erhielt die Note 8,6.'],
+    ['billy-walker','Billy Walker erzielte beim 9:1 gegen Shelbourne in der 89. Minute ein Tor, bereitete zwei weitere Treffer vor und erhielt die Note 8,6.'],
     ['kevin-kelly','Kevin Kelly traf beim 9:1 gegen Shelbourne und bereitete einen weiteren Treffer vor.'],
     ['torric-bruce','Torric Bruce erzielte beim 9:1 gegen Shelbourne in der 56. Minute einen Treffer und erhielt die Note 8,0.'],
-    ['gustavo-da-silva','Gustavo da Silva trug sich beim 9:1 gegen Shelbourne ebenfalls in die Torschützenliste ein.']
+    ['gustavo-da-silva','Gustavo da Silva erzielte beim 9:1 gegen Shelbourne in der 85. Minute das zwischenzeitliche 7:1.']
   ];
   notes.forEach(([id,text])=>{const p=(window.FM_PLAYERS||[]).find(x=>x.id===id);if(p&&!((p.careerNarrative||[]).includes(text)))p.careerNarrative=[...(p.careerNarrative||[]),text];});
 
@@ -55,7 +55,7 @@
       {title:'Frame öffnet das Tor nach vier Minuten',text:'Daryl Frame traf bereits in der vierten Minute. Der frühe Treffer war der Startschuss für eine erste Halbzeit, in der Finn Harps Shelbourne kaum aus der eigenen Hälfte entkommen ließ.'},
       {title:'Ramsey und Kelly machen vor der Pause alles klar',text:'Justin Ramsey verwandelte in der 20. Minute einen Elfmeter und traf in der 39. Minute erneut. Dazwischen erhöhte Kevin Kelly auf 3:0. Mit dem 4:0 zur Pause war die Partie sportlich bereits entschieden.'},
       {title:'O’Kane und Bruce starten die zweite Welle',text:'Cormac O’Kane traf in der 51. Minute und Torric Bruce fünf Minuten später. O’Kane verband sein Tor mit einer Vorlage und bestätigte mit der Note 8,8, warum er als Box-to-Box-Motor des Mittelfelds gesetzt ist.'},
-      {title:'Shelbourne trifft und wird trotzdem überrollt',text:'Jordan Nowakowski erzielte in der 58. Minute das 6:1 und damit erst das zweite Ligator der Saison gegen Finn Harps. Der Treffer änderte den Spielverlauf nicht. Gustavo da Silva und Billy Walker erhöhten weiter, ehe Frame in der Nachspielzeit den Schlusspunkt setzte.'},
+      {title:'Shelbourne trifft und wird trotzdem überrollt',text:'Jordan Nowakowski erzielte in der 58. Minute das 6:1 und damit erst das zweite Ligator der Saison gegen Finn Harps. Der Treffer änderte den Spielverlauf nicht. Gustavo da Silva traf in der 85. Minute, Billy Walker in der 89. Minute und Frame setzte in der Nachspielzeit den Schlusspunkt.'},
       {title:'Frame führt ein ganzes Ensemble an',text:'Frame kam auf zwei Tore, eine Vorlage und die Note 9,4. Dahinter überzeugten O’Kane mit 8,8, Ramsey und Walker mit jeweils 8,6 sowie Kelly und Papini mit jeweils 8,2. Die neun Tore verteilten sich auf sieben Harps-Spieler.'},
       {title:'Die Zahlen sind ein eigenes Donnerwetter',text:'Finn Harps gewann die Schussbilanz 29:4, brachte 19 Abschlüsse auf das Tor und erzeugte 5,29 xG. Dazu kamen 74 Prozent Ballbesitz, 547 angekommene Pässe und fünf Großchancen.'},
       {title:'50 Ligatore nach 16 Spielen',text:'Mit dem Kantersieg steht Finn Harps nach 16 Partien bei 15 Siegen, einem Unentschieden, 46 Punkten und 50:2 Toren. Das Ende der europäischen Titelverteidigung hat national keine Bremsspur hinterlassen.'}
@@ -67,8 +67,8 @@
     verdictHeading:'Eine nationale Machtdemonstration nach europäischem Schmerz',
     verdict:'Finn Harps hat das Champions-League-Aus nicht nur verarbeitet, sondern in Energie verwandelt. Shelbourne wurde nicht einfach geschlagen, sondern über 90 Minuten von Angriffswellen erfasst. Der Gegentreffer ist statistisch auffällig, sportlich jedoch bedeutungslos. Mit 50:2 Toren nach 16 Spielen bewegt sich die Mannschaft national in einer eigenen Umlaufbahn.',
     sourcesHeading:'Spieldaten vom 17. Mai 2041',
-    sourcesNote:'Der Bericht basiert auf der FM-Spielübersicht und den individuellen Spielerstatistiken der Partie. Bei Gustavo da Silva und Billy Walker waren in der sichtbaren Torübersicht keine exakten Trefferzeiten eingeblendet.',
-    sources:['FM-Spielübersicht Finn Harps – Shelbourne, 17.05.2041','FM-Spielerstatistiken Finn Harps, 17.05.2041']
+    sourcesNote:'Der Bericht basiert auf der FM-Spielübersicht, der vollständigen Torschützenanzeige und den individuellen Spielerstatistiken der Partie.',
+    sources:['FM-Spielübersicht Finn Harps – Shelbourne, 17.05.2041','FM-Torschützenanzeige Finn Harps – Shelbourne, 17.05.2041','FM-Spielerstatistiken Finn Harps, 17.05.2041']
   };
   const ri=window.FM_PRESS_REPORTS.findIndex(x=>x.id===report.id);if(ri>=0)window.FM_PRESS_REPORTS[ri]=report;else window.FM_PRESS_REPORTS.push(report);
 
