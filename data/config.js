@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-05-24',
+    referenceDate:'2041-05-31',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-05-24',
+    updatedAt:'2041-05-31',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-05-24',
+      players:'2041-05-31',
       transfers:'2041-05-20',
       nationalTeam:'2041-04-01',
-      clubs:'2041-05-24',
-      matches:'2041-05-24',
-      season:'2041-05-24',
-      news:'2041-05-24',
+      clubs:'2041-05-31',
+      matches:'2041-05-31',
+      season:'2041-05-31',
+      news:'2041-05-31',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-05-24-st-patricks-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-05-31-derry-city-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
