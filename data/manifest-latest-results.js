@@ -10,7 +10,8 @@
     'data/shelbourne-result-2041-05-17.js',
     'data/transfer-rumours-2041-05-18.js',
     'data/vinicius-celta-cwc-draw-2041-05-18.js',
-    'data/pol-munoz-transfer-confirmed-2041-05-20.js'
+    'data/pol-munoz-transfer-confirmed-2041-05-20.js',
+    'data/st-patricks-result-2041-05-24.js'
   ];
   const add=domain=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
