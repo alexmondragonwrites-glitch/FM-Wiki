@@ -9,7 +9,8 @@
     'data/athlone-town-result-2041-05-10.js',
     'data/shelbourne-result-2041-05-17.js',
     'data/transfer-rumours-2041-05-18.js',
-    'data/vinicius-celta-cwc-draw-2041-05-18.js'
+    'data/vinicius-celta-cwc-draw-2041-05-18.js',
+    'data/pol-munoz-transfer-confirmed-2041-05-20.js'
   ];
   const add=domain=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
