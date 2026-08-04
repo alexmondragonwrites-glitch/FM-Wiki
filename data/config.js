@@ -11,7 +11,7 @@
       players:'2041-05-18',
       transfers:'2041-05-18',
       nationalTeam:'2041-04-01',
-      clubs:'2041-05-17',
+      clubs:'2041-05-18',
       matches:'2041-05-17',
       season:'2041-05-18',
       news:'2041-05-18',
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-05-18-transfergeruechte-munoz-vinicius'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-05-18-klub-wm-auslosung-gruppe-h'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
