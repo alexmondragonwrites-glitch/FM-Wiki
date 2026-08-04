@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-05-20',
+    referenceDate:'2041-05-24',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-05-20',
+    updatedAt:'2041-05-24',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-05-18',
+      players:'2041-05-24',
       transfers:'2041-05-20',
       nationalTeam:'2041-04-01',
-      clubs:'2041-05-18',
-      matches:'2041-05-17',
-      season:'2041-05-20',
-      news:'2041-05-20',
+      clubs:'2041-05-24',
+      matches:'2041-05-24',
+      season:'2041-05-24',
+      news:'2041-05-24',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-05-20-pol-munoz-transfer-bestaetigt'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-05-24-st-patricks-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
