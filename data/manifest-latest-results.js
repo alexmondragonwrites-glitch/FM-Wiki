@@ -12,7 +12,8 @@
     'data/vinicius-celta-cwc-draw-2041-05-18.js',
     'data/pol-munoz-transfer-confirmed-2041-05-20.js',
     'data/st-patricks-result-2041-05-24.js',
-    'data/derry-city-result-2041-05-31.js'
+    'data/derry-city-result-2041-05-31.js',
+    'data/champions-league-final-awards-2041-06-01.js'
   ];
   const add=domain=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
