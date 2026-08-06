@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-06-01',
+    referenceDate:'2041-06-02',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-06-01',
+    updatedAt:'2041-06-02',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-06-01',
+      players:'2041-05-31',
       transfers:'2041-05-20',
       nationalTeam:'2041-04-01',
       clubs:'2041-06-01',
       matches:'2041-06-01',
-      season:'2041-06-01',
-      news:'2041-06-01',
+      season:'2041-06-02',
+      news:'2041-06-02',
       staff:'2040-11-02'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-06-01-champions-league-finale-und-auszeichnungen'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-06-02-champions-league-finale-und-koeffizientenpraemie'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
