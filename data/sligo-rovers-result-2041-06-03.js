@@ -33,16 +33,16 @@
     ...(window.FM_LEAGUE_2041||{}),updated:'2041-06-03',leader:'Finn Harps',played:19,wins:17,draws:2,losses:0,
     goalsFor:55,goalsAgainst:3,goalDifference:52,points:53,
     standings:[
-      {position:1,club:'Finn Harps',played:19,wins:17,draws:2,losses:0,goalsFor:55,goalsAgainst:3,points:53},
-      {position:2,club:'Derry City',played:19,wins:11,draws:3,losses:5,goalsFor:34,goalsAgainst:19,points:36},
-      {position:3,club:'Waterford',played:19,wins:11,draws:3,losses:5,goalsFor:26,goalsAgainst:5,points:36},
-      {position:4,club:'Shamrock Rovers',played:19,wins:10,draws:3,losses:6,goalsFor:32,goalsAgainst:9,points:33},
-      {position:5,club:'St Patrick’s Athletic',played:19,wins:9,draws:3,losses:7,goalsFor:20,goalsAgainst:3,points:30},
-      {position:6,club:'Sligo Rovers',played:19,wins:7,draws:3,losses:9,goalsFor:20,goalsAgainst:30,points:24},
-      {position:7,club:'Cork City',played:19,wins:6,draws:2,losses:11,goalsFor:19,goalsAgainst:49,points:20},
-      {position:8,club:'Shelbourne',played:19,wins:4,draws:6,losses:9,goalsFor:44,goalsAgainst:11,points:18},
-      {position:9,club:'Bohemian',played:19,wins:4,draws:2,losses:13,goalsFor:34,goalsAgainst:13,points:14},
-      {position:10,club:'Athlone Town',played:19,wins:2,draws:3,losses:14,goalsFor:46,goalsAgainst:28,points:9}
+      {position:1,club:'Finn Harps',played:19,wins:17,draws:2,losses:0,goalsFor:55,goalsAgainst:3,goalDifference:52,points:53},
+      {position:2,club:'Derry City',played:19,wins:11,draws:3,losses:5,goalsFor:34,goalsAgainst:19,goalDifference:15,points:36},
+      {position:3,club:'Waterford',played:19,wins:11,draws:3,losses:5,goalsFor:31,goalsAgainst:26,goalDifference:5,points:36},
+      {position:4,club:'Shamrock Rovers',played:19,wins:11,draws:0,losses:8,goalsFor:35,goalsAgainst:32,goalDifference:3,points:33},
+      {position:5,club:'St Patrick’s Athletic',played:19,wins:9,draws:3,losses:7,goalsFor:23,goalsAgainst:20,goalDifference:3,points:30},
+      {position:6,club:'Sligo Rovers',played:19,wins:7,draws:3,losses:9,goalsFor:24,goalsAgainst:30,goalDifference:-6,points:24},
+      {position:7,club:'Cork City',played:19,wins:6,draws:2,losses:11,goalsFor:15,goalsAgainst:29,goalDifference:-14,points:20},
+      {position:8,club:'Shelbourne',played:19,wins:4,draws:5,losses:10,goalsFor:27,goalsAgainst:44,goalDifference:-17,points:17},
+      {position:9,club:'Bohemian',played:19,wins:4,draws:2,losses:13,goalsFor:21,goalsAgainst:34,goalDifference:-13,points:14},
+      {position:10,club:'Athlone Town',played:19,wins:2,draws:3,losses:14,goalsFor:18,goalsAgainst:46,goalDifference:-28,points:9}
     ]
   };
 
