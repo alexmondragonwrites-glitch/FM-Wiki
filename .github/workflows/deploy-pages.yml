@@ -10,6 +10,7 @@ permissions:
   pages: write
   id-token: write
 
+# A fresh deployment replaces any stale Pages run.
 concurrency:
   group: github-pages
   cancel-in-progress: true
