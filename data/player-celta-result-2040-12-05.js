@@ -40,14 +40,14 @@
   }
 
   const papini=byName('Giacomo Papini');
-  if(papini){addStart(papini);addNumber(papini,'goals');addNumber(papini,'assists');papini.profileDate='2040-12-05';papini.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:8.5,minutes:75,goals:1,assists:1,playerOfMatch:true};papini.latestHeadline:'Tor, Vorlage und Bestnote beim 3:1 in Vigo';}
+  if(papini){addStart(papini);addNumber(papini,'goals');addNumber(papini,'assists');papini.profileDate='2040-12-05';papini.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:8.5,minutes:75,goals:1,assists:1,playerOfMatch:true};papini.latestHeadline='Tor, Vorlage und Bestnote beim 3:1 in Vigo';}
 
   const blanco=byName('Eduardo Blanco');
-  if(blanco){addSub(blanco);addNumber(blanco,'goals');blanco.profileDate='2040-12-05';blanco.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.4,minutes:30,goals:1,assists:0,sub:true};blanco.latestHeadline:'Jokertor zum 3:1 bei Celta Vigo';}
+  if(blanco){addSub(blanco);addNumber(blanco,'goals');blanco.profileDate='2040-12-05';blanco.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.4,minutes:30,goals:1,assists:0,sub:true};blanco.latestHeadline='Jokertor zum 3:1 bei Celta Vigo';}
 
   const maisto=byName('Romano Maisto');
-  if(maisto){addSub(maisto);addNumber(maisto,'assists');maisto.profileDate='2040-12-05';maisto.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.5,minutes:34,goals:0,assists:1,sub:true};maisto.latestHeadline:'Sofortwirkung als Joker in Vigo';}
+  if(maisto){addSub(maisto);addNumber(maisto,'assists');maisto.profileDate='2040-12-05';maisto.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.5,minutes:34,goals:0,assists:1,sub:true};maisto.latestHeadline='Sofortwirkung als Joker in Vigo';}
 
   const okane=byId('cormac-okane')||byName("Cormac O'Kane");
-  if(okane){addStart(okane);addNumber(okane,'assists');okane.profileDate='2040-12-05';okane.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.3,minutes:90,goals:0,assists:1,yellow:true};okane.latestHeadline:'Vorlage und Mittelfeldkontrolle beim 3:1 in Vigo';}
+  if(okane){addStart(okane);addNumber(okane,'assists');okane.profileDate='2040-12-05';okane.lastMatch={date:'2040-12-05',opponent:'RC Celta de Vigo',result:'3:1',rating:7.3,minutes:90,goals:0,assists:1,yellow:true};okane.latestHeadline='Vorlage und Mittelfeldkontrolle beim 3:1 in Vigo';}
 })();
