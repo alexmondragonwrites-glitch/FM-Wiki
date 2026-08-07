@@ -16,10 +16,15 @@
     'data/champions-league-final-awards-2041-06-01.js',
     'data/sligo-rovers-result-2041-06-03.js'
   ];
-  const add=domain=>{
+  const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
     group.current=group.current||[];
-    files.forEach(file=>{if(!group.current.includes(file))group.current.push(file);});
+    entries.forEach(file=>{if(!group.current.includes(file))group.current.push(file);});
   };
-  ['players','matches','fixtures','clubs','archive','league','transfers','press','news'].forEach(add);
+  ['players','matches','fixtures','clubs','archive','league','transfers','press','news'].forEach(domain=>add(domain));
+
+  add('nationalTeam',['data/ireland-result-2041-06-06-france.js']);
+  add('players',['data/player-ireland-result-2041-06-06-france.js']);
+  add('press',['data/press-reports-2041-06-06-france.js']);
+  add('news',['data/news-2041-06-06-france.js']);
 })();
