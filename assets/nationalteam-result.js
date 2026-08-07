@@ -5,7 +5,7 @@
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fmt=v=>Number(v).toFixed(2).replace('.',',');
   const fmtRating=v=>v==null?'–':fmt(v);
-  const teamCode=name=>({Irland:'IRL',Belgien:'BEL',Schottland:'SCO',Tschechien:'CZE',Kroatien:'CRO',Zypern:'CYP',Aserbaidschan:'AZE'}[name]||String(name||'').slice(0,3).toUpperCase());
+  const teamCode=name=>({Irland:'IRL',Frankreich:'FRA',Belgien:'BEL',Schottland:'SCO',Tschechien:'CZE',Kroatien:'CRO',Zypern:'CYP',Aserbaidschan:'AZE'}[name]||String(name||'').slice(0,3).toUpperCase());
   const report=m.report||{};
 
   const badge=document.querySelector('.page-hero-badge');
