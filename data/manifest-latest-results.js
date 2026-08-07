@@ -23,8 +23,8 @@
   };
   ['players','matches','fixtures','clubs','archive','league','transfers','press','news'].forEach(domain=>add(domain));
 
-  add('nationalTeam',['data/ireland-result-2041-06-06-france.js']);
-  add('players',['data/player-ireland-result-2041-06-06-france.js']);
-  add('press',['data/press-reports-2041-06-06-france.js']);
-  add('news',['data/news-2041-06-06-france.js']);
+  add('nationalTeam',['data/ireland-result-2041-06-06-france.js','data/ireland-result-2041-06-09-spain.js']);
+  add('players',['data/player-ireland-result-2041-06-06-france.js','data/player-ireland-result-2041-06-09-spain.js']);
+  add('press',['data/press-reports-2041-06-06-france.js','data/press-reports-2041-06-09-nations-league.js']);
+  add('news',['data/news-2041-06-06-france.js','data/news-2041-06-09-nations-league.js']);
 })();
