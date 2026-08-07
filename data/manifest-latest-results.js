@@ -16,7 +16,8 @@
     'data/champions-league-final-awards-2041-06-01.js',
     'data/sligo-rovers-result-2041-06-03.js',
     'data/club-world-cup-man-city-result-2041-06-13.js',
-    'data/europe-rankings-2041-06-13.js'
+    'data/europe-rankings-2041-06-13.js',
+    'data/europe-club-ranking-detail-2041-06-13.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
