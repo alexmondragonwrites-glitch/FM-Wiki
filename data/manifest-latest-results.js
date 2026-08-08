@@ -19,7 +19,8 @@
     'data/europe-rankings-2041-06-13.js',
     'data/europe-club-ranking-detail-2041-06-13.js',
     'data/club-world-cup-charlotte-result-2041-06-17.js',
-    'data/emerson-escarcega-transfer-confirmed-2041-06-20.js'
+    'data/emerson-escarcega-transfer-confirmed-2041-06-20.js',
+    'data/club-world-cup-boca-result-2041-06-21.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
