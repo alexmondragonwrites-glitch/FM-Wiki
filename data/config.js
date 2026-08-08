@@ -1,21 +1,21 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-06-13',
+    referenceDate:'2041-06-17',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-06-13',
+    updatedAt:'2041-06-17',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-06-13',
+      players:'2041-06-17',
       transfers:'2041-05-20',
       nationalTeam:'2041-06-09',
-      clubs:'2041-06-13',
-      matches:'2041-06-13',
-      season:'2041-06-13',
-      news:'2041-06-13',
-      staff:'2040-11-02'
+      clubs:'2041-06-17',
+      matches:'2041-06-17',
+      season:'2041-06-17',
+      news:'2041-06-17',
+      staff:'2041-06-17'
     }),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-06-13-man-city-klub-wm-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-06-17-charlotte-klub-wm-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
