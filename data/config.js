@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-06-17',
+    referenceDate:'2041-06-20',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-06-17',
+    updatedAt:'2041-06-20',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-06-17',
-      transfers:'2041-05-20',
+      players:'2041-06-20',
+      transfers:'2041-06-20',
       nationalTeam:'2041-06-09',
       clubs:'2041-06-17',
       matches:'2041-06-17',
-      season:'2041-06-17',
-      news:'2041-06-17',
+      season:'2041-06-20',
+      news:'2041-06-20',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=daryl-frame'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=emerson-escarcega'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-06-17-charlotte-klub-wm-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-06-20-emerson-escarcega-transfer-bestaetigt'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
