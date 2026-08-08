@@ -21,7 +21,8 @@
     'data/club-world-cup-charlotte-result-2041-06-17.js',
     'data/emerson-escarcega-transfer-confirmed-2041-06-20.js',
     'data/club-world-cup-boca-result-2041-06-21.js',
-    'data/club-world-cup-round-of-16-draw-2041-06-21.js'
+    'data/club-world-cup-round-of-16-draw-2041-06-21.js',
+    'data/club-world-cup-bayern-preview-2041-06-21.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
