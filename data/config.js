@@ -22,7 +22,7 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=emerson-escarcega'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=daryl-frame'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
