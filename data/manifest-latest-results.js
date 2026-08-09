@@ -23,7 +23,8 @@
     'data/club-world-cup-boca-result-2041-06-21.js',
     'data/club-world-cup-round-of-16-draw-2041-06-21.js',
     'data/club-world-cup-bayern-preview-2041-06-21.js',
-    'data/club-world-cup-round-of-16-first-results-2041-06-24.js'
+    'data/club-world-cup-round-of-16-first-results-2041-06-24.js',
+    'data/club-world-cup-bayern-result-2041-06-25.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
