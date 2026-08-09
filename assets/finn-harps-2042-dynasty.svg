@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 980" role="img" aria-labelledby="title desc">
+  <title id="title">Finn Harps FC 2042 Dynasty Edition</title>
+  <desc id="desc">A commemorative Finn Harps crest for the Football Manager save, celebrating the 2042 era, the 2040 European title and the 2037 world title while retaining Founded 1954.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a2f"/>
+      <stop offset="0.55" stop-color="#0b493b"/>
+      <stop offset="1" stop-color="#061724"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8df8a"/>
+      <stop offset="0.45" stop-color="#c79a35"/>
+      <stop offset="0.75" stop-color="#fff0ad"/>
+      <stop offset="1" stop-color="#a87518"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#dce7e8"/>
+      <stop offset="1" stop-color="#aebfc2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <path id="topArc" d="M 205 335 A 250 250 0 0 1 695 335"/>
+    <path id="bottomArc" d="M 700 600 A 255 255 0 0 1 200 600"/>
+  </defs>
+
+  <rect width="900" height="980" rx="54" fill="url(#bg)"/>
+  <circle cx="450" cy="450" r="350" fill="#0d7155" opacity="0.22" filter="url(#soft)"/>
+
+  <!-- continental/world laurels -->
+  <g fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round" opacity="0.95">
+    <path d="M150 622 C82 560 65 456 100 355 C120 300 152 260 188 225"/>
+    <path d="M750 622 C818 560 835 456 800 355 C780 300 748 260 712 225"/>
+  </g>
+  <g fill="url(#gold)" opacity="0.95">
+    <ellipse cx="126" cy="553" rx="15" ry="34" transform="rotate(-48 126 553)"/>
+    <ellipse cx="104" cy="488" rx="15" ry="34" transform="rotate(-70 104 488)"/>
+    <ellipse cx="106" cy="420" rx="15" ry="34" transform="rotate(-94 106 420)"/>
+    <ellipse cx="127" cy="354" rx="15" ry="34" transform="rotate(-116 127 354)"/>
+    <ellipse cx="163" cy="297" rx="15" ry="34" transform="rotate(-137 163 297)"/>
+    <ellipse cx="774" cy="553" rx="15" ry="34" transform="rotate(48 774 553)"/>
+    <ellipse cx="796" cy="488" rx="15" ry="34" transform="rotate(70 796 488)"/>
+    <ellipse cx="794" cy="420" rx="15" ry="34" transform="rotate(94 794 420)"/>
+    <ellipse cx="773" cy="354" rx="15" ry="34" transform="rotate(116 773 354)"/>
+    <ellipse cx="737" cy="297" rx="15" ry="34" transform="rotate(137 737 297)"/>
+  </g>
+
+  <!-- two major-era honours, deliberately labelled rather than used as anonymous title-count stars -->
+  <g filter="url(#shadow)">
+    <path d="M350 92 l18 37 41 6-30 29 7 41-36-19-36 19 7-41-30-29 41-6z" fill="url(#gold)"/>
+    <path d="M550 92 l18 37 41 6-30 29 7 41-36-19-36 19 7-41-30-29 41-6z" fill="url(#gold)"/>
+  </g>
+  <text x="350" y="225" text-anchor="middle" fill="#f6e7b2" font-family="Verdana,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1.5">EUROPE 2040</text>
+  <text x="550" y="225" text-anchor="middle" fill="#f6e7b2" font-family="Verdana,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1.5">WORLD 2037</text>
+
+  <!-- main oval -->
+  <g filter="url(#shadow)">
+    <ellipse cx="450" cy="475" rx="282" ry="325" fill="url(#silver)" stroke="url(#gold)" stroke-width="16"/>
+    <ellipse cx="450" cy="475" rx="258" ry="300" fill="#ffffff" stroke="#134d93" stroke-width="7"/>
+    <ellipse cx="450" cy="475" rx="229" ry="267" fill="none" stroke="#10804f" stroke-width="6"/>
+  </g>
+
+  <!-- ring text -->
+  <text fill="#174a93" font-family="Georgia,'Times New Roman',serif" font-size="39" font-weight="700" letter-spacing="4">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">FINN HARPS F.C.</textPath>
+  </text>
+  <text fill="#174a93" font-family="Georgia,'Times New Roman',serif" font-size="29" font-weight="700" letter-spacing="2.4">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">COUNTY DONEGAL</textPath>
+  </text>
+
+  <!-- footballs -->
+  <g stroke="#164b93" stroke-width="5" fill="#fff">
+    <circle cx="222" cy="470" r="54"/>
+    <circle cx="678" cy="470" r="54"/>
+  </g>
+  <g fill="#164b93">
+    <polygon points="222,444 245,458 237,484 207,484 199,458"/>
+    <polygon points="678,444 701,458 693,484 663,484 655,458"/>
+    <path d="M184 450l24-12 0-25-23 12zM260 450l-24-12 0-25 23 12zM194 499l25-8 17 21-23 11zM650 450l24-12 0-25-23 12zM726 450l-24-12 0-25 23 12zM660 499l25-8 17 21-23 11z"/>
+  </g>
+
+  <!-- central harp -->
+  <g transform="translate(450 470)">
+    <path d="M-90 -125 C-38 -145 48 -143 98 -108 C73 -111 57 -102 49 -86 C32 -51 42 18 12 76 C-10 118 -56 138 -92 106 C-57 104 -29 81 -21 48 C-12 9 -33 -45 -14 -82 C-2 -104 19 -116 43 -119 C7 -127 -38 -124 -72 -107z" fill="#087b48"/>
+    <path d="M-37 -103 C-42 -36 -38 29 -24 86" fill="none" stroke="#087b48" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-13 -111 C-17 -39 -14 31 -2 87M12 -114 C9 -42 10 27 19 77M36 -113 C35 -52 37 8 41 56" fill="none" stroke="#087b48" stroke-width="4"/>
+    <path d="M-89 -127 C-47 -157 43 -160 106 -119" fill="none" stroke="#087b48" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <!-- heritage foundation date -->
+  <path d="M316 691 Q450 733 584 691" fill="none" stroke="#164b93" stroke-width="3"/>
+  <text x="450" y="733" text-anchor="middle" fill="#164b93" font-family="Georgia,'Times New Roman',serif" font-size="25" font-weight="700">FOUNDED 1954</text>
+
+  <!-- 2042 banner -->
+  <g filter="url(#shadow)">
+    <path d="M190 785 L288 765 L315 795 H585 L612 765 L710 785 L675 860 H225 Z" fill="url(#gold)" stroke="#fff0ad" stroke-width="3"/>
+    <path d="M315 795 H585 V888 H315 Z" fill="#0a654b" stroke="#f1cf69" stroke-width="6"/>
+  </g>
+  <text x="450" y="848" text-anchor="middle" fill="#ffffff" font-family="Verdana,Arial,sans-serif" font-size="58" font-weight="900" letter-spacing="8">2042</text>
+  <text x="450" y="882" text-anchor="middle" fill="#f7df91" font-family="Verdana,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">DYNASTY EDITION</text>
+
+  <!-- achievement footer -->
+  <text x="450" y="933" text-anchor="middle" fill="#e6edf0" font-family="Verdana,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2">CHAMPIONS LEAGUE 2040  •  CLUB WORLD CUP 2037</text>
+  <text x="450" y="959" text-anchor="middle" fill="#9fc9bb" font-family="Verdana,Arial,sans-serif" font-size="14" letter-spacing="3">DONEGAL • IRELAND • EUROPE • WORLD</text>
+</svg>
