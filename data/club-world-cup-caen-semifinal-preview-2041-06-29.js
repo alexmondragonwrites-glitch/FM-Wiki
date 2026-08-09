@@ -20,7 +20,7 @@
     {name:'Emerson',zone:'MZR',role:'Vorgeschobener Spielmacher',nation:'BRA',age:26,height:'182 cm',fitness:43,apps:'2',goals:1,assists:1,rating:7.80,value:'€270–296 Mio.'},
     {name:'Matteo Spataro',zone:'MZL',role:'Unbekannt',nation:'ITA',age:30,height:'186 cm',fitness:59,apps:'1',goals:0,assists:0,rating:7.20,value:'€67–101 Mio.'},
     {name:'Ayodeji Agbaji',zone:'ML',role:'Flügelspieler',nation:'NGA',age:33,height:'180 cm',fitness:72,apps:'2',goals:1,assists:0,rating:6.90,value:'€74–89 Mio.'},
-    {name:"Harry O'Leary",zone:'STZR',role:'Stoßstürmer',nation:'IRL',age:29,height:'192 cm',weight:'89 kg',fitness:69,apps:'2',goals:0,assists:1,rating:6.95,value:'€181–204 Mio.',note:'Irischer Nationalspieler; in der Finn-Harps-Chronik zuvor als 1,92-m-Zielspieler und kraftvolle Plan-B-Option dokumentiert.'},
+    {name:"Harry O'Leary",zone:'STZR',role:'Stoßstürmer',nation:'IRL',age:29,height:'192 cm',weight:'89 kg',fitness:69,apps:'2',goals:0,assists:1,rating:6.95,value:'€181–204 Mio.',note:'Irischer Nationalspieler. O’Leary spielte nie für Finn Harps; die Verbindung zu Ryan Flannigan besteht ausschließlich über die irische Nationalmannschaft.'},
     {name:'Yannick Jaffre',zone:'STZL',role:'Unbekannt',nation:'FRA',age:22,height:'179 cm',fitness:55,apps:'2',goals:0,assists:2,rating:7.70,value:'€271–296 Mio.'}
   ];
 
@@ -42,11 +42,11 @@
   upsert(window.FM_CLUBS,{
     ...existing,
     id:'caen',name:'Caen',short:'CAE',country:'Frankreich',scope:['Club World Cup'],season:2041,status:'partial',completion:70,
-    summary:"Klub-WM-Halbfinalgegner 2041. Caen verbindet enorme individuelle Marktwerte mit einem erfahrenen Kern. Die besondere Geschichte ist Harry O'Leary: Der 29-jährige irische Stoßstürmer war zuvor als Harps-Spieler und kraftvolle 1,92-m-Option dokumentiert und steht nun im direkten Duell um den Finaleinzug.",
+    summary:"Klub-WM-Halbfinalgegner 2041. Caen verbindet enorme individuelle Marktwerte mit einem erfahrenen Kern. Die besondere Geschichte ist Harry O'Leary: Der 29-jährige irische Nationalstürmer trifft auf den Verein seines Nationaltrainers Ryan Flannigan. O’Leary spielte nie für Finn Harps.",
     formation:'Aus der positionsweise ausgewählten Elf: Torwart, Viererkette, breites Vierermittelfeld und Doppelspitze',
     squadValue:'Mehrere Spieler über €180 Mio.; Spitzenwerte bis €296 Mio.',
     keyPlayers:["Harry O'Leary",'Emerson','Yannick Jaffre','Gürsel Özçimen','Adama Koné'],
-    tags:['Klub-WM 2041','Halbfinale','Harry O’Leary','hohe Marktwerte','erfahrener Kern','körperlich belastet'],
+    tags:['Klub-WM 2041','Halbfinale','Harry O’Leary','Irland-Nationalteam','hohe Marktwerte','erfahrener Kern','körperlich belastet'],
     probableXI,bench,
     scouting:{
       strengths:[
@@ -79,34 +79,36 @@
     ...current,
     id:'club-world-cup-2041',year:2041,status:'semi-final',titleHolder:'Finn Harps',group:'H',
     knockout:{...(current.knockout||{}),round:'Halbfinale',previousRound:'Viertelfinale · 4:2 n. V. gegen FC Barcelona',opponent:'Caen',nextOpponent:'Caen',semiFinalOpponent:'Caen',opponentProfileId:'caen'},
-    headline:"Klub-WM 2041: Nach dem 4:2 n. V. gegen Barcelona trifft Finn Harps im Halbfinale auf Caen und den irischen Weltklasse-Stürmer Harry O'Leary."
+    headline:"Klub-WM 2041: Nach dem 4:2 n. V. gegen Barcelona trifft Finn Harps im Halbfinale auf Caen und Irlands Weltklasse-Stürmer Harry O'Leary."
   });
 
   const season=(window.FM_SEASONS||[]).find(x=>x.year===2041||x.season===2041);
   if(season){
     season.referenceDate='2041-06-29';
     season.latestHeadline="Klub-WM-Halbfinale: Caen und Harry O'Leary warten auf Finn Harps.";
-    season.clubWorldCup={...(season.clubWorldCup||{}),status:'Halbfinale',lastResult:'29.06.2041 · Finn Harps 4:2 n. V. FC Barcelona',nextOpponent:'Caen',nextMatch:'Termin im bereitgestellten Export nicht enthalten',knockoutWins:2,opponentNote:"Caen bringt mit Harry O'Leary einen 29-jährigen irischen Stoßstürmer im Wert von €181–204 Mio. sowie mit Emerson und Yannick Jaffre zwei Spieler im Bereich von €270–296 Mio. mit."};
+    season.clubWorldCup={...(season.clubWorldCup||{}),status:'Halbfinale',lastResult:'29.06.2041 · Finn Harps 4:2 n. V. FC Barcelona',nextOpponent:'Caen',nextMatch:'Termin im bereitgestellten Export nicht enthalten',knockoutWins:2,opponentNote:"Caen bringt mit Harry O'Leary einen 29-jährigen irischen Nationalstürmer im Wert von €181–204 Mio. sowie mit Emerson und Yannick Jaffre zwei Spieler im Bereich von €270–296 Mio. mit."};
     season.changes=season.changes||{notes:[]};
-    const note="29.06.2041: Klub-WM-Halbfinale gegen Caen; Harry O'Leary trifft als irischer Weltklasse-Stürmer auf seinen früher dokumentierten Klub Finn Harps.";
-    if(!(season.changes.notes||[]).includes(note))season.changes.notes=[...(season.changes.notes||[]),note];
+    const wrongNote="29.06.2041: Klub-WM-Halbfinale gegen Caen; Harry O'Leary trifft als irischer Weltklasse-Stürmer auf seinen früher dokumentierten Klub Finn Harps.";
+    const correctNote="29.06.2041: Klub-WM-Halbfinale gegen Caen; Irlands Nationalstürmer Harry O'Leary trifft auf den Verein seines Nationaltrainers Ryan Flannigan.";
+    season.changes.notes=[...(season.changes.notes||[]).filter(note=>note!==wrongNote)];
+    if(!season.changes.notes.includes(correctNote))season.changes.notes.push(correctNote);
   }
 
   const report={
     id:reportId,type:'Vorbericht',date:'2041-06-29',competition:'FIFA Club World Cup',fixtureDate:'Termin im Export nicht enthalten',
     home:'Finn Harps',away:'Caen',score:'–',location:'Neutraler Klub-WM-Spielort · im Export nicht enthalten',
     headline:"O'Leary wartet: Caen steht zwischen Finn Harps und dem Weltfinale",
-    subheadline:"Nach Manchester City, Bayern und Barcelona wartet kein klassischer Superklub, aber ein Gegner voller Spitzenwerte. Im Zentrum der Geschichte: der irische Weltklasse-Stürmer Harry O'Leary gegen seinen früher dokumentierten Klub.",
+    subheadline:"Nach Manchester City, Bayern und Barcelona wartet kein klassischer Superklub, aber ein Gegner voller Spitzenwerte. Im Zentrum der Geschichte: Irlands Weltklasse-Stürmer Harry O'Leary gegen den Verein seines Nationaltrainers Ryan Flannigan.",
     label:'FIFA CLUB WORLD CUP · HALBFINALE',
     heroStat:{label:'Caens Spitzenwerte',value:'bis €296 Mio.',note:"Emerson und Jaffre · O'Leary €181–204 Mio."},
     backlink:{href:'spiele.html',label:'← ZU DEN SPIELEN'},
-    intro:"Der Weg ins Klub-WM-Finale führt über Caen. Auf dem Papier wirkt dieses Los nach Manchester City, Bayern München und Barcelona zunächst weniger glamourös. Der Export erzählt jedoch eine andere Geschichte: Caen besitzt mehrere Spieler mit Weltklasse-Marktwerten und mit Harry O'Leary einen 29-jährigen irischen Stoßstürmer, der in der Finn-Harps-Chronik bereits als 1,92 Meter große Zielspieler- und Plan-B-Option dokumentiert war.",
+    intro:"Der Weg ins Klub-WM-Finale führt über Caen. Auf dem Papier wirkt dieses Los nach Manchester City, Bayern München und Barcelona zunächst weniger glamourös. Der Export erzählt jedoch eine andere Geschichte: Caen besitzt mehrere Spieler mit Weltklasse-Marktwerten und mit Harry O'Leary einen 29-jährigen irischen Nationalstürmer. Die persönliche Verbindung läuft ausschließlich über Irland: Ryan Flannigan trainiert O'Leary in der Nationalmannschaft, für Finn Harps hat der Stürmer nie gespielt.",
     sections:[
-      {title:'Die O’Leary-Geschichte macht dieses Halbfinale persönlich',text:"O'Leary ist 29 Jahre alt, 1,92 Meter groß, wiegt 89 Kilogramm und wird mit €181–204 Mio. bewertet. In zwei Klub-WM-Einsätzen steht er bei einer Vorlage. Seine Rolle als Stoßstürmer macht ihn zum natürlichen Fixpunkt für direkte Bälle und Flanken."},
+      {title:'Die O’Leary-Geschichte macht dieses Halbfinale persönlich',text:"O'Leary ist 29 Jahre alt, 1,92 Meter groß, wiegt 89 Kilogramm und wird mit €181–204 Mio. bewertet. In zwei Klub-WM-Einsätzen steht er bei einer Vorlage. Seine Rolle als Stoßstürmer macht ihn zum natürlichen Fixpunkt für direkte Bälle und Flanken. Für Flannigan ist er kein ehemaliger Harps-Spieler, sondern ein Spieler aus seiner irischen Nationalmannschaft."},
       {title:'Caen ist kein Märchenverein mit Zufallslauf',text:'Emerson und Yannick Jaffre werden beide mit bis zu €296 Mio. bewertet. Emerson hat in zwei Turnierspielen ein Tor und eine Vorlage bei 7,80 geliefert, Jaffre zwei Vorlagen bei 7,70. Dahinter steht mit Gürsel Özçimen ein Innenverteidiger im Bereich von €199–238 Mio.'},
       {title:'Der auffälligste Hebel ist die körperliche Belastung',text:'Mehrere Spieler der ausgewählten Elf liegen deutlich unter voller Athletik: Emerson bei 43 Prozent, Correia bei 51, Jaffre bei 55 sowie Rosendo, Donatiello und Spataro jeweils bei 59. Nach 120 Minuten gegen Barcelona ist auch Finn Harps belastet, doch Caens Export zeigt ungewöhnlich viele angeschlagene Kernspieler.'},
       {title:'Die Bank kann das Spiel verändern',text:'Adama Koné hat in zwei Einwechslungen zwei Tore und eine Vorlage gesammelt und steht bei 7,90. Chai Miggins, Özçimen und weitere wertvolle Optionen geben Caen genügend Tiefe, um das Spiel auch nach Wechseln auf hohem Niveau fortzusetzen.'},
-      {title:'Vom europäischen Spießrutenlauf zum irischen Duell',text:"Finn Harps hat Manchester City in der Gruppe, Bayern im Achtelfinale und Barcelona im Viertelfinale geschlagen. Nun wartet im Halbfinale ausgerechnet ein französischer Klub mit einem irischen Ex-Harps-Stürmer als prominentem Fixpunkt. Ein kurioserer Weg ins Weltfinale wäre schwer zu schreiben."}
+      {title:'Vom europäischen Spießrutenlauf zum irischen Duell',text:"Finn Harps hat Manchester City in der Gruppe, Bayern im Achtelfinale und Barcelona im Viertelfinale geschlagen. Nun wartet im Halbfinale ein französischer Klub mit einem irischen Nationalstürmer als prominentem Fixpunkt. O'Leary kennt Flannigans Anforderungen aus der Nationalmannschaft, Flannigan kennt im Gegenzug einen der gefährlichsten Caen-Spieler sehr genau."}
     ],
     strengthsTitle:'WARUM CAEN GEFÄHRLICH IST',strengthsHeading:'Weltklassewerte ohne Weltklub-Etikett',
     strengths:["Harry O'Leary · 29 · 1,92 m · €181–204 Mio.",'Emerson · €270–296 Mio. · 1 Tor + 1 Vorlage · 7,80','Yannick Jaffre · €271–296 Mio. · 2 Vorlagen · 7,70','Özçimen · €199–238 Mio. in der Defensive','Koné als Joker · 2 Tore + 1 Vorlage in zwei Einwechslungen'],
@@ -114,8 +116,8 @@
     vulnerabilities:['Emerson nur 43 % Athletik','Correia 51 %, Jaffre 55 %','Drei weitere mutmaßliche Starter bei 59 %','Mehrere Stammspieler über 30','Hohe Intensität könnte Caens müden Kern auseinanderziehen'],
     verdictHeading:'Kein leichtes Los, sondern ein anderes Schwergewicht',
     verdict:"Caen trägt nicht den Namen von Bayern oder Barcelona, aber der Kaderexport verbietet jede Außenseiterromantik. Die Franzosen haben enorme individuelle Qualität und eine gefährliche Doppelspitze. Gleichzeitig zeigen die Belastungswerte eine klare Angriffsfläche. Für Finn Harps liegt der Schlüssel darin, O'Leary nicht zum Zielspieler des Abends werden zu lassen und Caens müde Achse über Tempo, Pressing und eine lange Partie zu testen.",
-    sourcesHeading:'Gegnerexport',sourcesNote:'Der Vorbericht basiert auf dem bereitgestellten Football-Manager-Kaderexport von Caen. Spieltermin und Austragungsort waren darin nicht enthalten.',
-    sources:['FM-Kaderexport Caen · Klub-WM-Halbfinale · 29.06.2041','Finn-Harps-Chronik · frühere Dokumentation Harry O’Leary']
+    sourcesHeading:'Gegnerexport',sourcesNote:'Der Vorbericht basiert auf dem bereitgestellten Football-Manager-Kaderexport von Caen. Spieltermin und Austragungsort waren darin nicht enthalten. O’Learys Verbindung zu Ryan Flannigan besteht über die irische Nationalmannschaft, nicht über Finn Harps.',
+    sources:['FM-Kaderexport Caen · Klub-WM-Halbfinale · 29.06.2041','Irland-Nationalmannschaft · Harry O’Leary unter Ryan Flannigan']
   };
   upsert(window.FM_PRESS_REPORTS,report);
 
@@ -123,7 +125,7 @@
   upsert(window.FM_NEWS,{
     id:'2041-06-29-caen-klub-wm-halbfinale',date:'2041-06-29',season:2041,category:'Klub-WM',accent:'green',featured:true,
     eyebrow:'FIFA CLUB WORLD CUP · HALBFINALE',title:"O'Leary wartet im Halbfinale",
-    summary:"Finn Harps trifft nach dem 4:2 n. V. gegen Barcelona auf Caen. Der französische Klub bringt enorme Marktwerte und mit Harry O'Leary einen 29-jährigen irischen Weltklasse-Stürmer mit Harps-Vergangenheit mit.",
-    href:`presse.html?id=${reportId}`,entities:['finn-harps','caen','harry-oleary','club-world-cup']
+    summary:"Finn Harps trifft nach dem 4:2 n. V. gegen Barcelona auf Caen. Der französische Klub bringt enorme Marktwerte und mit Harry O'Leary einen 29-jährigen irischen Weltklasse-Stürmer mit, den Ryan Flannigan aus der Nationalmannschaft bestens kennt.",
+    href:`presse.html?id=${reportId}`,entities:['finn-harps','caen','harry-oleary','club-world-cup','ireland']
   });
 })();
