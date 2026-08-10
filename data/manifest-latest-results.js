@@ -27,7 +27,8 @@
     'data/club-world-cup-bayern-result-2041-06-25.js',
     'data/club-world-cup-barcelona-quarterfinal-preview-2041-06-25.js',
     'data/club-world-cup-barcelona-result-2041-06-29.js',
-    'data/club-world-cup-caen-semifinal-preview-2041-06-29.js'
+    'data/club-world-cup-caen-semifinal-preview-2041-06-29.js',
+    'data/club-world-cup-milan-semifinal-result-2041-07-02.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
