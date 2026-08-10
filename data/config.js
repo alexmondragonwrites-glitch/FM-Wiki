@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-07-03',
+    referenceDate:'2041-07-06',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-07-03',
+    updatedAt:'2041-07-06',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-07-03',
+      players:'2041-07-06',
       transfers:'2041-06-20',
       nationalTeam:'2041-06-09',
-      clubs:'2041-07-03',
-      matches:'2041-07-03',
-      season:'2041-07-03',
-      news:'2041-07-03',
+      clubs:'2041-07-06',
+      matches:'2041-07-06',
+      season:'2041-07-06',
+      news:'2041-07-06',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-07-03-klub-wm-caen-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-07-06-klub-wm-sao-paulo-platz-3-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
