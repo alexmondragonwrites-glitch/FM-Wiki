@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-07-02',
+    referenceDate:'2041-07-03',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-07-02',
+    updatedAt:'2041-07-03',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-06-29',
+      players:'2041-07-03',
       transfers:'2041-06-20',
       nationalTeam:'2041-06-09',
-      clubs:'2041-07-02',
-      matches:'2041-07-02',
-      season:'2041-07-02',
-      news:'2041-07-02',
+      clubs:'2041-07-03',
+      matches:'2041-07-03',
+      season:'2041-07-03',
+      news:'2041-07-03',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-06-29-caen-klub-wm-halbfinale-vorbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-07-03-klub-wm-caen-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
