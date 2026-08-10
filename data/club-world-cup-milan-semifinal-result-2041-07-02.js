@@ -56,7 +56,6 @@
   const season=(window.FM_SEASONS||[]).find(x=>x.year===2041||x.season===2041);
   if(season){
     season.referenceDate='2041-07-02';
-    season.latestHeadline:'AC Milan steht als erster Klub-WM-Finalist fest; Finn Harps spielt gegen Caen um den zweiten Finalplatz.';
     season.latestHeadline='AC Milan steht als erster Klub-WM-Finalist fest; Finn Harps spielt gegen Caen um den zweiten Finalplatz.';
     season.clubWorldCup={...(season.clubWorldCup||{}),status:'Halbfinale',firstFinalist:'AC Milan',firstSemifinalResult:'São Paulo 0:1 n. V. AC Milan',nextOpponent:'Caen',potentialFinalOpponent:'AC Milan'};
     season.changes=season.changes||{notes:[]};
