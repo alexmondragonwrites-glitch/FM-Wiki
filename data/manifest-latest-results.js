@@ -33,7 +33,8 @@
     'data/club-world-cup-third-place-sao-paulo-result-2041-07-06.js',
     'data/club-world-cup-final-milan-result-2041-07-07.js',
     'data/player-emerson-escarcega-gold-cup-2041-07-10.js',
-    'data/bohemian-result-2041-07-12.js'
+    'data/bohemian-result-2041-07-12.js',
+    'data/player-giacomo-papini-ireland-switch-2041-07-14.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
@@ -42,7 +43,7 @@
   };
   ['players','matches','fixtures','clubs','archive','league','transfers','press','news'].forEach(domain=>add(domain));
 
-  add('nationalTeam',['data/ireland-result-2041-06-06-france.js','data/ireland-result-2041-06-09-spain.js']);
+  add('nationalTeam',['data/ireland-result-2041-06-06-france.js','data/ireland-result-2041-06-09-spain.js','data/player-giacomo-papini-ireland-switch-2041-07-14.js']);
   add('players',['data/player-ireland-result-2041-06-06-france.js','data/player-ireland-result-2041-06-09-spain.js']);
   add('press',['data/press-reports-2041-06-06-france.js','data/press-reports-2041-06-09-nations-league.js']);
   add('news',['data/news-2041-06-06-france.js','data/news-2041-06-09-nations-league.js']);
