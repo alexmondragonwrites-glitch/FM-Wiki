@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-07-07',
+    referenceDate:'2041-07-10',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-07-07',
+    updatedAt:'2041-07-10',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-07-06',
+      players:'2041-07-10',
       transfers:'2041-06-20',
       nationalTeam:'2041-06-09',
       clubs:'2041-07-07',
       matches:'2041-07-07',
-      season:'2041-07-07',
-      news:'2041-07-07',
+      season:'2041-07-10',
+      news:'2041-07-10',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,7 +22,7 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=daryl-frame'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=emerson-escarcega'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
