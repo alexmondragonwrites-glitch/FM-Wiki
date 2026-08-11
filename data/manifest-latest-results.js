@@ -37,7 +37,8 @@
     'data/player-giacomo-papini-ireland-switch-2041-07-14.js',
     'data/shamrock-rovers-result-2041-07-15.js',
     'data/athenry-fai-cup-result-2041-07-18.js',
-    'data/cork-city-result-2041-07-22.js'
+    'data/cork-city-result-2041-07-22.js',
+    'data/athlone-town-result-2041-07-26.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
