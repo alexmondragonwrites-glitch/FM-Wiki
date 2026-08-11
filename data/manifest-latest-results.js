@@ -40,7 +40,8 @@
     'data/cork-city-result-2041-07-22.js',
     'data/athlone-town-result-2041-07-26.js',
     'data/player-emerson-escarcega-gold-cup-semifinal-2041-07-26.js',
-    'data/robert-boylan-retrospective-2041-07-29.js'
+    'data/robert-boylan-retrospective-2041-07-29.js',
+    'data/waterford-result-2041-07-29.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
