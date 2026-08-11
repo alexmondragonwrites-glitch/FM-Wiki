@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-07-22',
+    referenceDate:'2041-07-26',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-07-22',
+    updatedAt:'2041-07-26',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-07-22',
+      players:'2041-07-26',
       transfers:'2041-06-20',
       nationalTeam:'2041-07-14',
       clubs:'2041-07-07',
-      matches:'2041-07-22',
-      season:'2041-07-22',
-      news:'2041-07-22',
+      matches:'2041-07-26',
+      season:'2041-07-26',
+      news:'2041-07-26',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-07-22-cork-city-liga-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-07-26-athlone-town-liga-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
