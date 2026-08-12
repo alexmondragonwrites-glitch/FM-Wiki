@@ -12,7 +12,7 @@
       transfers:'2041-08-02',
       nationalTeam:'2041-07-14',
       clubs:'2041-07-07',
-      matches:'2041-07-29',
+      matches:'2041-08-02',
       season:'2041-08-02',
       news:'2041-08-02',
       staff:'2041-06-17'
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=justin-ramsey'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=daniele-di-maio'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-08-02-mitch-franke-sell-on'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-08-02-shelbourne-liga-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
