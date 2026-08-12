@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-08-01',
+    referenceDate:'2041-08-02',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-08-01',
+    updatedAt:'2041-08-02',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-08-01',
-      transfers:'2041-08-01',
+      players:'2041-08-02',
+      transfers:'2041-08-02',
       nationalTeam:'2041-07-14',
       clubs:'2041-07-07',
       matches:'2041-07-29',
-      season:'2041-08-01',
-      news:'2041-08-01',
+      season:'2041-08-02',
+      news:'2041-08-02',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-08-01-transferfenster-sommer-abschluss'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-08-02-mitch-franke-sell-on'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
