@@ -43,7 +43,8 @@
     'data/robert-boylan-retrospective-2041-07-29.js',
     'data/waterford-result-2041-07-29.js',
     'data/transfer-window-closed-2041-08-01.js',
-    'data/mitch-franke-sell-on-2041-08-02.js'
+    'data/mitch-franke-sell-on-2041-08-02.js',
+    'data/shelbourne-result-2041-08-02.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
