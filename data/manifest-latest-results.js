@@ -61,4 +61,9 @@
   add('players',['data/player-ireland-result-2041-06-06-france.js','data/player-ireland-result-2041-06-09-spain.js']);
   add('press',['data/press-reports-2041-06-06-france.js','data/press-reports-2041-06-09-nations-league.js']);
   add('news',['data/news-2041-06-06-france.js','data/news-2041-06-09-nations-league.js']);
+
+  const championsLeagueSchedule='data/champions-league-schedule-2041-08-28.js';
+  add('fixtures',[championsLeagueSchedule]);
+  add('archive',[championsLeagueSchedule]);
+  add('news',[championsLeagueSchedule]);
 })();
