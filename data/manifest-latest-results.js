@@ -47,7 +47,8 @@
     'data/shelbourne-result-2041-08-02.js',
     'data/player-emerson-escarcega-gold-cup-champion-2041-08-04.js',
     'data/st-patricks-result-2041-08-09.js',
-    'data/derry-city-fai-cup-result-2041-08-21.js'
+    'data/derry-city-fai-cup-result-2041-08-21.js',
+    'data/sligo-rovers-result-2041-08-24.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
