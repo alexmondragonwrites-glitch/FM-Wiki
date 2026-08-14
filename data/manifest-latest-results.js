@@ -103,4 +103,11 @@
   add('archive',[irelandWorldCupQualifiers]);
   add('press',[irelandWorldCupQualifiers]);
   add('news',[irelandWorldCupQualifiers]);
+
+  const irelandAzerbaijanResult='data/ireland-result-2041-09-26-azerbaijan.js';
+  add('nationalTeam',[irelandAzerbaijanResult]);
+  add('players',[irelandAzerbaijanResult]);
+  add('archive',[irelandAzerbaijanResult]);
+  add('press',[irelandAzerbaijanResult]);
+  add('news',[irelandAzerbaijanResult]);
 })();
