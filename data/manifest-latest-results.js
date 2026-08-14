@@ -90,4 +90,10 @@
   add('archive',[celtaPreview]);
   add('press',[celtaPreview]);
   add('news',[celtaPreview]);
+
+  const championsLeagueMatchdayTwo='data/champions-league-matchday-2-results-2041-09-18.js';
+  add('archive',[championsLeagueMatchdayTwo]);
+  add('league',[championsLeagueMatchdayTwo]);
+  add('press',[championsLeagueMatchdayTwo]);
+  add('news',[championsLeagueMatchdayTwo]);
 })();
