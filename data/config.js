@@ -1,10 +1,10 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-09-10',
+    referenceDate:'2041-09-11',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-09-10',
+    updatedAt:'2041-09-11',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
@@ -13,8 +13,8 @@
       nationalTeam:'2041-08-04',
       clubs:'2041-09-10',
       matches:'2041-09-10',
-      season:'2041-09-10',
-      news:'2041-09-10',
+      season:'2041-09-11',
+      news:'2041-09-11',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-09-10-manchester-united-ligaphase-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-09-11-champions-league-spieltag-1-rundschau'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
