@@ -76,4 +76,10 @@
   add('archive',[manUnitedPreview]);
   add('press',[manUnitedPreview]);
   add('news',[manUnitedPreview]);
+
+  const championsLeagueMatchdayOne='data/champions-league-matchday-1-results-2041-09-11.js';
+  add('archive',[championsLeagueMatchdayOne]);
+  add('league',[championsLeagueMatchdayOne]);
+  add('press',[championsLeagueMatchdayOne]);
+  add('news',[championsLeagueMatchdayOne]);
 })();
