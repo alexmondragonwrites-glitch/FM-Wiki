@@ -52,7 +52,8 @@
     'data/cork-city-result-2041-08-30.js',
     'data/bohemian-result-2041-09-02.js',
     'data/shamrock-rovers-result-2041-09-06.js',
-    'data/manchester-united-result-2041-09-10.js'
+    'data/manchester-united-result-2041-09-10.js',
+    'data/celta-vigo-result-2041-09-18.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
