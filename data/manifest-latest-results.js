@@ -69,4 +69,7 @@
   add('fixtures',[championsLeagueSchedule]);
   add('archive',[championsLeagueSchedule]);
   add('news',[championsLeagueSchedule]);
+
+  const manchesterUnitedPreview='data/manchester-united-preview-2041-09-07.js';
+  ['clubs','archive','press','news'].forEach(domain=>add(domain,[manchesterUnitedPreview]));
 })();
