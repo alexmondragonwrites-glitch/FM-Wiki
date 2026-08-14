@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-09-11',
+    referenceDate:'2041-09-18',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-09-11',
+    updatedAt:'2041-09-18',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-09-11',
+      players:'2041-09-18',
       transfers:'2041-08-02',
       nationalTeam:'2041-08-04',
-      clubs:'2041-09-11',
-      matches:'2041-09-10',
-      season:'2041-09-11',
-      news:'2041-09-11',
+      clubs:'2041-09-18',
+      matches:'2041-09-18',
+      season:'2041-09-18',
+      news:'2041-09-18',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-09-11-celta-vigo-ligaphase-vorbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-09-18-celta-vigo-ligaphase-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
