@@ -110,4 +110,10 @@
   add('archive',[irelandAzerbaijanResult]);
   add('press',[irelandAzerbaijanResult]);
   add('news',[irelandAzerbaijanResult]);
+
+  const internationalDuty='data/finn-harps-international-duty-2041-09-27.js';
+  add('players',[internationalDuty]);
+  add('archive',[internationalDuty]);
+  add('press',[internationalDuty]);
+  add('news',[internationalDuty]);
 })();
