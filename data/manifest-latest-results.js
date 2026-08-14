@@ -96,4 +96,11 @@
   add('league',[championsLeagueMatchdayTwo]);
   add('press',[championsLeagueMatchdayTwo]);
   add('news',[championsLeagueMatchdayTwo]);
+
+  const irelandWorldCupQualifiers='data/ireland-world-cup-qualifiers-squad-2041-09-18.js';
+  add('nationalTeam',[irelandWorldCupQualifiers]);
+  add('players',[irelandWorldCupQualifiers]);
+  add('archive',[irelandWorldCupQualifiers]);
+  add('press',[irelandWorldCupQualifiers]);
+  add('news',[irelandWorldCupQualifiers]);
 })();
