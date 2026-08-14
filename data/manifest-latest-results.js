@@ -50,7 +50,8 @@
     'data/derry-city-fai-cup-result-2041-08-21.js',
     'data/sligo-rovers-result-2041-08-24.js',
     'data/cork-city-result-2041-08-30.js',
-    'data/bohemian-result-2041-09-02.js'
+    'data/bohemian-result-2041-09-02.js',
+    'data/shamrock-rovers-result-2041-09-06.js'
   ];
   const add=(domain,entries=files)=>{
     const group=manifest[domain]||(manifest[domain]={current:[]});
