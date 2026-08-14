@@ -10,7 +10,7 @@
     dataDates:Object.freeze({
       players:'2041-09-18',
       transfers:'2041-08-02',
-      nationalTeam:'2041-08-04',
+      nationalTeam:'2041-09-18',
       clubs:'2041-09-18',
       matches:'2041-09-18',
       season:'2041-09-18',
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-09-18-champions-league-spieltag-2-rundschau'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-09-18-irland-wm-quali-kader'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
