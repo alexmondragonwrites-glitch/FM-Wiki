@@ -82,4 +82,11 @@
   add('league',[championsLeagueMatchdayOne]);
   add('press',[championsLeagueMatchdayOne]);
   add('news',[championsLeagueMatchdayOne]);
+
+  const celtaPreview='data/celta-vigo-preview-2041-09-11.js';
+  add('players',[celtaPreview]);
+  add('clubs',[celtaPreview]);
+  add('archive',[celtaPreview]);
+  add('press',[celtaPreview]);
+  add('news',[celtaPreview]);
 })();
