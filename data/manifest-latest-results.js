@@ -123,4 +123,10 @@
   add('archive',[irelandCyprusResult]);
   add('press',[irelandCyprusResult]);
   add('news',[irelandCyprusResult]);
+
+  const irelandCzechiaPreview='data/ireland-czechia-preview-2041-10-01.js';
+  add('nationalTeam',[irelandCzechiaPreview]);
+  add('archive',[irelandCzechiaPreview]);
+  add('press',[irelandCzechiaPreview]);
+  add('news',[irelandCzechiaPreview]);
 })();
