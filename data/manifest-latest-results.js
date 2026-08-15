@@ -116,4 +116,11 @@
   add('archive',[internationalDuty]);
   add('press',[internationalDuty]);
   add('news',[internationalDuty]);
+
+  const irelandCyprusResult='data/ireland-result-2041-09-29-cyprus.js';
+  add('nationalTeam',[irelandCyprusResult]);
+  add('players',[irelandCyprusResult]);
+  add('archive',[irelandCyprusResult]);
+  add('press',[irelandCyprusResult]);
+  add('news',[irelandCyprusResult]);
 })();
