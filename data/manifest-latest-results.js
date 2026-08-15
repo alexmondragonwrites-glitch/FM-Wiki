@@ -135,4 +135,11 @@
   add('archive',[octoberInternationalDuty]);
   add('press',[octoberInternationalDuty]);
   add('news',[octoberInternationalDuty]);
+
+  const irelandCzechiaResult='data/ireland-result-2041-10-03-czechia.js';
+  add('nationalTeam',[irelandCzechiaResult]);
+  add('players',[irelandCzechiaResult]);
+  add('archive',[irelandCzechiaResult]);
+  add('press',[irelandCzechiaResult]);
+  add('news',[irelandCzechiaResult]);
 })();
