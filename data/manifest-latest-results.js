@@ -129,4 +129,10 @@
   add('archive',[irelandCzechiaPreview]);
   add('press',[irelandCzechiaPreview]);
   add('news',[irelandCzechiaPreview]);
+
+  const octoberInternationalDuty='data/finn-harps-international-duty-2041-10-01.js';
+  add('players',[octoberInternationalDuty]);
+  add('archive',[octoberInternationalDuty]);
+  add('press',[octoberInternationalDuty]);
+  add('news',[octoberInternationalDuty]);
 })();
