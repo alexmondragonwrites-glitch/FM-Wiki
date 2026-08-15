@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-09-27',
+    referenceDate:'2041-09-29',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-09-27',
+    updatedAt:'2041-09-29',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-09-27',
+      players:'2041-09-29',
       transfers:'2041-08-02',
-      nationalTeam:'2041-09-26',
+      nationalTeam:'2041-09-29',
       clubs:'2041-09-18',
       matches:'2041-09-18',
-      season:'2041-09-27',
-      news:'2041-09-27',
+      season:'2041-09-29',
+      news:'2041-09-29',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=emerson-escarcega'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-09-27-finn-harps-laenderspielueberblick'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-09-29-irland-zypern-wm-quali-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
