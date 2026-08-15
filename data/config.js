@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-10-01',
+    referenceDate:'2041-10-03',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-10-01',
+    updatedAt:'2041-10-03',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-10-01',
+      players:'2041-10-03',
       transfers:'2041-08-02',
-      nationalTeam:'2041-10-01',
+      nationalTeam:'2041-10-03',
       clubs:'2041-09-18',
       matches:'2041-09-18',
-      season:'2041-10-01',
-      news:'2041-10-01',
+      season:'2041-10-03',
+      news:'2041-10-03',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=billy-walker'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-10-01-irland-tschechien-wm-quali-vorbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-10-03-irland-tschechien-wm-quali-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
