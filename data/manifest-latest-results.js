@@ -168,4 +168,13 @@
   add('archive',[octoberEighthInternationalDuty]);
   add('press',[octoberEighthInternationalDuty]);
   add('news',[octoberEighthInternationalDuty]);
+
+  const athloneOctoberResult='data/athlone-town-result-2041-10-11.js';
+  add('players',[athloneOctoberResult]);
+  add('matches',[athloneOctoberResult]);
+  add('fixtures',[athloneOctoberResult]);
+  add('archive',[athloneOctoberResult]);
+  add('league',[athloneOctoberResult]);
+  add('press',[athloneOctoberResult]);
+  add('news',[athloneOctoberResult]);
 })();
