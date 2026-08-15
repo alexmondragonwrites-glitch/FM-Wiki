@@ -154,4 +154,12 @@
   add('archive',[octoberFourthInternationalDuty]);
   add('press',[octoberFourthInternationalDuty]);
   add('news',[octoberFourthInternationalDuty]);
+
+  const irelandCroatiaResult='data/ireland-result-2041-10-06-croatia.js';
+  add('nationalTeam',[irelandCroatiaResult]);
+  add('players',[irelandCroatiaResult]);
+  add('matches',[irelandCroatiaResult]);
+  add('archive',[irelandCroatiaResult]);
+  add('press',[irelandCroatiaResult]);
+  add('news',[irelandCroatiaResult]);
 })();
