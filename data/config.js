@@ -8,7 +8,7 @@
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-09-29',
+      players:'2041-10-01',
       transfers:'2041-08-02',
       nationalTeam:'2041-10-01',
       clubs:'2041-09-18',
