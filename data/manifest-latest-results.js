@@ -142,4 +142,10 @@
   add('archive',[irelandCzechiaResult]);
   add('press',[irelandCzechiaResult]);
   add('news',[irelandCzechiaResult]);
+
+  const irelandCroatiaPreview='data/ireland-croatia-preview-2041-10-04.js';
+  add('nationalTeam',[irelandCroatiaPreview]);
+  add('archive',[irelandCroatiaPreview]);
+  add('press',[irelandCroatiaPreview]);
+  add('news',[irelandCroatiaPreview]);
 })();
