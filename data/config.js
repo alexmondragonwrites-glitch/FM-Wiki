@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-10-04',
+    referenceDate:'2041-10-06',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-10-04',
+    updatedAt:'2041-10-06',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-10-04',
+      players:'2041-10-06',
       transfers:'2041-08-02',
-      nationalTeam:'2041-10-04',
+      nationalTeam:'2041-10-06',
       clubs:'2041-09-18',
-      matches:'2041-09-18',
-      season:'2041-10-04',
-      news:'2041-10-04',
+      matches:'2041-10-06',
+      season:'2041-10-06',
+      news:'2041-10-06',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-10-04-irland-kroatien-wm-quali-vorbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-10-06-irland-kroatien-wm-quali-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
