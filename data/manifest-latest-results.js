@@ -177,4 +177,13 @@
   add('league',[athloneOctoberResult]);
   add('press',[athloneOctoberResult]);
   add('news',[athloneOctoberResult]);
+
+  const shelbourneOctoberResult='data/shelbourne-result-2041-10-18.js';
+  add('players',[shelbourneOctoberResult]);
+  add('matches',[shelbourneOctoberResult]);
+  add('fixtures',[shelbourneOctoberResult]);
+  add('archive',[shelbourneOctoberResult]);
+  add('league',[shelbourneOctoberResult]);
+  add('press',[shelbourneOctoberResult]);
+  add('news',[shelbourneOctoberResult]);
 })();
