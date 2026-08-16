@@ -17,13 +17,14 @@
   const redBullSalzburgPreview='data/red-bull-salzburg-preview-2041-10-19.js';
   const championsLeagueMatchdayThreeTuesday='data/champions-league-matchday-3-tuesday-results-2041-10-22.js';
   const redBullSalzburgResult='data/red-bull-salzburg-result-2041-10-23.js';
+  const stPatricksOctoberResult='data/st-patricks-result-2041-10-27.js';
 
-  add('players',[...recentResults,redBullSalzburgResult]);
-  add('matches',[...recentResults,redBullSalzburgResult]);
-  add('fixtures',[...recentResults,redBullSalzburgResult]);
+  add('players',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult]);
+  add('matches',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult]);
+  add('fixtures',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult]);
   add('clubs',[...recentResults,manUnitedPreview,redBullSalzburgPreview,redBullSalzburgResult]);
-  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult]);
-  add('league',[...recentResults,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult]);
-  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult]);
-  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult]);
+  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult]);
+  add('league',[...recentResults,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult]);
+  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult]);
+  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult]);
 })();
