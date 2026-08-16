@@ -14,13 +14,14 @@
     'data/bohemian-result-2041-04-28.js'
   ];
   const manUnitedPreview='data/manchester-united-preview-2041-04-30.js';
+  const redBullSalzburgPreview='data/red-bull-salzburg-preview-2041-10-19.js';
 
   add('players',recentResults);
   add('matches',recentResults);
   add('fixtures',recentResults);
-  add('clubs',[...recentResults,manUnitedPreview]);
-  add('archive',recentResults);
+  add('clubs',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
+  add('archive',[...recentResults,redBullSalzburgPreview]);
   add('league',recentResults);
-  add('press',[...recentResults,manUnitedPreview]);
-  add('news',[...recentResults,manUnitedPreview]);
+  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
+  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
 })();
