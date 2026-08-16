@@ -15,13 +15,14 @@
   ];
   const manUnitedPreview='data/manchester-united-preview-2041-04-30.js';
   const redBullSalzburgPreview='data/red-bull-salzburg-preview-2041-10-19.js';
+  const championsLeagueMatchdayThreeTuesday='data/champions-league-matchday-3-tuesday-results-2041-10-22.js';
 
   add('players',recentResults);
   add('matches',recentResults);
   add('fixtures',recentResults);
   add('clubs',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
-  add('archive',[...recentResults,redBullSalzburgPreview]);
-  add('league',recentResults);
-  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
-  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview]);
+  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday]);
+  add('league',[...recentResults,championsLeagueMatchdayThreeTuesday]);
+  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday]);
+  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday]);
 })();
