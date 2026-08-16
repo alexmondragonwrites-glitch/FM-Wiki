@@ -21,13 +21,14 @@
   const waterfordOctoberResult='data/waterford-result-2041-10-29.js';
   const derryCityOctoberResult='data/derry-city-result-2041-10-31.js';
   const derryCitySeasonFinale='data/derry-city-result-2041-11-02.js';
+  const irishLeaguesSeasonSummary='data/irish-leagues-season-summary-2041-11-02.js';
 
   add('players',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
   add('matches',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
   add('fixtures',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
   add('clubs',[...recentResults,manUnitedPreview,redBullSalzburgPreview,redBullSalzburgResult]);
-  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
-  add('league',[...recentResults,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
-  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
-  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale]);
+  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary]);
+  add('league',[...recentResults,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary]);
+  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary]);
+  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary]);
 })();
