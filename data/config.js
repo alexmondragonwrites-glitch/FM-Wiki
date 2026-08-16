@@ -1,10 +1,10 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-10-19',
+    referenceDate:'2041-10-22',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-10-19',
+    updatedAt:'2041-10-22',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
@@ -13,8 +13,8 @@
       nationalTeam:'2041-10-06',
       clubs:'2041-10-19',
       matches:'2041-10-18',
-      season:'2041-10-19',
-      news:'2041-10-19',
+      season:'2041-10-22',
+      news:'2041-10-22',
       staff:'2041-06-17'
     }),
     navigation:[
