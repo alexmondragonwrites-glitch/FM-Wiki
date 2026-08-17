@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-11-03',
+    referenceDate:'2041-11-04',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-11-03',
+    updatedAt:'2041-11-04',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
       players:'2041-11-03',
       transfers:'2041-08-02',
       nationalTeam:'2041-10-06',
-      clubs:'2041-10-23',
+      clubs:'2041-11-04',
       matches:'2041-11-02',
-      season:'2041-11-02',
-      news:'2041-11-02',
+      season:'2041-11-04',
+      news:'2041-11-04',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-11-02-finn-harps-derry-city-saisonfinale'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-11-04-young-boys-ligaphase-vorbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
