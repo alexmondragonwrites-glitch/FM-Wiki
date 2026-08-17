@@ -1,14 +1,14 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-11-02',
+    referenceDate:'2041-11-03',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-11-02',
+    updatedAt:'2041-11-03',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-11-02',
+      players:'2041-11-03',
       transfers:'2041-08-02',
       nationalTeam:'2041-10-06',
       clubs:'2041-10-23',
@@ -22,7 +22,7 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=jack-cahill'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
