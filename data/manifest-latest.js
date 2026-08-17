@@ -24,14 +24,16 @@
   const irishLeaguesSeasonSummary='data/irish-leagues-season-summary-2041-11-02.js';
   const jackCahillProfile='data/player-jack-cahill-2041-11-03.js';
   const youngBoysPreview='data/young-boys-preview-2041-11-04.js';
+  const internationalCallups='data/international-callups-2041-11-05.js';
   const youngBoysResult='data/young-boys-result-2041-11-06.js';
 
-  add('players',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,jackCahillProfile,youngBoysResult]);
+  add('players',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,jackCahillProfile,internationalCallups,youngBoysResult]);
+  add('nationalTeam',[internationalCallups]);
   add('matches',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,youngBoysResult]);
   add('fixtures',[...recentResults,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,youngBoysResult]);
   add('clubs',[...recentResults,manUnitedPreview,redBullSalzburgPreview,redBullSalzburgResult,youngBoysPreview,youngBoysResult]);
-  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,jackCahillProfile,youngBoysPreview,youngBoysResult]);
+  add('archive',[...recentResults,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,jackCahillProfile,youngBoysPreview,internationalCallups,youngBoysResult]);
   add('league',[...recentResults,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,youngBoysResult]);
-  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,youngBoysPreview,youngBoysResult]);
-  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,youngBoysPreview,youngBoysResult]);
+  add('press',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,youngBoysPreview,internationalCallups,youngBoysResult]);
+  add('news',[...recentResults,manUnitedPreview,redBullSalzburgPreview,championsLeagueMatchdayThreeTuesday,redBullSalzburgResult,stPatricksOctoberResult,waterfordOctoberResult,derryCityOctoberResult,derryCitySeasonFinale,irishLeaguesSeasonSummary,youngBoysPreview,internationalCallups,youngBoysResult]);
 })();
