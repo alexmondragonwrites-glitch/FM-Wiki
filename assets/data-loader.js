@@ -25,7 +25,7 @@
   };
   window.FM_DATA_LOADER={loaded,loadOne,loadSequential,writeSequential};
 
-  const overlays=['data/manifest-latest.js','data/manifest-latest-results.js'];
+  const overlays=['data/manifest-latest.js','data/manifest-latest-results.js','data/manifest-2042.js'];
   if(document.readyState==='loading')writeSequential(overlays);
   else loadSequential(overlays).catch(error=>console.warn('Manifest-Erweiterung konnte nicht geladen werden.',error));
 })();
