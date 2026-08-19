@@ -9,7 +9,7 @@
     if(path==='kaderarchiv.html')return 'archive';
     if(path==='spieler.html')return 'players';
     if(path==='nationalteam.html')return 'ireland';
-    if(path==='saison.html'||path==='spielplan-2041.html')return 'season';
+    if(path==='saison.html'||path==='spielplan-2041.html'||path==='spielplan-2042.html')return 'season';
     if(path==='spiele.html'||path==='spiel.html')return 'matches';
     if(path==='klubs.html'||path==='klub.html')return 'clubs';
     if(path==='presse.html')return 'press';
@@ -23,9 +23,9 @@
     menu.innerHTML=nav.map(item=>`<a${item.id===activeId?' class="active"':''} href="${item.href}">${item.label}</a>`).join('');
     menu.setAttribute('aria-label','Hauptnavigation');
   }
-  if(path==='saison.html'&&!document.querySelector('a[href="spielplan-2041.html"]')){
+  if(path==='saison.html'&&!document.querySelector('a[href="spielplan-2042.html"]')){
     const archiveButton=document.querySelector('.section-head a[href="spiele.html"]');
-    archiveButton?.insertAdjacentHTML('afterend',' <a class="button button-blue" href="spielplan-2041.html">Spielplan 2041</a>');
+    archiveButton?.insertAdjacentHTML('afterend',' <a class="button button-blue" href="spielplan-2042.html">Spielplan 2042</a>');
   }
   const footer=document.querySelector('footer');
   if(footer){
