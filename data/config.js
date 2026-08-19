@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2041-11-15',
+    referenceDate:'2041-12-31',
     currentSeason:2041,
     nextSeason:2042,
-    updatedAt:'2041-11-15',
+    updatedAt:'2041-12-31',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2041-11-15',
+      players:'2041-12-31',
       transfers:'2041-08-02',
-      nationalTeam:'2041-11-15',
-      clubs:'2041-11-06',
-      matches:'2041-11-15',
-      season:'2041-11-15',
-      news:'2041-11-15',
+      nationalTeam:'2041-11-28',
+      clubs:'2041-12-11',
+      matches:'2041-12-11',
+      season:'2041-12-31',
+      news:'2041-12-31',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=billy-walker'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=torric-bruce'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-11-15-irland-aserbaidschan-wm-ticket'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-12-31-torric-bruce-vertragsverlaengerung'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
