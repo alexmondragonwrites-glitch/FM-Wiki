@@ -2,8 +2,8 @@
   const config={
     schemaVersion:2,
     referenceDate:'2041-12-31',
-    currentSeason:2041,
-    nextSeason:2042,
+    currentSeason:2042,
+    nextSeason:2043,
     updatedAt:'2041-12-31',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2041-12-31-torric-bruce-vertragsverlaengerung'},
+      {id:'press',label:'Presse',href:'presse.html?id=2041-12-31-finn-harps-kader-2042'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
