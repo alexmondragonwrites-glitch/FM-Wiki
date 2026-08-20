@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-01-19',
+    referenceDate:'2042-01-22',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-01-19',
+    updatedAt:'2042-01-22',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-01-19',
+      players:'2042-01-22',
       transfers:'2042-01-19',
       nationalTeam:'2042-01-18',
-      clubs:'2042-01-16',
-      matches:'2042-01-18',
-      season:'2042-01-19',
-      news:'2042-01-19',
+      clubs:'2042-01-22',
+      matches:'2042-01-22',
+      season:'2042-01-22',
+      news:'2042-01-22',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-01-18-brasilien-irland-finalissima-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-01-22-finn-harps-anderlecht-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
