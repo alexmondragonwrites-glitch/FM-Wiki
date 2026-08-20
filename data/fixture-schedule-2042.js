@@ -6,7 +6,7 @@
     ["2042-01-15","20:00","Ferencvárosi TC","Auswärts","","Testspiel",0],
     ["2042-01-22","20:00","Anderlecht","Heim","2:0","Ligaphase der UEFA Champions League",1],
     ["2042-01-26","17:30","FK Vojvodina","Auswärts","","Testspiel",0],
-    ["2042-01-29","20:00","AEK","Heim","","Ligaphase der UEFA Champions League",0],
+    ["2042-01-29","20:00","AEK","Heim","5:3","Ligaphase der UEFA Champions League",1],
     ["2042-02-08","16:00","Unbekannt","Offen","","President's Cup",0],
     ["2042-02-14","19:45","Shamrock Rovers","Auswärts","","Premier Division",0],
     ["2042-02-18","19:45","Waterford","Heim","","Premier Division",0],
