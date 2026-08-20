@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-01-27',
+    referenceDate:'2042-01-29',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-01-27',
+    updatedAt:'2042-01-29',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-01-22',
+      players:'2042-01-29',
       transfers:'2042-01-19',
       nationalTeam:'2042-01-18',
-      clubs:'2042-01-27',
-      matches:'2042-01-22',
-      season:'2042-01-27',
-      news:'2042-01-27',
+      clubs:'2042-01-29',
+      matches:'2042-01-29',
+      season:'2042-01-29',
+      news:'2042-01-29',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-01-27-finn-harps-aek-vorbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-01-29-finn-harps-aek-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
