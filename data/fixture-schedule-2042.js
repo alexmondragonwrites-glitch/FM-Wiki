@@ -4,7 +4,7 @@
     ["2042-01-08","20:00","SpVgg 07 Elversberg","Auswärts","","Testspiel",0],
     ["2042-01-11","15:30","Karlsruhe","Auswärts","","Testspiel",0],
     ["2042-01-15","20:00","Ferencvárosi TC","Auswärts","","Testspiel",0],
-    ["2042-01-22","20:00","Anderlecht","Heim","","Ligaphase der UEFA Champions League",0],
+    ["2042-01-22","20:00","Anderlecht","Heim","2:0","Ligaphase der UEFA Champions League",1],
     ["2042-01-26","17:30","FK Vojvodina","Auswärts","","Testspiel",0],
     ["2042-01-29","20:00","AEK","Heim","","Ligaphase der UEFA Champions League",0],
     ["2042-02-08","16:00","Unbekannt","Offen","","President's Cup",0],
