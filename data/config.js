@@ -8,8 +8,8 @@
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-01-29',
-      transfers:'2042-01-19',
+      players:'2042-01-31',
+      transfers:'2042-01-31',
       nationalTeam:'2042-01-18',
       clubs:'2042-01-29',
       matches:'2042-01-29',
