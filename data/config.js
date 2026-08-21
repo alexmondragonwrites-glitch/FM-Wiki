@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-01-31',
+    referenceDate:'2042-02-07',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-01-31',
+    updatedAt:'2042-02-07',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-01-31',
-      transfers:'2042-01-31',
+      players:'2042-02-07',
+      transfers:'2042-02-07',
       nationalTeam:'2042-01-18',
       clubs:'2042-01-29',
       matches:'2042-01-29',
-      season:'2042-01-31',
-      news:'2042-01-31',
+      season:'2042-02-07',
+      news:'2042-02-07',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-01-31-raul-finn-harps-transfer-bestaetigt'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-02-07-raul-finn-harps-transfer-press'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
