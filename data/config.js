@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-02-14',
+    referenceDate:'2042-02-18',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-02-14',
+    updatedAt:'2042-02-18',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-02-14',
+      players:'2042-02-18',
       transfers:'2042-02-07',
       nationalTeam:'2042-01-18',
-      clubs:'2042-02-14',
-      matches:'2042-02-14',
-      season:'2042-02-14',
-      news:'2042-02-14',
+      clubs:'2042-02-18',
+      matches:'2042-02-18',
+      season:'2042-02-18',
+      news:'2042-02-18',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-02-14-shamrock-rovers-finn-harps-report'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-02-18-finn-harps-waterford-report'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
