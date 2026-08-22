@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-03-14',
+    referenceDate:'2042-03-18',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-03-14',
+    updatedAt:'2042-03-18',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-03-14',
+      players:'2042-03-18',
       transfers:'2042-02-22',
       nationalTeam:'2042-01-18',
       clubs:'2042-03-14',
       matches:'2042-03-14',
       season:'2042-03-14',
-      news:'2042-03-14',
+      news:'2042-03-18',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,7 +22,7 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=graham-varma'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
