@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-03-02',
+    referenceDate:'2042-03-05',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-03-02',
+    updatedAt:'2042-03-05',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-02-28',
+      players:'2042-03-05',
       transfers:'2042-02-22',
       nationalTeam:'2042-01-18',
-      clubs:'2042-03-02',
-      matches:'2042-02-28',
-      season:'2042-03-02',
-      news:'2042-03-02',
+      clubs:'2042-03-05',
+      matches:'2042-03-05',
+      season:'2042-03-05',
+      news:'2042-03-05',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-03-02-caen-finn-harps-achtelfinale-preview'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-03-05-caen-finn-harps-4-4-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
