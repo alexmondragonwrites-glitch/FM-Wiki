@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-03-11',
+    referenceDate:'2042-03-14',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-03-11',
+    updatedAt:'2042-03-14',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-03-11',
+      players:'2042-03-14',
       transfers:'2042-02-22',
       nationalTeam:'2042-01-18',
-      clubs:'2042-03-11',
-      matches:'2042-03-11',
-      season:'2042-03-11',
-      news:'2042-03-11',
+      clubs:'2042-03-14',
+      matches:'2042-03-14',
+      season:'2042-03-14',
+      news:'2042-03-14',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-03-11-finn-harps-caen-4-0-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-03-14-finn-harps-sligo-rovers-3-0-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
