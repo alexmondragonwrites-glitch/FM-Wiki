@@ -11,9 +11,9 @@
       players:'2042-03-18',
       transfers:'2042-02-22',
       nationalTeam:'2042-01-18',
-      clubs:'2042-03-14',
-      matches:'2042-03-14',
-      season:'2042-03-14',
+      clubs:'2042-03-18',
+      matches:'2042-03-18',
+      season:'2042-03-18',
       news:'2042-03-18',
       staff:'2041-06-17'
     }),
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-03-14-finn-harps-sligo-rovers-3-0-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-03-18-athlone-town-finn-harps-0-3-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
