@@ -15,4 +15,7 @@
 
   const bohemianResult='data/bohemian-result-2042-03-21.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,bohemianResult));
+
+  const derryResult='data/derry-city-result-2042-03-24.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,derryResult));
 })();
