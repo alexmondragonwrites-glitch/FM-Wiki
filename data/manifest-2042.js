@@ -18,4 +18,7 @@
 
   const derryResult='data/derry-city-result-2042-03-24.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,derryResult));
+
+  const irelandPeruResult='data/ireland-peru-result-2042-03-29.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandPeruResult));
 })();
