@@ -24,4 +24,7 @@
 
   const worldCupDraw='data/world-cup-draw-2042-04-03.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupDraw));
+
+  const shamrockResult='data/shamrock-rovers-result-2042-04-06.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,shamrockResult));
 })();
