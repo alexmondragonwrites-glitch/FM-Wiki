@@ -12,4 +12,7 @@
 
   const quarterFinalDraw='data/champions-league-quarterfinal-draw-2042-03-21.js';
   ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,quarterFinalDraw));
+
+  const bohemianResult='data/bohemian-result-2042-03-21.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,bohemianResult));
 })();
