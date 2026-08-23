@@ -21,4 +21,7 @@
 
   const irelandPeruResult='data/ireland-peru-result-2042-03-29.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandPeruResult));
+
+  const worldCupDraw='data/world-cup-draw-2042-04-03.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupDraw));
 })();
