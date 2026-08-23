@@ -8,11 +8,11 @@
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-03-18',
+      players:'2042-03-21',
       transfers:'2042-02-22',
       nationalTeam:'2042-01-18',
       clubs:'2042-03-21',
-      matches:'2042-03-18',
+      matches:'2042-03-21',
       season:'2042-03-21',
       news:'2042-03-21',
       staff:'2041-06-17'
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-03-21-champions-league-viertelfinale-auslosung'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-03-21-finn-harps-bohemian-0-1-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
