@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-04-03',
+    referenceDate:'2042-04-06',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-04-03',
+    updatedAt:'2042-04-06',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-03-29',
+      players:'2042-04-06',
       transfers:'2042-02-22',
       nationalTeam:'2042-04-03',
-      clubs:'2042-03-24',
-      matches:'2042-03-29',
-      season:'2042-03-24',
-      news:'2042-04-03',
+      clubs:'2042-04-06',
+      matches:'2042-04-06',
+      season:'2042-04-06',
+      news:'2042-04-06',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-04-03-world-cup-auslosung-irland-gruppe-k'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-04-06-finn-harps-shamrock-rovers-3-0-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
