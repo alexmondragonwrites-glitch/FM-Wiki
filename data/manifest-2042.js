@@ -36,4 +36,7 @@
 
   const ucdResult='data/ucd-result-2042-04-12.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,ucdResult));
+
+  const manCitySecondLeg='data/manchester-city-result-2042-04-15.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,manCitySecondLeg));
 })();
