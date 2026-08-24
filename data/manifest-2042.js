@@ -27,4 +27,7 @@
 
   const shamrockResult='data/shamrock-rovers-result-2042-04-06.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,shamrockResult));
+
+  const manCityPreview='data/manchester-city-preview-2042-04-07.js';
+  ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,manCityPreview));
 })();
