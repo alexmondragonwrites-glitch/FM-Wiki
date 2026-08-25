@@ -42,4 +42,7 @@
 
   const semifinalPairings='data/champions-league-semifinal-pairings-2042-04-15.js';
   ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,semifinalPairings));
+
+  const europaLeagueSemifinals='data/europa-league-semifinal-pairings-2042-04-15.js';
+  ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,europaLeagueSemifinals));
 })();
