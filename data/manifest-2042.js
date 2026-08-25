@@ -45,4 +45,7 @@
 
   const conferenceLeagueSemifinals='data/conference-league-semifinal-pairings-2042-04-15.js';
   ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,conferenceLeagueSemifinals));
+
+  const stPatricksResult='data/st-patricks-result-2042-04-20.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,stPatricksResult));
 })();
