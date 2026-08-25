@@ -48,4 +48,7 @@
 
   const stPatricksResult='data/st-patricks-result-2042-04-20.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,stPatricksResult));
+
+  const corkCityResult='data/cork-city-result-2042-04-24.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,corkCityResult));
 })();
