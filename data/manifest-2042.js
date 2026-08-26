@@ -51,4 +51,7 @@
 
   const corkCityResult='data/cork-city-result-2042-04-24.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,corkCityResult));
+
+  const derryCityResultApril='data/derry-city-result-2042-04-27.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,derryCityResultApril));
 })();
