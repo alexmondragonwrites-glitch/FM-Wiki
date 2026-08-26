@@ -57,4 +57,7 @@
 
   const barcelonaPreview='data/barcelona-preview-2042-04-28.js';
   ['players','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,barcelonaPreview));
+
+  const barcelonaFirstLeg='data/barcelona-result-2042-04-30.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,barcelonaFirstLeg));
 })();
