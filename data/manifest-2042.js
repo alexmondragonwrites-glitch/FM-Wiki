@@ -63,4 +63,7 @@
 
   const sligoRoversResult='data/sligo-rovers-result-2042-05-03.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,sligoRoversResult));
+
+  const barcelonaSecondLeg='data/barcelona-result-2042-05-06.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,barcelonaSecondLeg));
 })();
