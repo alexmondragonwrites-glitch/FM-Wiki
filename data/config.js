@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-04-27',
+    referenceDate:'2042-04-28',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-04-27',
+    updatedAt:'2042-04-28',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-04-27',
+      players:'2042-04-28',
       transfers:'2042-02-22',
       nationalTeam:'2042-04-03',
-      clubs:'2042-04-27',
+      clubs:'2042-04-28',
       matches:'2042-04-27',
-      season:'2042-04-27',
-      news:'2042-04-27',
+      season:'2042-04-28',
+      news:'2042-04-28',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-04-27-finn-harps-derry-city-3-0-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-04-28-barcelona-halbfinale-vorbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
