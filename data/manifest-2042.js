@@ -66,4 +66,7 @@
 
   const barcelonaSecondLeg='data/barcelona-result-2042-05-06.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,barcelonaSecondLeg));
+
+  const championsLeagueFinalPairing='data/champions-league-final-pairing-2042-05-06.js';
+  ['players','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,championsLeagueFinalPairing));
 })();
