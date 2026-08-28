@@ -87,4 +87,7 @@
 
   const polMunozPortrait='data/pol-munoz-portrait-2042-05-25.js';
   ['players','nationalTeam','archive','clubs','league','press','news'].forEach(key=>add(key,polMunozPortrait));
+
+  const polMunozCoventryContext='data/pol-munoz-coventry-context-2042-05-25.js';
+  ['players','nationalTeam','archive','clubs','league','press','news'].forEach(key=>add(key,polMunozCoventryContext));
 })();
