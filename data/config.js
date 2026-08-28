@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-05-16',
+    referenceDate:'2042-05-19',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-05-16',
+    updatedAt:'2042-05-19',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-05-16',
+      players:'2042-05-19',
       transfers:'2042-02-22',
       nationalTeam:'2042-04-03',
-      clubs:'2042-05-16',
-      matches:'2042-05-16',
-      season:'2042-05-16',
-      news:'2042-05-16',
+      clubs:'2042-05-19',
+      matches:'2042-05-19',
+      season:'2042-05-19',
+      news:'2042-05-19',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-05-16-bohemian-finn-harps-0-5-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-05-19-waterford-finn-harps-0-3-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
