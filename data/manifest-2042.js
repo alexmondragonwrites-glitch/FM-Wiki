@@ -84,4 +84,7 @@
 
   const worldCupNominations='data/world-cup-nominations-finn-harps-2042-05-23.js';
   ['players','nationalTeam','archive','clubs','league','press','news'].forEach(key=>add(key,worldCupNominations));
+
+  const polMunozPortrait='data/pol-munoz-portrait-2042-05-25.js';
+  ['players','nationalTeam','archive','clubs','league','press','news'].forEach(key=>add(key,polMunozPortrait));
 })();
