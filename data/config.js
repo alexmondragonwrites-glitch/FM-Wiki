@@ -10,7 +10,7 @@
     dataDates:Object.freeze({
       players:'2042-05-23',
       transfers:'2042-02-22',
-      nationalTeam:'2042-04-03',
+      nationalTeam:'2042-05-23',
       clubs:'2042-05-23',
       matches:'2042-05-23',
       season:'2042-05-23',
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=pol-munoz'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-05-23-finn-harps-waterford-3-1-spielbericht'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-05-23-finn-harps-20-spieler-world-cup'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
