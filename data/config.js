@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-05-06',
+    referenceDate:'2042-05-09',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-05-06',
+    updatedAt:'2042-05-09',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-05-06',
+      players:'2042-05-09',
       transfers:'2042-02-22',
       nationalTeam:'2042-04-03',
-      clubs:'2042-05-06',
-      matches:'2042-05-06',
-      season:'2042-05-06',
-      news:'2042-05-06',
+      clubs:'2042-05-09',
+      matches:'2042-05-09',
+      season:'2042-05-09',
+      news:'2042-05-09',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-05-06-champions-league-finale-finn-harps-man-utd'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-05-09-finn-harps-athlone-town-5-1-spielbericht'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
