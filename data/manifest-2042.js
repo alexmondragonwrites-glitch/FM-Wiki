@@ -78,4 +78,7 @@
 
   const waterfordResultMay='data/waterford-result-2042-05-19.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,waterfordResultMay));
+
+  const waterfordHomeResultMay='data/waterford-result-2042-05-23.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,waterfordHomeResultMay));
 })();
