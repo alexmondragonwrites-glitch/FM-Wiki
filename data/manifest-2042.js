@@ -72,4 +72,7 @@
 
   const athloneTownResultMay='data/athlone-town-result-2042-05-09.js';
   ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,athloneTownResultMay));
+
+  const bohemianResultMay='data/bohemian-result-2042-05-16.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,bohemianResultMay));
 })();
