@@ -13,7 +13,7 @@
       nationalTeam:'2042-05-25',
       clubs:'2042-05-25',
       matches:'2042-05-23',
-      season:'2042-05-23',
+      season:'2042-05-25',
       news:'2042-05-25',
       staff:'2041-06-17'
     }),
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-05-25-pol-munoz-portrait-von-coventry-zur-wm'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-05-25-champions-league-final-manchester-united-scouting'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
