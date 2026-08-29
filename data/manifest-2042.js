@@ -90,4 +90,7 @@
 
   const polMunozCoventryContext='data/pol-munoz-coventry-context-2042-05-25.js';
   ['players','nationalTeam','archive','clubs','league','press','news'].forEach(key=>add(key,polMunozCoventryContext));
+
+  const manUtdFinalScouting='data/manchester-united-final-scouting-2042-05-25.js';
+  ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,manUtdFinalScouting));
 })();
