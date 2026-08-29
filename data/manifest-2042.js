@@ -102,4 +102,7 @@
 
   const irelandDrCongoResult='data/ireland-dr-congo-result-2042-06-08.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandDrCongoResult));
+
+  const harpsInternationalDutyJune='data/finn-harps-international-duty-2042-06-07.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,harpsInternationalDutyJune));
 })();
