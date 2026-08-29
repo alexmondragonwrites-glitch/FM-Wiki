@@ -105,4 +105,7 @@
 
   const harpsInternationalDutyJune='data/finn-harps-international-duty-2042-06-07.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,harpsInternationalDutyJune));
+
+  const worldCupOpeningResults='data/world-cup-opening-results-2042-06-12.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupOpeningResults));
 })();
