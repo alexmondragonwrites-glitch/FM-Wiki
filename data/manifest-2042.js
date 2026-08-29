@@ -99,4 +99,7 @@
 
   const irelandCameroonResult='data/ireland-cameroon-result-2042-06-02.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandCameroonResult));
+
+  const irelandDrCongoResult='data/ireland-dr-congo-result-2042-06-08.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandDrCongoResult));
 })();
