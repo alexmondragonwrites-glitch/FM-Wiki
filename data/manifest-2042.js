@@ -93,4 +93,7 @@
 
   const manUtdFinalScouting='data/manchester-united-final-scouting-2042-05-25.js';
   ['fixtures','clubs','archive','league','press','news'].forEach(key=>add(key,manUtdFinalScouting));
+
+  const championsLeagueFinalResult='data/champions-league-final-result-2042-05-31.js';
+  ['players','matches','fixtures','clubs','archive','league','press','news','nationalTeam'].forEach(key=>add(key,championsLeagueFinalResult));
 })();
