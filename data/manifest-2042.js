@@ -96,4 +96,7 @@
 
   const championsLeagueFinalResult='data/champions-league-final-result-2042-05-31.js';
   ['players','matches','fixtures','clubs','archive','league','press','news','nationalTeam'].forEach(key=>add(key,championsLeagueFinalResult));
+
+  const irelandCameroonResult='data/ireland-cameroon-result-2042-06-02.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandCameroonResult));
 })();
