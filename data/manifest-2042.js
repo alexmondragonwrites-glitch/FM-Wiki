@@ -111,4 +111,7 @@
 
   const worldCupGroupsDF='data/world-cup-results-2042-06-13.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsDF));
+
+  const worldCupPreIrelandChina='data/world-cup-pre-ireland-china-2042-06-15.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupPreIrelandChina));
 })();
