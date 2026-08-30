@@ -117,4 +117,7 @@
 
   const irelandChinaPreview='data/ireland-china-preview-2042-06-15.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandChinaPreview));
+
+  const irelandChinaResult='data/ireland-china-result-2042-06-15.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandChinaResult));
 })();
