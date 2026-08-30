@@ -120,4 +120,7 @@
 
   const irelandChinaResult='data/ireland-china-result-2042-06-15.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandChinaResult));
+
+  const worldCupGroupsABCSecond='data/world-cup-results-2042-06-16.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsABCSecond));
 })();
