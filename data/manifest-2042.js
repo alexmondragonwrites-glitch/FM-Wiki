@@ -162,4 +162,7 @@
 
   const worldCupKnockoutJune29='data/world-cup-knockout-results-2042-06-29.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupKnockoutJune29));
+
+  const irelandItalyResult='data/ireland-italy-result-2042-06-29.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandItalyResult));
 })();
