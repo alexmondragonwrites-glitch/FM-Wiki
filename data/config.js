@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-06-23',
+    referenceDate:'2042-06-25',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-06-23',
+    updatedAt:'2042-06-25',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-06-23',
+      players:'2042-06-25',
       transfers:'2042-02-22',
-      nationalTeam:'2042-06-23',
+      nationalTeam:'2042-06-25',
       clubs:'2042-05-31',
       matches:'2042-06-23',
       season:'2042-05-31',
-      news:'2042-06-23',
+      news:'2042-06-25',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-06-23-brasilien-irland-2-2-gruppensieg'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-06-25-world-cup-round2-argentina-upset-escarcega'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
