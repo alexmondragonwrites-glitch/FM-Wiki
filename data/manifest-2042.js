@@ -132,4 +132,7 @@
 
   const worldCupGroupsGHISecond='data/world-cup-results-2042-06-18.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsGHISecond));
+
+  const irelandSouthAfricaResult='data/ireland-south-africa-result-2042-06-19.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandSouthAfricaResult));
 })();
