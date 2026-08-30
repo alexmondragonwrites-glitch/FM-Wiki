@@ -144,4 +144,10 @@
 
   const irelandBrazilPreview='data/ireland-brazil-preview-2042-06-21.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandBrazilPreview));
+
+  const worldCupGroupsGHIFinal='data/world-cup-results-2042-06-22.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsGHIFinal));
+
+  const irelandBrazilResult='data/ireland-brazil-result-2042-06-23.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandBrazilResult));
 })();
