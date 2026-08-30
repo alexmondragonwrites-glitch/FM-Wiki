@@ -159,4 +159,7 @@
 
   const irelandItalyPreview='data/ireland-italy-preview-2042-06-28.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandItalyPreview));
+
+  const worldCupKnockoutJune29='data/world-cup-knockout-results-2042-06-29.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupKnockoutJune29));
 })();
