@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-06-20',
+    referenceDate:'2042-06-21',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-06-20',
+    updatedAt:'2042-06-21',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-06-19',
+      players:'2042-06-21',
       transfers:'2042-02-22',
-      nationalTeam:'2042-06-20',
+      nationalTeam:'2042-06-21',
       clubs:'2042-05-31',
       matches:'2042-06-19',
       season:'2042-05-31',
-      news:'2042-06-20',
+      news:'2042-06-21',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -22,12 +22,12 @@
       {id:'squad',label:'Kader',href:'kader.html'},
       {id:'planning',label:'Planung',href:'kaderplanung.html'},
       {id:'archive',label:'Archiv',href:'kaderarchiv.html?year=2041'},
-      {id:'players',label:'Spieler',href:'spieler.html?id=ben-barry'},
+      {id:'players',label:'Spieler',href:'spieler.html?id=emerson-escarcega'},
       {id:'ireland',label:'Nationalteam',href:'nationalteam.html'},
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-06-20-world-cup-groups-a-c-final-matchday'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-06-21-irland-brasilien-wm-scouting'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
