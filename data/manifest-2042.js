@@ -153,4 +153,10 @@
 
   const worldCupKnockoutFirstResults='data/world-cup-knockout-results-2042-06-25.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupKnockoutFirstResults));
+
+  const worldCupKnockoutJune28='data/world-cup-knockout-results-2042-06-28.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupKnockoutJune28));
+
+  const irelandItalyPreview='data/ireland-italy-preview-2042-06-28.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandItalyPreview));
 })();
