@@ -150,4 +150,7 @@
 
   const irelandBrazilResult='data/ireland-brazil-result-2042-06-23.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandBrazilResult));
+
+  const worldCupKnockoutFirstResults='data/world-cup-knockout-results-2042-06-25.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupKnockoutFirstResults));
 })();
