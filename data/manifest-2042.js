@@ -108,4 +108,7 @@
 
   const worldCupOpeningResults='data/world-cup-opening-results-2042-06-12.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupOpeningResults));
+
+  const worldCupGroupsDF='data/world-cup-results-2042-06-13.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsDF));
 })();
