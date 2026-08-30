@@ -70,7 +70,7 @@
   wc.dayTwoSummary={
     date,
     matches:6,
-    goals:14,
+    goals:15,
     headline:'Ecuador setzt mit einem 4:1 das Ausrufezeichen, Mexiko startet mit 3:1 und Escárcega spielt durch.',
     harpsNote:'Emerson Escárcega absolviert beim 3:1 Mexikos gegen Österreich die vollen 90 Minuten als hängende Spitze.'
   };
