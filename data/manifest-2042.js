@@ -114,4 +114,7 @@
 
   const worldCupPreIrelandChina='data/world-cup-pre-ireland-china-2042-06-15.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupPreIrelandChina));
+
+  const irelandChinaPreview='data/ireland-china-preview-2042-06-15.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandChinaPreview));
 })();
