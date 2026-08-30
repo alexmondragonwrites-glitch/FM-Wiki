@@ -138,4 +138,10 @@
 
   const worldCupGroupsABCFinal='data/world-cup-results-2042-06-20.js';
   ['nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsABCFinal));
+
+  const worldCupGroupsDEFFinal='data/world-cup-results-2042-06-21.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsDEFFinal));
+
+  const irelandBrazilPreview='data/ireland-brazil-preview-2042-06-21.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandBrazilPreview));
 })();
