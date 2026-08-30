@@ -123,4 +123,10 @@
 
   const worldCupGroupsABCSecond='data/world-cup-results-2042-06-16.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsABCSecond));
+
+  const worldCupGroupsDEFSecond='data/world-cup-results-2042-06-17.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupGroupsDEFSecond));
+
+  const irelandSouthAfricaPreview='data/ireland-south-africa-preview-2042-06-17.js';
+  ['nationalTeam','archive','press','news'].forEach(key=>add(key,irelandSouthAfricaPreview));
 })();
