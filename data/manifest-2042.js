@@ -180,4 +180,7 @@
 
   const alejandroLopezSigning='data/alejandro-lopez-signing-2042-07-05.js';
   ['players','transfers','clubs','archive','league','press','news'].forEach(key=>add(key,alejandroLopezSigning));
+
+  const irelandAustriaQuarterfinals='data/ireland-austria-result-quarterfinals-2042-07-05.js';
+  ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandAustriaQuarterfinals));
 })();
