@@ -165,4 +165,7 @@
 
   const irelandItalyResult='data/ireland-italy-result-2042-06-29.js';
   ['players','matches','nationalTeam','archive','press','news'].forEach(key=>add(key,irelandItalyResult));
+
+  const raulSigning='data/raul-signing-2042-07-01.js';
+  ['players','transfers','clubs','archive','league','press','news','nationalTeam'].forEach(key=>add(key,raulSigning));
 })();
