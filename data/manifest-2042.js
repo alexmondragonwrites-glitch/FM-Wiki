@@ -171,4 +171,7 @@
 
   const worldCupRoundOf16July2='data/world-cup-round-of-16-results-2042-07-02.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupRoundOf16July2));
+
+  const worldCupRoundOf16July3='data/world-cup-round-of-16-results-austria-scouting-2042-07-03.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupRoundOf16July3));
 })();
