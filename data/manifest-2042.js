@@ -177,4 +177,7 @@
 
   const worldCupRoundOf16July3Late='data/world-cup-round-of-16-results-belgium-korea-2042-07-03.js';
   ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupRoundOf16July3Late));
+
+  const alejandroLopezSigning='data/alejandro-lopez-signing-2042-07-05.js';
+  ['players','transfers','clubs','archive','league','press','news'].forEach(key=>add(key,alejandroLopezSigning));
 })();
