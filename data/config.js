@@ -10,9 +10,9 @@
     dataDates:Object.freeze({
       players:'2042-07-05',
       transfers:'2042-07-05',
-      nationalTeam:'2042-07-03',
+      nationalTeam:'2042-07-05',
       clubs:'2042-07-05',
-      matches:'2042-06-29',
+      matches:'2042-07-05',
       season:'2042-07-05',
       news:'2042-07-05',
       staff:'2041-06-17'
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-07-05-alejandro-lopez-finn-harps'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-07-05-ireland-austria-3-0-quarterfinal-spain'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
