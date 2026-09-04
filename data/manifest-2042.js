@@ -168,4 +168,7 @@
 
   const raulSigning='data/raul-signing-2042-07-01.js';
   ['players','transfers','clubs','archive','league','press','news','nationalTeam'].forEach(key=>add(key,raulSigning));
+
+  const worldCupRoundOf16July2='data/world-cup-round-of-16-results-2042-07-02.js';
+  ['players','nationalTeam','archive','press','news'].forEach(key=>add(key,worldCupRoundOf16July2));
 })();
