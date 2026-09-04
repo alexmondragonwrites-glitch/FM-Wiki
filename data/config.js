@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-07-02',
+    referenceDate:'2042-07-03',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-07-02',
+    updatedAt:'2042-07-03',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-07-02',
+      players:'2042-07-03',
       transfers:'2042-07-01',
-      nationalTeam:'2042-07-02',
+      nationalTeam:'2042-07-03',
       clubs:'2042-07-01',
       matches:'2042-06-29',
       season:'2042-07-01',
-      news:'2042-07-02',
+      news:'2042-07-03',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-07-02-mexico-5-2-england-escarcega-dream-lives'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-07-03-brazil-spain-through-paulo-austria-scouting'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
