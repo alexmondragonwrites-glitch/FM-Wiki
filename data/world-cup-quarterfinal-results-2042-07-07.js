@@ -53,19 +53,14 @@
 
   wc.semiFinalists=wc.semiFinalists||[];
   ['Niederlande','Mexiko'].forEach(team=>{if(!wc.semiFinalists.includes(team))wc.semiFinalists.push(team);});
-  wc.semiFinals=wc.semiFinals||[];
-  {
-    const semi={stage:'Halbfinale',home:'Niederlande',away:'Mexiko',status:'angesetzt',basis:'Sieger der ersten beiden Viertelfinals'};
-    const index=wc.semiFinals.findIndex(item=>item&&((item.home==='Niederlande'&&item.away==='Mexiko')||(item.home==='Mexiko'&&item.away==='Niederlande')));
-    if(index>=0)wc.semiFinals[index]=Object.assign({},wc.semiFinals[index],semi);else wc.semiFinals.push(semi);
-  }
 
   wc.july7QuarterFinalSummary={
     date,stage:'Viertelfinale',
     headline:'Mexiko und die Niederlande stehen im WM-Halbfinale.',
     results:['Niederlande 2:2 Südkorea · 4:3 i.E.','Mexiko 4:1 Japan'],
     harpsHeadline:'Emerson Escárcega trifft beim 4:1 gegen Japan und hält seinen Traum vom WM-Titel am Leben.',
-    firstSemiFinal:'Niederlande gegen Mexiko'
+    semiFinalistsSoFar:['Niederlande','Mexiko'],
+    note:'Die konkreten Halbfinalpaarungen ergeben sich erst nach Abschluss aller vier Viertelfinals.'
   };
 
   upsert(window.FM_PLAYER_UPDATES,{
@@ -79,14 +74,14 @@
     headline:'Escárcegas Traum lebt weiter: Mexiko und Niederlande stehen im Halbfinale',
     subheadline:'Mexiko schlägt Japan überzeugend 4:1, Escárcega trifft. Zuvor überleben die Niederlande ein dramatisches 2:2 gegen Südkorea und gewinnen 4:3 im Elfmeterschießen.',
     label:'FIFA WORLD CUP 2042 · VIERTELFINALE · 7. JULI',
-    heroStat:{label:'HALBFINALE',value:'NIEDERLANDE – MEXIKO',note:'Die ersten beiden Halbfinalisten stehen fest'},
+    heroStat:{label:'HALBFINALISTEN',value:'NIEDERLANDE & MEXIKO',note:'Die ersten beiden Tickets sind vergeben'},
     backlink:{href:'nationalteam.html',label:'← ZUR WM / NATIONALTEAM'},
     intro:'Die ersten beiden Viertelfinals sind gespielt. Die Niederlande müssen gegen Südkorea bis ins Elfmeterschießen, setzen sich dort aber 4:3 durch. Mexiko liefert dagegen das nächste klare Statement und schlägt Japan im Wembley-Stadion 4:1. Emerson Escárcega erzielt das zwischenzeitliche 2:0 und steht damit mit Mexiko im WM-Halbfinale.',
     sections:[
       {title:'Südkorea zwingt die Niederlande bis zum letzten Schuss',text:'F. Sierskma bringt die Niederlande in Minute 31 in Führung, Noh Tae-Ho gleicht kurz vor der Pause aus. E. Musah stellt in Minute 67 erneut auf niederländische Führung, doch nur eine Minute später trifft Noh Tae-Ho zum 2:2. Nach Verlängerung fällt die Entscheidung vom Punkt: Die Niederlande gewinnen 4:3 im Elfmeterschießen.'},
       {title:'Mexiko bleibt auf Titelkurs',text:'Mexiko schlägt Japan vor 90.000 Zuschauern in Wembley 4:1. R. López trifft in Minute 37 und später per Elfmeter in Minute 70, Emerson Escárcega erhöht in Minute 40 auf 2:0, I. Barragán setzt in der Nachspielzeit den Schlusspunkt. Japan kommt durch K. Uematsu kurz vor der Pause zum zwischenzeitlichen 1:2.'},
       {title:'Escárcega liefert wieder',text:'Nach seinem scorerlosen Auftritt beim 5:2 gegen England steht Escárcega diesmal wieder selbst auf der Anzeigetafel. Der 32-Jährige spielt 67 Minuten als hängende Spitze, trifft in Minute 40 per Volley aus kurzer Distanz und erhält die Note 7,1. Der Treffer wird nach Videobeweis anerkannt.'},
-      {title:'Das erste Halbfinale steht',text:'Mit den Siegen der Niederlande und Mexikos ist die erste Halbfinalpaarung fix: Niederlande gegen Mexiko. Für Escárcega lebt damit die außergewöhnliche Geschichte weiter, nach dem verlorenen Champions-League-Finale mit Finn Harps nun mit Mexiko nach dem größten Titel im Nationalmannschaftsfußball zu greifen.'}
+      {title:'Zwei Halbfinalisten stehen fest',text:'Mit den Siegen der Niederlande und Mexikos sind die ersten beiden Halbfinaltickets vergeben. Die konkrete Zuordnung im Turnierbaum steht jedoch erst nach den beiden verbleibenden Viertelfinals fest. Für Escárcega lebt die außergewöhnliche Geschichte weiter, nach dem verlorenen Champions-League-Finale mit Finn Harps nun mit Mexiko nach dem größten Titel im Nationalmannschaftsfußball zu greifen.'}
     ],
     fanReactions:{simulated:true,note:'Simulierte Save-Welt-Reaktionen',items:[
       '„Mexiko schießt erst England fünf und Japan vier. Das ist längst kein Außenseiterlauf mehr.“',
@@ -100,7 +95,7 @@
   upsert(window.FM_NEWS,{
     id:'2042-07-07-world-cup-quarterfinals-mexico-netherlands',date,type:'world-cup',
     title:'Mexiko und Niederlande im Halbfinale · Escárcega trifft erneut',
-    text:'Mexiko schlägt Japan 4:1, Emerson Escárcega erzielt das 2:0. Die Niederlande setzen sich nach einem 2:2 mit 4:3 im Elfmeterschießen gegen Südkorea durch. Im Halbfinale treffen Niederlande und Mexiko aufeinander.',
+    text:'Mexiko schlägt Japan 4:1, Emerson Escárcega erzielt das 2:0. Die Niederlande setzen sich nach einem 2:2 mit 4:3 im Elfmeterschießen gegen Südkorea durch. Beide stehen im Halbfinale; die Gegner ergeben sich nach den übrigen Viertelfinals.',
     href:`presse.html?id=${report.id}`
   });
 })();
