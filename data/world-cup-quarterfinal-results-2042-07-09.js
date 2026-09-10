@@ -88,8 +88,8 @@
 
   wc.semiFinalists=['Niederlande','Mexiko','Brasilien','Irland'];
   wc.semiFinals=[
-    {stage:'Halbfinale',home:'Niederlande',away:'Mexiko',status:'angesetzt'},
-    {stage:'Halbfinale',home:'Brasilien',away:'Irland',status:'angesetzt',note:'Rematch des 2:2 aus der Gruppenphase.'}
+    {stage:'Halbfinale',home:'Mexiko',away:'Brasilien',status:'angesetzt',basis:'im Wettbewerbsüberblick bestätigt'},
+    {stage:'Halbfinale',home:'Niederlande',away:'Irland',status:'angesetzt',basis:'im Wettbewerbsüberblick bestätigt'}
   ];
 
   wc.finnHarps=wc.finnHarps||{};
@@ -100,7 +100,7 @@
     mexico:['Emerson Escárcega'],
     brazil:['Paulo Henrique']
   };
-  wc.finnHarps.contextSemiFinals='Zwölf aktuelle Finn-Harps-Spieler stehen im WM-Halbfinale. Irland trifft auf Brasilien mit Harps-Torwart Paulo Henrique; im anderen Halbfinale jagt Emerson Escárcega mit Mexiko gegen die Niederlande den Finaleinzug.';
+  wc.finnHarps.contextSemiFinals='Zwölf aktuelle Finn-Harps-Spieler stehen im WM-Halbfinale. Im ersten Duell trifft Emerson Escárcega mit Mexiko auf Harps-Torwart Paulo Henrique und Brasilien. Im zweiten Halbfinale spielt Irlands großer Harps-Block gegen die Niederlande.';
 
   upsert(window.FM_PLAYER_UPDATES,{
     id:'2042-07-09-paulo-henrique-brazil-germany-world-cup',date,player:'Paulo Henrique',type:'nationalteam',
@@ -125,7 +125,7 @@
     headline:'Reilly, McHugh und pure Nerven: Irland überlebt Spanien und steht im WM-Halbfinale',
     subheadline:'Führung, Ausgleich in der 92., spanischer Elfmeter zur Wende, Rote Karte, McHughs spätes 2:2 und dann zwei Reilly-Paraden: Irland gewinnt ein unfassbares Viertelfinale 4:3 im Elfmeterschießen.',
     label:'FIFA WORLD CUP 2042 · VIERTELFINALE · 9. JULI',
-    heroStat:{label:'HALBFINALE',value:'SPANIEN 2:2 IRLAND · 3:4 i.E.',note:'Nächster Gegner: Brasilien'},
+    heroStat:{label:'HALBFINALE',value:'SPANIEN 2:2 IRLAND · 3:4 i.E.',note:'Nächster Gegner: Niederlande'},
     backlink:{href:'nationalteam.html',label:'← ZUR WM / NATIONALTEAM'},
     intro:'Was für ein Spiel. Irland führt durch Harry O’Learys Elfmeter, kassiert in der Nachspielzeit den Ausgleich und unmittelbar danach per Strafstoß sogar das 1:2. Spanien scheint das Halbfinale bereits zu greifen, verliert dann José Luis mit Rot. In Minute 115 köpft Brendan McHugh, dessen Länderspielkarriere bei einem Ausscheiden hätte enden können, Irland zurück ins Spiel. Im Elfmeterschießen verschießt Cormac O’Kane, doch Evan Reilly hält zwei spanische Versuche und schickt Irland ins Halbfinale.',
     sections:[
@@ -133,23 +133,23 @@
       {title:'McHugh weigert sich, dass es sein Abschied wird',text:'Nach der Roten Karte für José Luis in Minute 103 bekommt Irland noch einmal Zugriff. Brendan McHugh, bei einem Ausscheiden womöglich vor seinem letzten Länderspiel, köpft in Minute 115 das 2:2. Ben Barry liefert die Vorlage und sammelt damit erneut einen wichtigen Scorerpunkt auf der größten Bühne.'},
       {title:'Reilly hält Irland am Leben',text:'Evan Reilly spielt bereits während der 120 Minuten stark und pariert vier von sechs Schüssen auf sein Tor. Im Elfmeterschießen wird der 19-Jährige endgültig zum Helden: Er hält gegen J. Alonso und E. Zubizarreta. Selbst Cormac O’Kanes Fehlschuss kann Irland deshalb nicht stoppen.'},
       {title:'Barry wächst weiter in die Ramsey-Rolle',text:'Barry wird diesmal als Mezzala eingesetzt und bestätigt genau die Entwicklung, die sich während des Turniers angedeutet hat. Er kommt auf 64 Minuten, liefert die Vorlage zum 2:2 und verwandelt seinen Elfmeter. Tore, Vorlagen, Spitze, Mittelfeld: Seine WM wird zunehmend zu einer Geschichte über Vielseitigkeit.'},
-      {title:'Brasilien wartet: das Rematch',text:'Brasilien schlägt Deutschland im anderen Viertelfinale 2:0. Paulo Henrique hält erneut die Null und erhält die Note 7,5. Damit wartet im Halbfinale ausgerechnet Brasilien auf Irland, also jene Mannschaft, gegen die die Boys in Green bereits in der Gruppenphase 2:2 gespielt haben.'},
-      {title:'Finn Harps ist im Halbfinale überall',text:'Mit Irland, Mexiko und Brasilien stehen noch drei Nationen mit aktuellen Harps-Spielern im Turnier. Zwölf Harps-Akteure sind unter den letzten vier: zehn für Irland, Emerson Escárcega für Mexiko und Paulo Henrique für Brasilien.'}
+      {title:'Niederlande wartet im Halbfinale',text:'Der Wettbewerbsüberblick bestätigt die tatsächliche Halbfinal-Zuordnung: Irland trifft auf die Niederlande. Das zweite Halbfinale bestreiten Mexiko und Brasilien. Damit bleibt Irland ein mögliches Rematch mit Brasilien erst für ein denkbares Finale vorbehalten.'},
+      {title:'Finn Harps ist im Halbfinale überall',text:'Mit Irland, Mexiko und Brasilien stehen noch drei Nationen mit aktuellen Harps-Spielern im Turnier. Zwölf Harps-Akteure sind unter den letzten vier: zehn für Irland, Emerson Escárcega für Mexiko und Paulo Henrique für Brasilien. Escárcega und Paulo Henrique treffen im Halbfinale sogar direkt aufeinander.'}
     ],
     fanReactions:{simulated:true,note:'Simulierte Save-Welt-Reaktionen',items:[
       '„92. Minute Ausgleich, 93. Minute hinten, 115. Minute wieder da und dann Reilly. Wie soll man bei dieser Mannschaft noch ruhig bleiben?“',
       '„McHugh stand möglicherweise vor seinem letzten Länderspiel und hat einfach beschlossen, es noch nicht enden zu lassen.“',
       '„O’Kane verschießt und der 19-jährige Reilly sagt trotzdem: Wir fahren ins Halbfinale.“',
-      '„Und jetzt wieder Brasilien. Nach dem 2:2 in der Gruppe gibt es keine Ausreden mehr: Irland gehört hierher.“'
+      '„Niederlande gegen Irland, Mexiko gegen Brasilien: Jetzt stimmt der Turnierbaum, und Finn Harps steckt trotzdem in beiden Halbfinals mit drin.“'
     ]},
-    sources:['FM World Cup 2042 · Spanien 2:2 Irland, 3:4 i.E. · Viertelfinale','FM Spielerstatistik Irland · Spanien gegen Irland','FM-Länderspielbericht Evan Reilly · 120 Minuten · Note 7,6','FM-Länderspielbericht Ben Barry · 64 Minuten · 1 Vorlage · Note 7,1','FM-Länderspielbericht Paulo Henrique · Brasilien 2:0 Deutschland · Note 7,5']
+    sources:['FM World Cup 2042 · Spanien 2:2 Irland, 3:4 i.E. · Viertelfinale','FM Spielerstatistik Irland · Spanien gegen Irland','FM-Länderspielbericht Evan Reilly · 120 Minuten · Note 7,6','FM-Länderspielbericht Ben Barry · 64 Minuten · 1 Vorlage · Note 7,1','FM-Länderspielbericht Paulo Henrique · Brasilien 2:0 Deutschland · Note 7,5','FM Wettbewerbsübersicht World Cup 2042 · bestätigte Halbfinalpaarungen']
   };
   upsert(window.FM_PRESS_REPORTS,report);
 
   upsert(window.FM_NEWS,{
     id:'2042-07-09-ireland-beats-spain-on-penalties-world-cup',date,type:'world-cup',
     title:'Irland überlebt Spanien im Elfmeterschießen und steht im WM-Halbfinale',
-    text:'Nach einem wilden 2:2 über 120 Minuten gewinnt Irland 4:3 im Elfmeterschießen gegen Spanien. Brendan McHugh erzwingt spät den Shootout, Evan Reilly hält zwei Elfmeter. Im Halbfinale wartet Brasilien.',
+    text:'Nach einem wilden 2:2 über 120 Minuten gewinnt Irland 4:3 im Elfmeterschießen gegen Spanien. Brendan McHugh erzwingt spät den Shootout, Evan Reilly hält zwei Elfmeter. Im Halbfinale wartet die Niederlande.',
     href:`presse.html?id=${report.id}`
   });
 })();
