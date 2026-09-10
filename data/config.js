@@ -1,20 +1,20 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-07-07',
+    referenceDate:'2042-07-09',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-07-07',
+    updatedAt:'2042-07-09',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
     dataDates:Object.freeze({
-      players:'2042-07-07',
+      players:'2042-07-09',
       transfers:'2042-07-05',
-      nationalTeam:'2042-07-07',
+      nationalTeam:'2042-07-09',
       clubs:'2042-07-05',
-      matches:'2042-07-05',
+      matches:'2042-07-09',
       season:'2042-07-05',
-      news:'2042-07-07',
+      news:'2042-07-09',
       staff:'2041-06-17'
     }),
     navigation:[
@@ -27,7 +27,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-07-07-world-cup-quarterfinals-mexico-netherlands'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-07-09-ireland-spain-penalty-drama-world-cup-semifinal'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
