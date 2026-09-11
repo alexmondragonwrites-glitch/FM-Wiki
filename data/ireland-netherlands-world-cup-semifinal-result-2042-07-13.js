@@ -1,0 +1,1 @@
+(()=>{window.FM_WORLD_CUP=window.FM_WORLD_CUP||{};const wc=window.FM_WORLD_CUP['2042']||(window.FM_WORLD_CUP['2042']={});wc.status='K.-o.-Phase · Finale';wc.updated='2042-07-13';wc.finalists=['Mexiko','Irland'];wc.final={stage:'Finale',home:'Mexiko',away:'Irland',status:'angesetzt'};})();
