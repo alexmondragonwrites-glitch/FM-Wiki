@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-07-18',
+    referenceDate:'2042-07-19',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-07-18',
+    updatedAt:'2042-07-19',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-07-18',transfers:'2042-07-18',nationalTeam:'2042-07-18',clubs:'2042-07-18',matches:'2042-07-13',season:'2042-07-18',news:'2042-07-18',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-07-18',transfers:'2042-07-18',nationalTeam:'2042-07-19',clubs:'2042-07-18',matches:'2042-07-19',season:'2042-07-18',news:'2042-07-19',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -18,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-07-18-kevin-kelly-liverpool-transfer'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-07-19-netherlands-third-place-world-cup'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
