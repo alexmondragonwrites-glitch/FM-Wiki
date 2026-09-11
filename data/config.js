@@ -7,16 +7,7 @@
     updatedAt:'2042-07-13',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({
-      players:'2042-07-13',
-      transfers:'2042-07-05',
-      nationalTeam:'2042-07-13',
-      clubs:'2042-07-05',
-      matches:'2042-07-13',
-      season:'2042-07-05',
-      news:'2042-07-13',
-      staff:'2041-06-17'
-    }),
+    dataDates:Object.freeze({players:'2042-07-13',transfers:'2042-07-05',nationalTeam:'2042-07-13',clubs:'2042-07-05',matches:'2042-07-13',season:'2042-07-05',news:'2042-07-13',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -27,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-07-13-ireland-netherlands-world-cup-semifinal-final-bound'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-07-13-mexico-ireland-world-cup-final-mega-preview'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
