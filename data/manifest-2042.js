@@ -77,7 +77,8 @@
     [['players','transfers','clubs','archive','league','press','news','nationalTeam'],'data/kevin-kelly-liverpool-transfer-2042-07-18.js'],
     [['matches','nationalTeam','archive','press','news'],'data/world-cup-third-place-result-2042-07-19.js'],
     [['players','matches','nationalTeam','archive','press','news'],'data/mexico-ireland-world-cup-final-result-2042-07-20.js'],
-    [['players','nationalTeam','archive','press','news'],'data/world-cup-2042-awards-reactions-retirements-2042-07-20.js']
+    [['players','nationalTeam','archive','press','news'],'data/world-cup-2042-awards-reactions-retirements-2042-07-20.js'],
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/derry-city-result-2042-07-25.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
