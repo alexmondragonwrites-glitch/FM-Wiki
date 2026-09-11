@@ -72,7 +72,8 @@
     [['players','matches','nationalTeam','archive','press','news'],'data/world-cup-quarterfinal-results-2042-07-09.js'],
     [['nationalTeam','archive','press','news'],'data/netherlands-world-cup-semifinal-scouting-2042-07-11.js'],
     [['players','matches','nationalTeam','archive','press','news'],'data/mexico-brazil-world-cup-semifinal-result-2042-07-12.js'],
-    [['players','matches','nationalTeam','archive','press','news'],'data/ireland-netherlands-world-cup-semifinal-result-2042-07-13.js']
+    [['players','matches','nationalTeam','archive','press','news'],'data/ireland-netherlands-world-cup-semifinal-result-2042-07-13.js'],
+    [['players','nationalTeam','archive','press','news'],'data/mexico-ireland-world-cup-final-preview-2042-07-13.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
