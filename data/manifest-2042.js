@@ -81,7 +81,8 @@
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/derry-city-result-2042-07-25.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/st-patricks-athletic-result-2042-07-28.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/sligo-rovers-result-2042-08-01.js'],
-    [['players','archive','press','news'],'data/ben-barry-contract-extension-2042-08-03.js']
+    [['players','archive','press','news'],'data/ben-barry-contract-extension-2042-08-03.js'],
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/ucd-result-2042-08-04.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
