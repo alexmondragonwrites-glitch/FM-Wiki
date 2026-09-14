@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-08-04',
+    referenceDate:'2042-08-08',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-08-04',
+    updatedAt:'2042-08-08',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-08-04',transfers:'2042-07-18',nationalTeam:'2042-07-20',clubs:'2042-08-04',matches:'2042-08-04',season:'2042-08-04',news:'2042-08-04',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-08-08',transfers:'2042-07-18',nationalTeam:'2042-07-20',clubs:'2042-08-08',matches:'2042-08-08',season:'2042-08-08',news:'2042-08-08',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -18,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-08-04-finn-harps-ucd-6-0-barry-hat-trick'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-08-08-athlone-town-finn-harps-1-5-ramsey-brace'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
