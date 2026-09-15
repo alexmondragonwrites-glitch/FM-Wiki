@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-08-08',
+    referenceDate:'2042-08-11',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-08-08',
+    updatedAt:'2042-08-11',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-08-08',transfers:'2042-07-18',nationalTeam:'2042-07-20',clubs:'2042-08-08',matches:'2042-08-08',season:'2042-08-08',news:'2042-08-08',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-08-11',transfers:'2042-07-18',nationalTeam:'2042-07-20',clubs:'2042-08-11',matches:'2042-08-11',season:'2042-08-11',news:'2042-08-11',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -18,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-08-08-athlone-town-finn-harps-1-5-ramsey-brace'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-08-11-finn-harps-cork-city-3-0-barry-frame-impact'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
