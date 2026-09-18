@@ -86,7 +86,8 @@
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/athlone-town-result-2042-08-08.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/cork-city-result-2042-08-11.js'],
     [['players','matches','fixtures','clubs','archive','press','news'],'data/galway-united-fai-cup-result-2042-08-14.js'],
-    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/bohemian-result-2042-08-17.js']
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/bohemian-result-2042-08-17.js'],
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/shamrock-rovers-result-2042-08-25.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
