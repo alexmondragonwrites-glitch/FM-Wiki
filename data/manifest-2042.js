@@ -89,7 +89,8 @@
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/bohemian-result-2042-08-17.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/shamrock-rovers-result-2042-08-25.js'],
     [['fixtures','archive','league','news'],'data/champions-league-schedule-2042-08-28.js'],
-    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/shamrock-rovers-title-result-2042-08-31.js']
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/shamrock-rovers-title-result-2042-08-31.js'],
+    [['players','transfers','archive','league','press','news'],'data/paulo-henrique-wolves-transfer-2042-08-31.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
