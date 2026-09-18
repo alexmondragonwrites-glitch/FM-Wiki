@@ -48,22 +48,49 @@
         {date:'2043-01-21',time:'20:00',venue:'Heim',opponent:'Grenoble Foot 38',country:'Frankreich',coefficientRank:71,pot:4},
         {date:'2043-01-28',time:'20:00',venue:'Heim',opponent:'Atlético de Madrid',country:'Spanien',coefficientRank:30,pot:3}
       ],
-      confirmedParticipantsFromSchedule:[
-        {club:'Finn Harps',country:'Irland',role:'Teilnehmer'},
-        {club:'Inter',country:'Italien',pot:1,coefficientRank:9},
-        {club:'Tottenham',country:'England',pot:1,coefficientRank:6},
-        {club:'Benfica',country:'Portugal',pot:2,coefficientRank:22},
-        {club:'Villarreal',country:'Spanien',pot:2,coefficientRank:23},
-        {club:'AEK',country:'Griechenland',pot:3,coefficientRank:46},
-        {club:'Atlético de Madrid',country:'Spanien',pot:3,coefficientRank:30},
-        {club:'Kortrijk',country:'Belgien',pot:4,coefficientRank:73},
-        {club:'Grenoble Foot 38',country:'Frankreich',pot:4,coefficientRank:71}
+      participants:[
+        {seed:1,club:'Finn Harps'},
+        {seed:2,club:'Manchester United'},
+        {seed:3,club:'Monaco'},
+        {seed:4,club:'Barcelona'},
+        {seed:5,club:'Tottenham'},
+        {seed:6,club:'West Ham'},
+        {seed:7,club:'Manchester City'},
+        {seed:8,club:'Inter'},
+        {seed:9,club:'Real Madrid'},
+        {seed:10,club:'Borussia Dortmund'},
+        {seed:11,club:'Wolfsburg'},
+        {seed:12,club:'Liverpool'},
+        {seed:13,club:'Napoli'},
+        {seed:14,club:'Milan'},
+        {seed:15,club:'Benfica'},
+        {seed:16,club:'Villarreal'},
+        {seed:17,club:'Roma'},
+        {seed:18,club:'Atlético de Madrid'},
+        {seed:19,club:'Bayer Leverkusen'},
+        {seed:20,club:'Caen'},
+        {seed:21,club:'Sporting CP'},
+        {seed:22,club:'Young Boys'},
+        {seed:23,club:'Cagliari'},
+        {seed:24,club:'Galatasaray SK'},
+        {seed:25,club:'Celtic'},
+        {seed:26,club:'AEK'},
+        {seed:27,club:'PSV Eindhoven'},
+        {seed:28,club:'Eintracht Frankfurt'},
+        {seed:29,club:'Grenoble Foot 38'},
+        {seed:30,club:'Kortrijk'},
+        {seed:31,club:'Crvena zvezda'},
+        {seed:32,club:'Paris Saint-Germain'},
+        {seed:33,club:"St Patrick's Athletic"},
+        {seed:34,club:'Red Bull Salzburg'},
+        {seed:35,club:'Bodø/Glimt'},
+        {seed:36,club:'Dynamo Kyiv'}
       ],
-      participantsNote:'Der bereitgestellte Spielplan bestätigt Finn Harps und die acht zugelosten Gegner als Teilnehmer. Das vollständige 36er-Teilnehmerfeld ist in dieser Quelle nicht sichtbar.'
+      participantsNote:'Das vollständige 36er-Teilnehmerfeld der Champions-League-Ligaphase 2042/43 ist bestätigt. Neben Finn Harps hat sich mit St Patrick’s Athletic ein zweiter irischer Klub qualifiziert.'
     };
     season.changes=season.changes||{incoming:[],outgoing:[],promoted:[],notes:[]};
     season.changes.notes=season.changes.notes||[];
-    const note='28.08.2042: Champions-League-Ligaphase 2042/43 ausgelost. Finn Harps trifft auf Inter, Benfica, Kortrijk, AEK, Tottenham, Villarreal, Grenoble Foot 38 und Atlético de Madrid.';
+    const note='28.08.2042: Champions-League-Ligaphase 2042/43 ausgelost. Finn Harps trifft auf Inter, Benfica, Kortrijk, AEK, Tottenham, Villarreal, Grenoble Foot 38 und Atlético de Madrid. Das vollständige Feld umfasst 36 Vereine; St Patrick’s Athletic ist als zweiter irischer Klub ebenfalls qualifiziert.';
     if(!season.changes.notes.includes(note))season.changes.notes.push(note);
   }
 
