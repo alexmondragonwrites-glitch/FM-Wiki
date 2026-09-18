@@ -7,7 +7,7 @@
     updatedAt:'2042-08-31',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-08-31',transfers:'2042-07-18',nationalTeam:'2042-07-20',clubs:'2042-08-31',matches:'2042-08-31',season:'2042-08-31',news:'2042-08-31',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-08-31',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-08-31',matches:'2042-08-31',season:'2042-08-31',news:'2042-08-31',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
