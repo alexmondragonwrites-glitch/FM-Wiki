@@ -95,7 +95,8 @@
     [['players','archive','league','press','news'],'data/pol-munoz-development-2042-09-08.js'],
     [['clubs','fixtures','archive','league','press','news'],'data/inter-preview-2042-09-08.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/inter-result-2042-09-09.js'],
-    [['clubs','fixtures','archive','league','press','news'],'data/benfica-preview-2042-09-10.js']
+    [['clubs','fixtures','archive','league','press','news'],'data/benfica-preview-2042-09-10.js'],
+    [['clubs','archive','league','press','news'],'data/champions-league-matchday1-wednesday-2042-09-10.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
