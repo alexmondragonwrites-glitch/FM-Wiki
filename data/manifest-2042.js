@@ -91,6 +91,7 @@
     [['fixtures','archive','league','news'],'data/champions-league-schedule-2042-08-28.js'],
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/shamrock-rovers-title-result-2042-08-31.js'],
     [['players','transfers','archive','league','press','news'],'data/paulo-henrique-wolves-transfer-2042-08-31.js'],
+    [['players','matches','fixtures','clubs','archive','league','press','news'],'data/ucd-result-2042-09-05.js'],
     [['players','archive','league','press','news'],'data/pol-munoz-development-2042-09-08.js']
   ];
 
