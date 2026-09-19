@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-08-31',
+    referenceDate:'2042-09-08',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-08-31',
+    updatedAt:'2042-09-08',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-08-31',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-08-31',matches:'2042-08-31',season:'2042-08-31',news:'2042-08-31',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-09-08',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-08-31',matches:'2042-08-31',season:'2042-09-08',news:'2042-09-08',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
