@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-09-16',
+    referenceDate:'2042-09-17',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-09-16',
+    updatedAt:'2042-09-17',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-09-16',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-09-16',matches:'2042-09-16',season:'2042-09-16',news:'2042-09-16',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-09-16',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-09-16',matches:'2042-09-16',season:'2042-09-17',news:'2042-09-17',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -18,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-09-16-finn-harps-benfica-1-0-match-report'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-09-17-champions-league-wednesday-roundup'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
