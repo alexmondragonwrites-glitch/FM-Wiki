@@ -1,13 +1,13 @@
 (()=>{
   const config={
     schemaVersion:2,
-    referenceDate:'2042-09-17',
+    referenceDate:'2042-09-21',
     currentSeason:2042,
     nextSeason:2043,
-    updatedAt:'2042-09-17',
+    updatedAt:'2042-09-21',
     locale:'de-DE',
     siteName:'Finn Harps FM Wiki',
-    dataDates:Object.freeze({players:'2042-09-16',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-09-16',matches:'2042-09-16',season:'2042-09-17',news:'2042-09-17',staff:'2041-06-17'}),
+    dataDates:Object.freeze({players:'2042-09-21',transfers:'2042-08-31',nationalTeam:'2042-07-20',clubs:'2042-09-21',matches:'2042-09-21',season:'2042-09-21',news:'2042-09-21',staff:'2041-06-17'}),
     navigation:[
       {id:'news',label:'News',href:'news.html'},
       {id:'squad',label:'Kader',href:'kader.html'},
@@ -18,7 +18,7 @@
       {id:'season',label:'Saison',href:'saison.html'},
       {id:'matches',label:'Spiele',href:'spiele.html'},
       {id:'clubs',label:'Klubs',href:'klubs.html'},
-      {id:'press',label:'Presse',href:'presse.html?id=2042-09-17-champions-league-wednesday-roundup'},
+      {id:'press',label:'Presse',href:'presse.html?id=2042-09-21-derry-city-finn-harps-0-2-fai-cup-quarterfinal'},
       {id:'club',label:'Verein',href:'verein.html'},
       {id:'staff',label:'Mitarbeiter',href:'mitarbeiter.html'},
       {id:'docs',label:'Dokumentation',href:'dokumentation.html'}
