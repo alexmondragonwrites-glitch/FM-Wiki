@@ -103,7 +103,8 @@
     [['players','matches','fixtures','clubs','archive','league','press','news'],'data/cork-city-result-2042-09-23.js'],
     [['players','nationalTeam','archive','press','news'],'data/ireland-denmark-nations-league-preview-2042-09-25.js'],
     [['matches','nationalTeam','archive','press','news'],'data/ireland-denmark-result-2042-09-26.js'],
-    [['nationalTeam','archive','press','news'],'data/ireland-israel-preview-2042-09-26.js']
+    [['nationalTeam','archive','press','news'],'data/ireland-israel-preview-2042-09-26.js'],
+    [['players','matches','nationalTeam','archive','press','news'],'data/ireland-israel-result-2042-09-29.js']
   ];
 
   entries.forEach(([keys,path])=>keys.forEach(key=>add(key,path)));
